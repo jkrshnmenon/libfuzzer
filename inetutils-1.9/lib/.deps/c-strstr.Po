@@ -1,0 +1,38 @@
+c-strstr.o: c-strstr.c ../config.h ../confpaths.h /usr/include/paths.h \
+  c-strstr.h string.h /usr/include/string.h /usr/include/features.h \
+  /usr/include/stdc-predef.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/local/lib/clang/5.0.0/include/stddef.h /usr/include/xlocale.h \
+  /usr/local/lib/clang/5.0.0/include/__stddef_max_align_t.h
+
+../config.h:
+
+../confpaths.h:
+
+/usr/include/paths.h:
+
+c-strstr.h:
+
+string.h:
+
+/usr/include/string.h:
+
+/usr/include/features.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/local/lib/clang/5.0.0/include/stddef.h:
+
+/usr/include/xlocale.h:
+
+/usr/local/lib/clang/5.0.0/include/__stddef_max_align_t.h:

@@ -1,0 +1,8 @@
+read_passwd.o: read_passwd.c ../config.h ../confpaths.h \
+  /usr/include/paths.h
+
+../config.h:
+
+../confpaths.h:
+
+/usr/include/paths.h:

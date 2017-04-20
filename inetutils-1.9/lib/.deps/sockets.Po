@@ -1,0 +1,10 @@
+sockets.o: sockets.c ../config.h ../confpaths.h /usr/include/paths.h \
+  sockets.h
+
+../config.h:
+
+../confpaths.h:
+
+/usr/include/paths.h:
+
+sockets.h:

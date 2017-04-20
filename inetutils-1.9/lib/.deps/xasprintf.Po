@@ -1,0 +1,12 @@
+xasprintf.o: xasprintf.c ../config.h ../confpaths.h /usr/include/paths.h \
+  xvasprintf.h /usr/local/lib/clang/5.0.0/include/stdarg.h
+
+../config.h:
+
+../confpaths.h:
+
+/usr/include/paths.h:
+
+xvasprintf.h:
+
+/usr/local/lib/clang/5.0.0/include/stdarg.h:

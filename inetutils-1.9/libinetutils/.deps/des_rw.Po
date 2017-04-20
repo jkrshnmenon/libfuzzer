@@ -1,0 +1,7 @@
+des_rw.o: des_rw.c ../config.h ../confpaths.h /usr/include/paths.h
+
+../config.h:
+
+../confpaths.h:
+
+/usr/include/paths.h:

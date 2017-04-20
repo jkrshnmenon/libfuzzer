@@ -1,0 +1,7 @@
+argp-pin.o: argp-pin.c ../config.h ../confpaths.h /usr/include/paths.h
+
+../config.h:
+
+../confpaths.h:
+
+/usr/include/paths.h:

@@ -1,0 +1,7 @@
+kerberos5.o: kerberos5.c ../config.h ../confpaths.h /usr/include/paths.h
+
+../config.h:
+
+../confpaths.h:
+
+/usr/include/paths.h:

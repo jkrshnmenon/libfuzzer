@@ -1,0 +1,25 @@
+gl_xlist.o: gl_xlist.c ../config.h ../confpaths.h /usr/include/paths.h \
+  gl_xlist.h gl_list.h /usr/local/lib/clang/5.0.0/include/stdbool.h \
+  /usr/local/lib/clang/5.0.0/include/stddef.h \
+  /usr/local/lib/clang/5.0.0/include/__stddef_max_align_t.h xalloc.h \
+  xalloc-oversized.h
+
+../config.h:
+
+../confpaths.h:
+
+/usr/include/paths.h:
+
+gl_xlist.h:
+
+gl_list.h:
+
+/usr/local/lib/clang/5.0.0/include/stdbool.h:
+
+/usr/local/lib/clang/5.0.0/include/stddef.h:
+
+/usr/local/lib/clang/5.0.0/include/__stddef_max_align_t.h:
+
+xalloc.h:
+
+xalloc-oversized.h:

@@ -1,0 +1,10 @@
+auth.o: auth.c ../config.h ../confpaths.h /usr/include/paths.h \
+  ../lib/unused-parameter.h
+
+../config.h:
+
+../confpaths.h:
+
+/usr/include/paths.h:
+
+../lib/unused-parameter.h:

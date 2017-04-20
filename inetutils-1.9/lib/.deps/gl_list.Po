@@ -1,0 +1,18 @@
+gl_list.o: gl_list.c ../config.h ../confpaths.h /usr/include/paths.h \
+  gl_list.h /usr/local/lib/clang/5.0.0/include/stdbool.h \
+  /usr/local/lib/clang/5.0.0/include/stddef.h \
+  /usr/local/lib/clang/5.0.0/include/__stddef_max_align_t.h
+
+../config.h:
+
+../confpaths.h:
+
+/usr/include/paths.h:
+
+gl_list.h:
+
+/usr/local/lib/clang/5.0.0/include/stdbool.h:
+
+/usr/local/lib/clang/5.0.0/include/stddef.h:
+
+/usr/local/lib/clang/5.0.0/include/__stddef_max_align_t.h:

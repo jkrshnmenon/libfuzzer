@@ -1,0 +1,7 @@
+shishi.o: shishi.c ../config.h ../confpaths.h /usr/include/paths.h
+
+../config.h:
+
+../confpaths.h:
+
+/usr/include/paths.h:
