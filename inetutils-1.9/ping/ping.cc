@@ -466,5 +466,10 @@ ping_finish (void)
 
 extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data,size_t Size){
 	char *buffers[3]={"./a.out",(char *)Data,NULL};
+	// all arguments should be NULL terminated.
+	char *main_arg = (char*)malloc(Size + 1);
+	memcpy(main_arg, Data, Size);
+	main_arg[Size] = NULL;
+	buffers[1] = main_arg;
 	runner(2,buffers);
 }
