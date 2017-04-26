@@ -1,0 +1,508 @@
+Magick++/lib/Magick___lib_libGraphicsMagick___la-Image.lo: \
+  Magick++/lib/Image.cpp Magick++/lib/Magick++/Include.h \
+  magick/magick_config.h /usr/include/stdio.h /usr/include/features.h \
+  /usr/include/stdc-predef.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/local/lib/clang/5.0.0/include/stddef.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/libio.h \
+  /usr/include/_G_config.h /usr/include/wchar.h \
+  /usr/local/lib/clang/5.0.0/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap-16.h \
+  /usr/include/xlocale.h /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/time.h /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/sigset.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h magick/api.h \
+  magick/common.h magick/magick_types.h magick/analyze.h magick/image.h \
+  magick/forward.h magick/colorspace.h magick/error.h magick/log.h \
+  magick/timer.h magick/attribute.h magick/average.h magick/blob.h \
+  magick/cdl.h magick/channel.h magick/color.h magick/color_lookup.h \
+  magick/colormap.h magick/command.h magick/compare.h magick/composite.h \
+  magick/compress.h magick/confirm_access.h magick/constitute.h \
+  magick/decorate.h magick/delegate.h magick/deprecate.h \
+  magick/describe.h magick/draw.h magick/render.h magick/type.h \
+  magick/effect.h magick/enhance.h magick/fx.h magick/gem.h \
+  magick/random.h magick/gradient.h magick/hclut.h magick/list.h \
+  magick/magic.h magick/magick.h magick/memory.h magick/module.h \
+  magick/monitor.h magick/montage.h magick/operator.h magick/paint.h \
+  magick/pixel_cache.h magick/pixel_iterator.h magick/plasma.h \
+  magick/profile.h magick/quantize.h magick/registry.h magick/resize.h \
+  magick/resource.h magick/shear.h magick/signature.h \
+  magick/statistics.h magick/texture.h magick/transform.h \
+  magick/utility.h magick/version.h magick/enum_strings.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/cstdlib \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0/bits/c++config.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0/bits/os_defines.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0/bits/cpu_defines.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/string \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/stringfwd.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/memoryfwd.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/char_traits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/stl_algobase.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/functexcept.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/exception_defines.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/cpp_type_traits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/ext/type_traits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/ext/numeric_traits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/stl_pair.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/move.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/concept_check.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/stl_iterator_base_types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/stl_iterator_base_funcs.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/debug/debug.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/stl_iterator.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/ptr_traits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/predefined_ops.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/postypes.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/cwchar \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/allocator.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0/bits/c++allocator.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/ext/new_allocator.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/new \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/exception \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/atomic_lockfree_defines.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/localefwd.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0/bits/c++locale.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/clocale \
+  /usr/include/locale.h /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/iosfwd \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/cctype \
+  /usr/include/ctype.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/ostream_insert.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/cxxabi_forced.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/stl_function.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward/binders.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/range_access.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/basic_string.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/ext/atomicity.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0/bits/gthr.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0/bits/gthr-default.h \
+  /usr/include/pthread.h /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0/bits/atomic_word.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/ext/alloc_traits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/basic_string.tcc \
+  /usr/include/string.h /usr/include/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/huge_val.h \
+  /usr/include/x86_64-linux-gnu/bits/huge_valf.h \
+  /usr/include/x86_64-linux-gnu/bits/huge_vall.h \
+  /usr/include/x86_64-linux-gnu/bits/inf.h \
+  /usr/include/x86_64-linux-gnu/bits/nan.h \
+  /usr/include/x86_64-linux-gnu/bits/mathdef.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  Magick++/lib/Magick++/Image.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/list \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/stl_list.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/list.tcc \
+  Magick++/lib/Magick++/Blob.h Magick++/lib/Magick++/Color.h \
+  Magick++/lib/Magick++/Drawable.h \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/functional \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/utility \
+  /usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/stl_relops.h \
+  Magick++/lib/Magick++/Geometry.h Magick++/lib/Magick++/Exception.h \
+  Magick++/lib/Magick++/TypeMetric.h Magick++/lib/Magick++/Functions.h \
+  Magick++/lib/Magick++/Pixels.h Magick++/lib/Magick++/Options.h \
+  Magick++/lib/Magick++/ImageRef.h Magick++/lib/Magick++/Thread.h
+
+Magick++/lib/Magick++/Include.h:
+
+magick/magick_config.h:
+
+/usr/include/stdio.h:
+
+/usr/include/features.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/local/lib/clang/5.0.0/include/stddef.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/local/lib/clang/5.0.0/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap-16.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigset.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/sys/sysmacros.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+magick/api.h:
+
+magick/common.h:
+
+magick/magick_types.h:
+
+magick/analyze.h:
+
+magick/image.h:
+
+magick/forward.h:
+
+magick/colorspace.h:
+
+magick/error.h:
+
+magick/log.h:
+
+magick/timer.h:
+
+magick/attribute.h:
+
+magick/average.h:
+
+magick/blob.h:
+
+magick/cdl.h:
+
+magick/channel.h:
+
+magick/color.h:
+
+magick/color_lookup.h:
+
+magick/colormap.h:
+
+magick/command.h:
+
+magick/compare.h:
+
+magick/composite.h:
+
+magick/compress.h:
+
+magick/confirm_access.h:
+
+magick/constitute.h:
+
+magick/decorate.h:
+
+magick/delegate.h:
+
+magick/deprecate.h:
+
+magick/describe.h:
+
+magick/draw.h:
+
+magick/render.h:
+
+magick/type.h:
+
+magick/effect.h:
+
+magick/enhance.h:
+
+magick/fx.h:
+
+magick/gem.h:
+
+magick/random.h:
+
+magick/gradient.h:
+
+magick/hclut.h:
+
+magick/list.h:
+
+magick/magic.h:
+
+magick/magick.h:
+
+magick/memory.h:
+
+magick/module.h:
+
+magick/monitor.h:
+
+magick/montage.h:
+
+magick/operator.h:
+
+magick/paint.h:
+
+magick/pixel_cache.h:
+
+magick/pixel_iterator.h:
+
+magick/plasma.h:
+
+magick/profile.h:
+
+magick/quantize.h:
+
+magick/registry.h:
+
+magick/resize.h:
+
+magick/resource.h:
+
+magick/shear.h:
+
+magick/signature.h:
+
+magick/statistics.h:
+
+magick/texture.h:
+
+magick/transform.h:
+
+magick/utility.h:
+
+magick/version.h:
+
+magick/enum_strings.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/cstdlib:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0/bits/c++config.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0/bits/os_defines.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0/bits/cpu_defines.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/string:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/stringfwd.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/memoryfwd.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/char_traits.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/stl_algobase.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/functexcept.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/exception_defines.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/cpp_type_traits.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/ext/type_traits.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/ext/numeric_traits.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/stl_pair.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/move.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/concept_check.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/stl_iterator_base_types.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/stl_iterator_base_funcs.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/debug/debug.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/stl_iterator.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/ptr_traits.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/predefined_ops.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/postypes.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/cwchar:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/allocator.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0/bits/c++allocator.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/ext/new_allocator.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/new:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/exception:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/atomic_lockfree_defines.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/localefwd.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0/bits/c++locale.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/clocale:
+
+/usr/include/locale.h:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/iosfwd:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/cctype:
+
+/usr/include/ctype.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/ostream_insert.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/cxxabi_forced.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/stl_function.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/backward/binders.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/range_access.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/basic_string.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/ext/atomicity.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0/bits/gthr.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/x86_64-linux-gnu/c++/5.4.0/bits/atomic_word.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/ext/alloc_traits.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/basic_string.tcc:
+
+/usr/include/string.h:
+
+/usr/include/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/math.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/huge_val.h:
+
+/usr/include/x86_64-linux-gnu/bits/huge_valf.h:
+
+/usr/include/x86_64-linux-gnu/bits/huge_vall.h:
+
+/usr/include/x86_64-linux-gnu/bits/inf.h:
+
+/usr/include/x86_64-linux-gnu/bits/nan.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathdef.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+Magick++/lib/Magick++/Image.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/list:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/stl_list.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/list.tcc:
+
+Magick++/lib/Magick++/Blob.h:
+
+Magick++/lib/Magick++/Color.h:
+
+Magick++/lib/Magick++/Drawable.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/functional:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/utility:
+
+/usr/lib/gcc/x86_64-linux-gnu/5.4.0/../../../../include/c++/5.4.0/bits/stl_relops.h:
+
+Magick++/lib/Magick++/Geometry.h:
+
+Magick++/lib/Magick++/Exception.h:
+
+Magick++/lib/Magick++/TypeMetric.h:
+
+Magick++/lib/Magick++/Functions.h:
+
+Magick++/lib/Magick++/Pixels.h:
+
+Magick++/lib/Magick++/Options.h:
+
+Magick++/lib/Magick++/ImageRef.h:
+
+Magick++/lib/Magick++/Thread.h:

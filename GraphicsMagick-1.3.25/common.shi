@@ -1,0 +1,18 @@
+# -*- shell-script -*-
+# Copyright (C) 2012 GraphicsMagick Group
+# Definitions of optional features and configuration values for this build.
+# Intended for use by test scripts.
+MAGICK_FEATURES='PS X XML ZLIB'
+top_srcdir='/home/jake/project/GraphicsMagick-1.3.25'
+top_builddir='/home/jake/project/GraphicsMagick-1.3.25'
+
+set -a
+GM="${MEMCHECK} /home/jake/project/GraphicsMagick-1.3.25/utilities/gm"
+LD_LIBRARY_PATH="/home/jake/project/GraphicsMagick-1.3.25/magick/.libs:${LD_LIBRARY_PATH}"
+
+MAGICK_CODER_MODULE_PATH='/home/jake/project/GraphicsMagick-1.3.25/coders'
+MAGICK_CONFIGURE_PATH='/home/jake/project/GraphicsMagick-1.3.25/config:/home/jake/project/GraphicsMagick-1.3.25/config'
+MAGICK_FILTER_MODULE_PATH='/home/jake/project/GraphicsMagick-1.3.25/filters'
+
+PATH="/home/jake/project/GraphicsMagick-1.3.25/utilities:${PATH}"
+set +a
