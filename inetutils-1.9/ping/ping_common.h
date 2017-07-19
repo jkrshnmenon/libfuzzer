@@ -17,6 +17,7 @@
   You should have received a copy of the GNU General Public License
   along with this program.  If not, see `http://www.gnu.org/licenses/'. */
 
+
 #include <netinet/in_systm.h>
 #include <netinet/in.h>
 #include <netinet/ip.h>
@@ -142,7 +143,6 @@ struct ping_data
 
 
 void tvsub (struct timeval *out, struct timeval *in);
-double nabs (double a);
 double nsqrt (double a, double prec);
 
 size_t ping_cvt_number (const char *optarg, size_t maxval, int allow_zero);
@@ -158,3 +158,7 @@ void ping_set_sockopt (PING * ping, int opt, void *val, int valsize);
 void ping_set_interval (PING * ping, size_t interval);
 void ping_unset_data (PING * p);
 int ping_timeout_p (struct timeval *start_time, int timeout);
+#ifdef _cplusplus
+extern "C"
+#endif
+double nabs (double a);

@@ -1,9 +1,10 @@
-#include<iostream>
+extern "C"{
 #include "ping.h"
+}
 
-using namespace std;
-
-int main(){
-    ping_finish();
+extern "C" int LLVMFuzzerTestOneInput( const uint8_t *Data, size_t Size)
+{
+    double a = 0.0;
+    nabs(a);
     return 0;
 }
