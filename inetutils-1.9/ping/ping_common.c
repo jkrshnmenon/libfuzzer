@@ -113,9 +113,6 @@ tvsub (struct timeval *out, struct timeval *in)
   out->tv_sec -= in->tv_sec;
 }
 
-#ifdef _cplusplus
-extern "C"
-#endif
 double
 nabs (double a)
 {
