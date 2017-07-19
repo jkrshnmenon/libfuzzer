@@ -1,4 +1,7 @@
-argp-pin.o: argp-pin.c ../config.h ../confpaths.h /usr/include/paths.h
+argp-pin.o: argp-pin.c /usr/include/stdc-predef.h ../config.h \
+ ../confpaths.h /usr/include/paths.h
+
+/usr/include/stdc-predef.h:
 
 ../config.h:
 

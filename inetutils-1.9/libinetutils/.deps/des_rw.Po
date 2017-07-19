@@ -1,4 +1,7 @@
-des_rw.o: des_rw.c ../config.h ../confpaths.h /usr/include/paths.h
+des_rw.o: des_rw.c /usr/include/stdc-predef.h ../config.h ../confpaths.h \
+ /usr/include/paths.h
+
+/usr/include/stdc-predef.h:
 
 ../config.h:
 

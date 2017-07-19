@@ -1,4 +1,7 @@
-enc_des.o: enc_des.c ../config.h ../confpaths.h /usr/include/paths.h
+enc_des.o: enc_des.c /usr/include/stdc-predef.h ../config.h \
+ ../confpaths.h /usr/include/paths.h
+
+/usr/include/stdc-predef.h:
 
 ../config.h:
 

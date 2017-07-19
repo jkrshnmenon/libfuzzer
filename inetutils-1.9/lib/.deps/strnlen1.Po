@@ -1,11 +1,13 @@
-strnlen1.o: strnlen1.c ../config.h ../confpaths.h /usr/include/paths.h \
-  strnlen1.h /usr/local/lib/clang/5.0.0/include/stddef.h \
-  /usr/local/lib/clang/5.0.0/include/__stddef_max_align_t.h string.h \
-  /usr/include/string.h /usr/include/features.h \
-  /usr/include/stdc-predef.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h /usr/include/xlocale.h
+strnlen1.o: strnlen1.c /usr/include/stdc-predef.h ../config.h \
+ ../confpaths.h /usr/include/paths.h strnlen1.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h string.h \
+ /usr/include/string.h /usr/include/features.h \
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h /usr/include/xlocale.h
+
+/usr/include/stdc-predef.h:
 
 ../config.h:
 
@@ -15,17 +17,13 @@ strnlen1.o: strnlen1.c ../config.h ../confpaths.h /usr/include/paths.h \
 
 strnlen1.h:
 
-/usr/local/lib/clang/5.0.0/include/stddef.h:
-
-/usr/local/lib/clang/5.0.0/include/__stddef_max_align_t.h:
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h:
 
 string.h:
 
 /usr/include/string.h:
 
 /usr/include/features.h:
-
-/usr/include/stdc-predef.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 

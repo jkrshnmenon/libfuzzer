@@ -1,52 +1,52 @@
-init_disp.o: init_disp.c ../config.h ../confpaths.h /usr/include/paths.h \
-  ../lib/stdlib.h /usr/include/stdlib.h /usr/include/features.h \
-  /usr/include/stdc-predef.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/local/lib/clang/5.0.0/include/stddef.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap-16.h \
-  /usr/include/xlocale.h ../lib/sys/types.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h ../lib/time.h \
-  /usr/include/time.h ../lib/sys/select.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/sigset.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h ../lib/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/local/lib/clang/5.0.0/include/__stddef_max_align_t.h \
-  ../lib/termios.h /usr/include/termios.h \
-  /usr/include/x86_64-linux-gnu/bits/termios.h \
-  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h ../lib/unistd.h \
-  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
-  /usr/include/x86_64-linux-gnu/bits/environments.h \
-  /usr/include/x86_64-linux-gnu/bits/confname.h ../lib/getopt.h \
-  /usr/include/getopt.h ../lib/signal.h /usr/include/signal.h \
-  /usr/include/x86_64-linux-gnu/bits/signum.h \
-  /usr/include/x86_64-linux-gnu/bits/siginfo.h \
-  /usr/include/x86_64-linux-gnu/bits/sigaction.h \
-  /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
-  /usr/include/x86_64-linux-gnu/bits/sigstack.h \
-  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
-  /usr/include/x86_64-linux-gnu/bits/sigthread.h ../lib/error.h talk.h \
-  /usr/include/curses.h /usr/include/ncurses_dll.h \
-  /usr/local/lib/clang/5.0.0/include/stdint.h /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h ../lib/stdio.h \
-  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
-  ../lib/wchar.h /usr/include/wchar.h \
-  /usr/local/lib/clang/5.0.0/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
-  /usr/local/lib/clang/5.0.0/include/stdbool.h /usr/include/unctrl.h \
-  ../lib/progname.h ../lib/unused-parameter.h
+init_disp.o: init_disp.c /usr/include/stdc-predef.h ../config.h \
+ ../confpaths.h /usr/include/paths.h ../lib/stdlib.h \
+ /usr/include/stdlib.h /usr/include/features.h \
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h \
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap-16.h /usr/include/xlocale.h \
+ ../lib/sys/types.h /usr/include/x86_64-linux-gnu/sys/types.h \
+ ../lib/time.h /usr/include/time.h ../lib/sys/select.h \
+ /usr/include/x86_64-linux-gnu/sys/select.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h \
+ /usr/include/x86_64-linux-gnu/bits/sigset.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h ../lib/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h ../lib/termios.h \
+ /usr/include/termios.h /usr/include/x86_64-linux-gnu/bits/termios.h \
+ /usr/include/x86_64-linux-gnu/sys/ttydefaults.h ../lib/unistd.h \
+ /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h ../lib/getopt.h \
+ /usr/include/getopt.h ../lib/signal.h /usr/include/signal.h \
+ /usr/include/x86_64-linux-gnu/bits/signum.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo.h \
+ /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+ /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+ /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+ /usr/include/x86_64-linux-gnu/bits/sigthread.h ../lib/error.h talk.h \
+ /usr/include/curses.h /usr/include/ncurses_dll.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h ../lib/stdio.h \
+ /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
+ ../lib/wchar.h /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdbool.h /usr/include/unctrl.h \
+ ../lib/progname.h ../lib/unused-parameter.h
+
+/usr/include/stdc-predef.h:
 
 ../config.h:
 
@@ -60,8 +60,6 @@ init_disp.o: init_disp.c ../config.h ../confpaths.h /usr/include/paths.h \
 
 /usr/include/features.h:
 
-/usr/include/stdc-predef.h:
-
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
@@ -70,7 +68,7 @@ init_disp.o: init_disp.c ../config.h ../confpaths.h /usr/include/paths.h \
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/local/lib/clang/5.0.0/include/stddef.h:
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
@@ -115,8 +113,6 @@ init_disp.o: init_disp.c ../config.h ../confpaths.h /usr/include/paths.h \
 ../lib/alloca.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/local/lib/clang/5.0.0/include/__stddef_max_align_t.h:
 
 ../lib/termios.h:
 
@@ -166,7 +162,7 @@ talk.h:
 
 /usr/include/ncurses_dll.h:
 
-/usr/local/lib/clang/5.0.0/include/stdint.h:
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h:
 
 /usr/include/stdint.h:
 
@@ -184,13 +180,13 @@ talk.h:
 
 /usr/include/wchar.h:
 
-/usr/local/lib/clang/5.0.0/include/stdarg.h:
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
 
-/usr/local/lib/clang/5.0.0/include/stdbool.h:
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stdbool.h:
 
 /usr/include/unctrl.h:
 

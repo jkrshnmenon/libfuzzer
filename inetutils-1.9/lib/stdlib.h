@@ -579,7 +579,7 @@ _GL_WARN_ON_USE (grantpt, "grantpt is not portable - "
    by never specifying a zero size), so it does not need malloc or
    realloc to be redefined.  */
 #if 1
-# if 1
+# if 0
 #  if !((defined __cplusplus && defined GNULIB_NAMESPACE) \
         || _GL_USE_STDLIB_ALLOC)
 #   undef malloc
@@ -896,7 +896,7 @@ _GL_WARN_ON_USE (setstate_r, "setstate_r is unportable - "
 
 
 #if 1
-# if 1
+# if 0
 #  if !((defined __cplusplus && defined GNULIB_NAMESPACE) \
         || _GL_USE_STDLIB_ALLOC)
 #   undef realloc

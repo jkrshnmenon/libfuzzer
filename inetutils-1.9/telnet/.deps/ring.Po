@@ -1,50 +1,51 @@
-ring.o: ring.c ../config.h ../confpaths.h /usr/include/paths.h \
-  ../lib/string.h /usr/include/string.h /usr/include/features.h \
-  /usr/include/stdc-predef.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/local/lib/clang/5.0.0/include/stddef.h /usr/include/xlocale.h \
-  /usr/local/lib/clang/5.0.0/include/__stddef_max_align_t.h \
-  ../lib/stdio.h /usr/include/stdio.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/libio.h \
-  /usr/include/_G_config.h ../lib/wchar.h /usr/include/wchar.h \
-  /usr/local/lib/clang/5.0.0/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h ../lib/sys/types.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h ../lib/time.h \
-  /usr/include/time.h /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap-16.h ../lib/sys/select.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/sigset.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
-  /usr/include/x86_64-linux-gnu/asm/errno.h \
-  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
-  ../lib/sys/ioctl.h /usr/include/x86_64-linux-gnu/sys/ioctl.h \
-  /usr/include/x86_64-linux-gnu/bits/ioctls.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctls.h \
-  /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
-  /usr/include/x86_64-linux-gnu/asm/ioctl.h \
-  /usr/include/asm-generic/ioctl.h \
-  /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
-  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h ../lib/sys/socket.h \
-  /usr/include/x86_64-linux-gnu/sys/socket.h ../lib/sys/uio.h \
-  /usr/include/x86_64-linux-gnu/sys/uio.h \
-  /usr/include/x86_64-linux-gnu/bits/uio.h \
-  /usr/include/x86_64-linux-gnu/bits/socket.h \
-  /usr/include/x86_64-linux-gnu/bits/socket_type.h \
-  /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
-  /usr/include/x86_64-linux-gnu/asm/socket.h \
-  /usr/include/asm-generic/socket.h \
-  /usr/include/x86_64-linux-gnu/asm/sockios.h \
-  /usr/include/asm-generic/sockios.h ring.h general.h
+ring.o: ring.c /usr/include/stdc-predef.h ../config.h ../confpaths.h \
+ /usr/include/paths.h ../lib/string.h /usr/include/string.h \
+ /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h /usr/include/xlocale.h \
+ ../lib/stdio.h /usr/include/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/libio.h \
+ /usr/include/_G_config.h ../lib/wchar.h /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h ../lib/sys/types.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h ../lib/time.h \
+ /usr/include/time.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap-16.h ../lib/sys/select.h \
+ /usr/include/x86_64-linux-gnu/sys/select.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h \
+ /usr/include/x86_64-linux-gnu/bits/sigset.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ ../lib/sys/ioctl.h /usr/include/x86_64-linux-gnu/sys/ioctl.h \
+ /usr/include/x86_64-linux-gnu/bits/ioctls.h \
+ /usr/include/x86_64-linux-gnu/asm/ioctls.h \
+ /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
+ /usr/include/x86_64-linux-gnu/asm/ioctl.h \
+ /usr/include/asm-generic/ioctl.h \
+ /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
+ /usr/include/x86_64-linux-gnu/sys/ttydefaults.h ../lib/sys/socket.h \
+ /usr/include/x86_64-linux-gnu/sys/socket.h ../lib/sys/uio.h \
+ /usr/include/x86_64-linux-gnu/sys/uio.h \
+ /usr/include/x86_64-linux-gnu/bits/uio.h \
+ /usr/include/x86_64-linux-gnu/bits/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+ /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+ /usr/include/x86_64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h ring.h general.h
+
+/usr/include/stdc-predef.h:
 
 ../config.h:
 
@@ -58,8 +59,6 @@ ring.o: ring.c ../config.h ../confpaths.h /usr/include/paths.h \
 
 /usr/include/features.h:
 
-/usr/include/stdc-predef.h:
-
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
@@ -68,11 +67,9 @@ ring.o: ring.c ../config.h ../confpaths.h /usr/include/paths.h \
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/local/lib/clang/5.0.0/include/stddef.h:
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h:
 
 /usr/include/xlocale.h:
-
-/usr/local/lib/clang/5.0.0/include/__stddef_max_align_t.h:
 
 ../lib/stdio.h:
 
@@ -90,7 +87,7 @@ ring.o: ring.c ../config.h ../confpaths.h /usr/include/paths.h \
 
 /usr/include/wchar.h:
 
-/usr/local/lib/clang/5.0.0/include/stdarg.h:
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 

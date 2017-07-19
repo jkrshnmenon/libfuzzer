@@ -1,13 +1,14 @@
-basename-lgpl.o: basename-lgpl.c ../config.h ../confpaths.h \
-  /usr/include/paths.h dirname.h \
-  /usr/local/lib/clang/5.0.0/include/stdbool.h \
-  /usr/local/lib/clang/5.0.0/include/stddef.h \
-  /usr/local/lib/clang/5.0.0/include/__stddef_max_align_t.h dosname.h \
-  string.h /usr/include/string.h /usr/include/features.h \
-  /usr/include/stdc-predef.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h /usr/include/xlocale.h
+basename-lgpl.o: basename-lgpl.c /usr/include/stdc-predef.h ../config.h \
+ ../confpaths.h /usr/include/paths.h dirname.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdbool.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h dosname.h string.h \
+ /usr/include/string.h /usr/include/features.h \
+ /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h /usr/include/xlocale.h
+
+/usr/include/stdc-predef.h:
 
 ../config.h:
 
@@ -17,11 +18,9 @@ basename-lgpl.o: basename-lgpl.c ../config.h ../confpaths.h \
 
 dirname.h:
 
-/usr/local/lib/clang/5.0.0/include/stdbool.h:
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stdbool.h:
 
-/usr/local/lib/clang/5.0.0/include/stddef.h:
-
-/usr/local/lib/clang/5.0.0/include/__stddef_max_align_t.h:
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h:
 
 dosname.h:
 
@@ -30,8 +29,6 @@ string.h:
 /usr/include/string.h:
 
 /usr/include/features.h:
-
-/usr/include/stdc-predef.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 

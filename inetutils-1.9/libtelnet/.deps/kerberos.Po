@@ -1,4 +1,7 @@
-kerberos.o: kerberos.c ../config.h ../confpaths.h /usr/include/paths.h
+kerberos.o: kerberos.c /usr/include/stdc-predef.h ../config.h \
+ ../confpaths.h /usr/include/paths.h
+
+/usr/include/stdc-predef.h:
 
 ../config.h:
 

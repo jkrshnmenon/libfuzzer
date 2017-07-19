@@ -1,5 +1,8 @@
-xasprintf.o: xasprintf.c ../config.h ../confpaths.h /usr/include/paths.h \
-  xvasprintf.h /usr/local/lib/clang/5.0.0/include/stdarg.h
+xasprintf.o: xasprintf.c /usr/include/stdc-predef.h ../config.h \
+ ../confpaths.h /usr/include/paths.h xvasprintf.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h
+
+/usr/include/stdc-predef.h:
 
 ../config.h:
 
@@ -9,4 +12,4 @@ xasprintf.o: xasprintf.c ../config.h ../confpaths.h /usr/include/paths.h \
 
 xvasprintf.h:
 
-/usr/local/lib/clang/5.0.0/include/stdarg.h:
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h:

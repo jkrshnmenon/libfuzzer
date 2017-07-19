@@ -893,7 +893,7 @@ _GL_WARN_ON_USE (ftruncate, "ftruncate is unportable - "
    extension: If BUF is NULL, an array is allocated with 'malloc'; the array
    is SIZE bytes long, unless SIZE == 0, in which case it is as big as
    necessary.  */
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   define getcwd rpl_getcwd
 #  endif

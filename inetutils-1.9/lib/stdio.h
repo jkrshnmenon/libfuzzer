@@ -942,7 +942,7 @@ _GL_CXXALIASWARN (getchar);
    bytes of space.  It is realloc'd as necessary.
    Return the number of bytes read and stored at *LINEPTR (not including the
    NUL terminator), or -1 on error or EOF.  */
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef getdelim
 #   define getdelim rpl_getdelim
@@ -981,7 +981,7 @@ _GL_WARN_ON_USE (getdelim, "getdelim is unportable - "
    bytes of space.  It is realloc'd as necessary.
    Return the number of bytes read and stored at *LINEPTR (not including the
    NUL terminator), or -1 on error or EOF.  */
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef getline
 #   define getline rpl_getline
@@ -1027,7 +1027,9 @@ _GL_CXXALIASWARN (gets);
 /* It is very rare that the developer ever has full control of stdin,
    so any use of gets warrants an unconditional warning.  Assume it is
    always declared, since it is required by C89.  */
+#ifdef gets
 _GL_WARN_ON_USE (gets, "gets is a security hole - use fgets instead");
+#endif
 #endif
 
 

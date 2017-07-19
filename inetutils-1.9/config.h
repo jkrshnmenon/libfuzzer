@@ -57,7 +57,7 @@
 /* #undef DOUBLE_SLASH_IS_DISTINCT_ROOT */
 
 /* Define if struct dirent has a member d_ino that actually works. */
-/* #undef D_INO_IN_DIRENT */
+#define D_INO_IN_DIRENT 1
 
 /* Define to one if you want encryption. */
 /* #undef ENCRYPTION */
@@ -552,7 +552,7 @@
 
 /* Define to 1 if you have the declaration of `isblank', and to 0 if you
    don't. */
-#define HAVE_DECL_ISBLANK 1
+/* #undef HAVE_DECL_ISBLANK */
 
 /* Define to 1 if you have the declaration of `mbrtowc', and to 0 if you
    don't. */
@@ -854,7 +854,7 @@
 /* #undef HAVE_LIBDL */
 
 /* Define to 1 if you have the <libintl.h> header file. */
-#define HAVE_LIBINTL_H 1
+/* #undef HAVE_LIBINTL_H */
 
 /* Define to 1 if you have the `nsl' library (-lnsl). */
 #define HAVE_LIBNSL 1
@@ -882,11 +882,11 @@
 
 /* Define to 1 if your system has a GNU libc compatible `malloc' function, and
    to 0 otherwise. */
-#define HAVE_MALLOC 0
+#define HAVE_MALLOC 1
 
 /* Define to 1 if your system has a GNU libc compatible 'malloc' function, and
    to 0 otherwise. */
-#define HAVE_MALLOC_GNU 0
+#define HAVE_MALLOC_GNU 1
 
 /* Define if the 'malloc' function is POSIX compliant. */
 #define HAVE_MALLOC_POSIX 1
@@ -942,7 +942,7 @@
 #define HAVE_MKSTEMP 1
 
 /* Define to 1 if you have a working `mmap' system call. */
-/* #undef HAVE_MMAP */
+#define HAVE_MMAP 1
 
 /* Define to 1 if you have the `mprotect' function. */
 #define HAVE_MPROTECT 1
@@ -1681,11 +1681,11 @@
 
 /* Define to 1 if your system has a GNU libc compatible `realloc' function,
    and to 0 otherwise. */
-#define HAVE_REALLOC 0
+#define HAVE_REALLOC 1
 
 /* Define to 1 if your system has a GNU libc compatible 'realloc' function,
    and to 0 otherwise. */
-#define HAVE_REALLOC_GNU 0
+#define HAVE_REALLOC_GNU 1
 
 /* Define if the 'realloc' function is POSIX compliant. */
 #define HAVE_REALLOC_POSIX 1
@@ -2264,7 +2264,7 @@
 #define LSTAT_FOLLOWS_SLASHED_SYMLINK 1
 
 /* If malloc(0) is != NULL, define this to 1. Otherwise define this to 0. */
-#define MALLOC_0_IS_NONNULL 0
+#define MALLOC_0_IS_NONNULL 1
 
 /* Define to a substitute value for mmap()'s MAP_ANONYMOUS flag. */
 /* #undef MAP_ANONYMOUS */
@@ -2526,7 +2526,7 @@
 /* #undef _POSIX_SOURCE */
 
 /* Define if you want regoff_t to be at least as wide POSIX requires. */
-#define _REGEX_LARGE_OFFSETS 1
+/* #undef _REGEX_LARGE_OFFSETS */
 
 /* Define to 500 only on HP-UX. */
 /* #undef _XOPEN_SOURCE */
@@ -2602,7 +2602,7 @@
 /* #undef localtime */
 
 /* Define to rpl_malloc if the replacement function should be used. */
-#define malloc rpl_malloc
+/* #undef malloc */
 
 /* Define to a type if <wchar.h> does not define. */
 /* #undef mbstate_t */
@@ -2624,52 +2624,52 @@
 /* #undef ptrdiff_t */
 
 /* Define to rpl_re_comp if the replacement should be used. */
-#define re_comp rpl_re_comp
+/* #undef re_comp */
 
 /* Define to rpl_re_compile_fastmap if the replacement should be used. */
-#define re_compile_fastmap rpl_re_compile_fastmap
+/* #undef re_compile_fastmap */
 
 /* Define to rpl_re_compile_pattern if the replacement should be used. */
-#define re_compile_pattern rpl_re_compile_pattern
+/* #undef re_compile_pattern */
 
 /* Define to rpl_re_exec if the replacement should be used. */
-#define re_exec rpl_re_exec
+/* #undef re_exec */
 
 /* Define to rpl_re_match if the replacement should be used. */
-#define re_match rpl_re_match
+/* #undef re_match */
 
 /* Define to rpl_re_match_2 if the replacement should be used. */
-#define re_match_2 rpl_re_match_2
+/* #undef re_match_2 */
 
 /* Define to rpl_re_search if the replacement should be used. */
-#define re_search rpl_re_search
+/* #undef re_search */
 
 /* Define to rpl_re_search_2 if the replacement should be used. */
-#define re_search_2 rpl_re_search_2
+/* #undef re_search_2 */
 
 /* Define to rpl_re_set_registers if the replacement should be used. */
-#define re_set_registers rpl_re_set_registers
+/* #undef re_set_registers */
 
 /* Define to rpl_re_set_syntax if the replacement should be used. */
-#define re_set_syntax rpl_re_set_syntax
+/* #undef re_set_syntax */
 
 /* Define to rpl_re_syntax_options if the replacement should be used. */
-#define re_syntax_options rpl_re_syntax_options
+/* #undef re_syntax_options */
 
 /* Define to rpl_realloc if the replacement function should be used. */
-#define realloc rpl_realloc
+/* #undef realloc */
 
 /* Define to rpl_regcomp if the replacement should be used. */
-#define regcomp rpl_regcomp
+/* #undef regcomp */
 
 /* Define to rpl_regerror if the replacement should be used. */
-#define regerror rpl_regerror
+/* #undef regerror */
 
 /* Define to rpl_regexec if the replacement should be used. */
-#define regexec rpl_regexec
+/* #undef regexec */
 
 /* Define to rpl_regfree if the replacement should be used. */
-#define regfree rpl_regfree
+/* #undef regfree */
 
 /* Define to the equivalent of the C99 'restrict' keyword, or to
    nothing if this is not supported.  Do not define if restrict is

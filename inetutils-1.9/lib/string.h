@@ -708,7 +708,7 @@ _GL_WARN_ON_USE (strncat, "strncat is unportable - "
 
 /* Return a newly allocated copy of at most N bytes of STRING.  */
 #if 1
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   undef strndup
 #   define strndup rpl_strndup
@@ -873,7 +873,7 @@ _GL_WARN_ON_USE (strsep, "strsep is unportable - "
 #endif
 
 #if 1
-# if 1
+# if 0
 #  if !(defined __cplusplus && defined GNULIB_NAMESPACE)
 #   define strstr rpl_strstr
 #  endif

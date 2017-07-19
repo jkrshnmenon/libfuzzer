@@ -440,6 +440,9 @@ send_echo (PING * ping)
   return ping_xmit (ping);
 }
 
+#ifdef _cplusplus
+extern "C" 
+#endif
 int
 ping_finish (void)
 {

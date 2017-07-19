@@ -1,4 +1,7 @@
-getent.o: getent.c ../config.h ../confpaths.h /usr/include/paths.h
+getent.o: getent.c /usr/include/stdc-predef.h ../config.h ../confpaths.h \
+ /usr/include/paths.h
+
+/usr/include/stdc-predef.h:
 
 ../config.h:
 

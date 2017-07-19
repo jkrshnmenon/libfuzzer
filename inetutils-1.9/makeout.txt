@@ -1,843 +1,625 @@
 make  all-recursive
-make[1]: Entering directory '/home/jake/project/inetutils-1.9'
+make[1]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9'
 Making all in lib
-make[2]: Entering directory '/home/jake/project/inetutils-1.9/lib'
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/lib'
 make  all-recursive
-make[3]: Entering directory '/home/jake/project/inetutils-1.9/lib'
-make[4]: Entering directory '/home/jake/project/inetutils-1.9/lib'
+make[3]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/lib'
+make[4]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/lib'
+depbase=`echo argp-eexst.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT argp-eexst.o -MD -MP -MF $depbase.Tpo -c -o argp-eexst.o argp-eexst.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo argp-fmtstream.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT argp-fmtstream.o -MD -MP -MF $depbase.Tpo -c -o argp-fmtstream.o argp-fmtstream.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo argp-fs-xinl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT argp-fs-xinl.o -MD -MP -MF $depbase.Tpo -c -o argp-fs-xinl.o argp-fs-xinl.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo argp-help.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT argp-help.o -MD -MP -MF $depbase.Tpo -c -o argp-help.o argp-help.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo argp-parse.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT argp-parse.o -MD -MP -MF $depbase.Tpo -c -o argp-parse.o argp-parse.c &&\
+mv -f $depbase.Tpo $depbase.Po
+argp-parse.c: In function 'argp_version_parser':
+argp-parse.c:157:9: warning: format not a string literal and no format arguments [-Wformat-security]
+         __argp_error (state, dgettext (state->root_argp->argp_domain,
+         ^
+depbase=`echo argp-pin.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT argp-pin.o -MD -MP -MF $depbase.Tpo -c -o argp-pin.o argp-pin.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo argp-pv.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT argp-pv.o -MD -MP -MF $depbase.Tpo -c -o argp-pv.o argp-pv.c &&\
+mv -f $depbase.Tpo $depbase.Po
 depbase=`echo argp-pvh.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT argp-pvh.o -MD -MP -MF $depbase.Tpo -c -o argp-pvh.o argp-pvh.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT argp-pvh.o -MD -MP -MF $depbase.Tpo -c -o argp-pvh.o argp-pvh.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo argp-xinl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT argp-xinl.o -MD -MP -MF $depbase.Tpo -c -o argp-xinl.o argp-xinl.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT argp-xinl.o -MD -MP -MF $depbase.Tpo -c -o argp-xinl.o argp-xinl.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo argp-version-etc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT argp-version-etc.o -MD -MP -MF $depbase.Tpo -c -o argp-version-etc.o argp-version-etc.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT argp-version-etc.o -MD -MP -MF $depbase.Tpo -c -o argp-version-etc.o argp-version-etc.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo gl_array_list.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT gl_array_list.o -MD -MP -MF $depbase.Tpo -c -o gl_array_list.o gl_array_list.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT gl_array_list.o -MD -MP -MF $depbase.Tpo -c -o gl_array_list.o gl_array_list.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo c-strstr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT c-strstr.o -MD -MP -MF $depbase.Tpo -c -o c-strstr.o c-strstr.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT c-strstr.o -MD -MP -MF $depbase.Tpo -c -o c-strstr.o c-strstr.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo cloexec.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT cloexec.o -MD -MP -MF $depbase.Tpo -c -o cloexec.o cloexec.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT cloexec.o -MD -MP -MF $depbase.Tpo -c -o cloexec.o cloexec.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo dirname-lgpl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT dirname-lgpl.o -MD -MP -MF $depbase.Tpo -c -o dirname-lgpl.o dirname-lgpl.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT dirname-lgpl.o -MD -MP -MF $depbase.Tpo -c -o dirname-lgpl.o dirname-lgpl.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo basename-lgpl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT basename-lgpl.o -MD -MP -MF $depbase.Tpo -c -o basename-lgpl.o basename-lgpl.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT basename-lgpl.o -MD -MP -MF $depbase.Tpo -c -o basename-lgpl.o basename-lgpl.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo stripslash.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT stripslash.o -MD -MP -MF $depbase.Tpo -c -o stripslash.o stripslash.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT stripslash.o -MD -MP -MF $depbase.Tpo -c -o stripslash.o stripslash.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo exitfail.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT exitfail.o -MD -MP -MF $depbase.Tpo -c -o exitfail.o exitfail.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT exitfail.o -MD -MP -MF $depbase.Tpo -c -o exitfail.o exitfail.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo fd-hook.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT fd-hook.o -MD -MP -MF $depbase.Tpo -c -o fd-hook.o fd-hook.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT fd-hook.o -MD -MP -MF $depbase.Tpo -c -o fd-hook.o fd-hook.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo filemode.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT filemode.o -MD -MP -MF $depbase.Tpo -c -o filemode.o filemode.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT filemode.o -MD -MP -MF $depbase.Tpo -c -o filemode.o filemode.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo filenamecat-lgpl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT filenamecat-lgpl.o -MD -MP -MF $depbase.Tpo -c -o filenamecat-lgpl.o filenamecat-lgpl.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT filenamecat-lgpl.o -MD -MP -MF $depbase.Tpo -c -o filenamecat-lgpl.o filenamecat-lgpl.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo fopen-safer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT fopen-safer.o -MD -MP -MF $depbase.Tpo -c -o fopen-safer.o fopen-safer.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT fopen-safer.o -MD -MP -MF $depbase.Tpo -c -o fopen-safer.o fopen-safer.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo fstrcmp.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT fstrcmp.o -MD -MP -MF $depbase.Tpo -c -o fstrcmp.o fstrcmp.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT fstrcmp.o -MD -MP -MF $depbase.Tpo -c -o fstrcmp.o fstrcmp.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo fwriteerror.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT fwriteerror.o -MD -MP -MF $depbase.Tpo -c -o fwriteerror.o fwriteerror.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT fwriteerror.o -MD -MP -MF $depbase.Tpo -c -o fwriteerror.o fwriteerror.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo imaxtostr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT imaxtostr.o -MD -MP -MF $depbase.Tpo -c -o imaxtostr.o imaxtostr.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT imaxtostr.o -MD -MP -MF $depbase.Tpo -c -o imaxtostr.o imaxtostr.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo inttostr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT inttostr.o -MD -MP -MF $depbase.Tpo -c -o inttostr.o inttostr.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT inttostr.o -MD -MP -MF $depbase.Tpo -c -o inttostr.o inttostr.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo offtostr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT offtostr.o -MD -MP -MF $depbase.Tpo -c -o offtostr.o offtostr.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT offtostr.o -MD -MP -MF $depbase.Tpo -c -o offtostr.o offtostr.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo uinttostr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT uinttostr.o -MD -MP -MF $depbase.Tpo -c -o uinttostr.o uinttostr.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT uinttostr.o -MD -MP -MF $depbase.Tpo -c -o uinttostr.o uinttostr.c &&\
 mv -f $depbase.Tpo $depbase.Po
-In file included from uinttostr.c:3:
-./anytostr.c:39:9: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
-  if (i < 0)
-      ~ ^ ~
-1 warning generated.
 depbase=`echo umaxtostr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT umaxtostr.o -MD -MP -MF $depbase.Tpo -c -o umaxtostr.o umaxtostr.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT umaxtostr.o -MD -MP -MF $depbase.Tpo -c -o umaxtostr.o umaxtostr.c &&\
 mv -f $depbase.Tpo $depbase.Po
-In file included from umaxtostr.c:3:
-./anytostr.c:39:9: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
-  if (i < 0)
-      ~ ^ ~
-1 warning generated.
 depbase=`echo gl_linked_list.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT gl_linked_list.o -MD -MP -MF $depbase.Tpo -c -o gl_linked_list.o gl_linked_list.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT gl_linked_list.o -MD -MP -MF $depbase.Tpo -c -o gl_linked_list.o gl_linked_list.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo gl_linkedhash_list.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT gl_linkedhash_list.o -MD -MP -MF $depbase.Tpo -c -o gl_linkedhash_list.o gl_linkedhash_list.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT gl_linkedhash_list.o -MD -MP -MF $depbase.Tpo -c -o gl_linkedhash_list.o gl_linkedhash_list.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo gl_list.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT gl_list.o -MD -MP -MF $depbase.Tpo -c -o gl_list.o gl_list.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT gl_list.o -MD -MP -MF $depbase.Tpo -c -o gl_list.o gl_list.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo localcharset.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT localcharset.o -MD -MP -MF $depbase.Tpo -c -o localcharset.o localcharset.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT localcharset.o -MD -MP -MF $depbase.Tpo -c -o localcharset.o localcharset.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo glthread/lock.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT glthread/lock.o -MD -MP -MF $depbase.Tpo -c -o glthread/lock.o glthread/lock.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT glthread/lock.o -MD -MP -MF $depbase.Tpo -c -o glthread/lock.o glthread/lock.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo malloca.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT malloca.o -MD -MP -MF $depbase.Tpo -c -o malloca.o malloca.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT malloca.o -MD -MP -MF $depbase.Tpo -c -o malloca.o malloca.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo openat-die.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT openat-die.o -MD -MP -MF $depbase.Tpo -c -o openat-die.o openat-die.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT openat-die.o -MD -MP -MF $depbase.Tpo -c -o openat-die.o openat-die.c &&\
 mv -f $depbase.Tpo $depbase.Po
-In file included from openat-die.c:30:
-./gettext.h:191:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-     ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-./gettext.h:215:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-    ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-./gettext.h:230:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-     ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-./gettext.h:261:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-    ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-./gettext.h:276:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-     ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-5 warnings generated.
 depbase=`echo gl_oset.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT gl_oset.o -MD -MP -MF $depbase.Tpo -c -o gl_oset.o gl_oset.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT gl_oset.o -MD -MP -MF $depbase.Tpo -c -o gl_oset.o gl_oset.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo progname.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT progname.o -MD -MP -MF $depbase.Tpo -c -o progname.o progname.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT progname.o -MD -MP -MF $depbase.Tpo -c -o progname.o progname.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo gl_rbtree_oset.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT gl_rbtree_oset.o -MD -MP -MF $depbase.Tpo -c -o gl_rbtree_oset.o gl_rbtree_oset.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT gl_rbtree_oset.o -MD -MP -MF $depbase.Tpo -c -o gl_rbtree_oset.o gl_rbtree_oset.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo gl_rbtreehash_list.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT gl_rbtreehash_list.o -MD -MP -MF $depbase.Tpo -c -o gl_rbtreehash_list.o gl_rbtreehash_list.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT gl_rbtreehash_list.o -MD -MP -MF $depbase.Tpo -c -o gl_rbtreehash_list.o gl_rbtreehash_list.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo read-file.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT read-file.o -MD -MP -MF $depbase.Tpo -c -o read-file.o read-file.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT read-file.o -MD -MP -MF $depbase.Tpo -c -o read-file.o read-file.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo save-cwd.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT save-cwd.o -MD -MP -MF $depbase.Tpo -c -o save-cwd.o save-cwd.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT save-cwd.o -MD -MP -MF $depbase.Tpo -c -o save-cwd.o save-cwd.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo sockets.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT sockets.o -MD -MP -MF $depbase.Tpo -c -o sockets.o sockets.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT sockets.o -MD -MP -MF $depbase.Tpo -c -o sockets.o sockets.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo strnlen1.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT strnlen1.o -MD -MP -MF $depbase.Tpo -c -o strnlen1.o strnlen1.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT strnlen1.o -MD -MP -MF $depbase.Tpo -c -o strnlen1.o strnlen1.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo tempname.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT tempname.o -MD -MP -MF $depbase.Tpo -c -o tempname.o tempname.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT tempname.o -MD -MP -MF $depbase.Tpo -c -o tempname.o tempname.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo glthread/threadlib.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT glthread/threadlib.o -MD -MP -MF $depbase.Tpo -c -o glthread/threadlib.o glthread/threadlib.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT glthread/threadlib.o -MD -MP -MF $depbase.Tpo -c -o glthread/threadlib.o glthread/threadlib.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo glthread/tls.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT glthread/tls.o -MD -MP -MF $depbase.Tpo -c -o glthread/tls.o glthread/tls.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT glthread/tls.o -MD -MP -MF $depbase.Tpo -c -o glthread/tls.o glthread/tls.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo dup-safer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT dup-safer.o -MD -MP -MF $depbase.Tpo -c -o dup-safer.o dup-safer.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT dup-safer.o -MD -MP -MF $depbase.Tpo -c -o dup-safer.o dup-safer.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo fd-safer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT fd-safer.o -MD -MP -MF $depbase.Tpo -c -o fd-safer.o fd-safer.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT fd-safer.o -MD -MP -MF $depbase.Tpo -c -o fd-safer.o fd-safer.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo pipe-safer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT pipe-safer.o -MD -MP -MF $depbase.Tpo -c -o pipe-safer.o pipe-safer.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT pipe-safer.o -MD -MP -MF $depbase.Tpo -c -o pipe-safer.o pipe-safer.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo version-etc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT version-etc.o -MD -MP -MF $depbase.Tpo -c -o version-etc.o version-etc.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT version-etc.o -MD -MP -MF $depbase.Tpo -c -o version-etc.o version-etc.c &&\
 mv -f $depbase.Tpo $depbase.Po
-In file included from version-etc.c:32:
-./gettext.h:191:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-     ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-./gettext.h:215:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-    ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-./gettext.h:230:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-     ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-./gettext.h:261:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-    ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-./gettext.h:276:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-     ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-5 warnings generated.
 depbase=`echo version-etc-fsf.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT version-etc-fsf.o -MD -MP -MF $depbase.Tpo -c -o version-etc-fsf.o version-etc-fsf.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT version-etc-fsf.o -MD -MP -MF $depbase.Tpo -c -o version-etc-fsf.o version-etc-fsf.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo xmalloc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT xmalloc.o -MD -MP -MF $depbase.Tpo -c -o xmalloc.o xmalloc.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT xmalloc.o -MD -MP -MF $depbase.Tpo -c -o xmalloc.o xmalloc.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo xalloc-die.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT xalloc-die.o -MD -MP -MF $depbase.Tpo -c -o xalloc-die.o xalloc-die.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT xalloc-die.o -MD -MP -MF $depbase.Tpo -c -o xalloc-die.o xalloc-die.c &&\
 mv -f $depbase.Tpo $depbase.Po
-In file included from xalloc-die.c:28:
-./gettext.h:191:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-     ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-./gettext.h:215:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-    ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-./gettext.h:230:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-     ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-./gettext.h:261:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-    ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-./gettext.h:276:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-     ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-5 warnings generated.
 depbase=`echo xgetcwd.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT xgetcwd.o -MD -MP -MF $depbase.Tpo -c -o xgetcwd.o xgetcwd.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT xgetcwd.o -MD -MP -MF $depbase.Tpo -c -o xgetcwd.o xgetcwd.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo xgetdomainname.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT xgetdomainname.o -MD -MP -MF $depbase.Tpo -c -o xgetdomainname.o xgetdomainname.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT xgetdomainname.o -MD -MP -MF $depbase.Tpo -c -o xgetdomainname.o xgetdomainname.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo xgethostname.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT xgethostname.o -MD -MP -MF $depbase.Tpo -c -o xgethostname.o xgethostname.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT xgethostname.o -MD -MP -MF $depbase.Tpo -c -o xgethostname.o xgethostname.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo gl_xlist.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT gl_xlist.o -MD -MP -MF $depbase.Tpo -c -o gl_xlist.o gl_xlist.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT gl_xlist.o -MD -MP -MF $depbase.Tpo -c -o gl_xlist.o gl_xlist.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo xmalloca.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT xmalloca.o -MD -MP -MF $depbase.Tpo -c -o xmalloca.o xmalloca.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT xmalloca.o -MD -MP -MF $depbase.Tpo -c -o xmalloca.o xmalloca.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo xvasprintf.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT xvasprintf.o -MD -MP -MF $depbase.Tpo -c -o xvasprintf.o xvasprintf.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT xvasprintf.o -MD -MP -MF $depbase.Tpo -c -o xvasprintf.o xvasprintf.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo xasprintf.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT xasprintf.o -MD -MP -MF $depbase.Tpo -c -o xasprintf.o xasprintf.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT xasprintf.o -MD -MP -MF $depbase.Tpo -c -o xasprintf.o xasprintf.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo asnprintf.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT asnprintf.o -MD -MP -MF $depbase.Tpo -c -o asnprintf.o asnprintf.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT asnprintf.o -MD -MP -MF $depbase.Tpo -c -o asnprintf.o asnprintf.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo chdir-long.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT chdir-long.o -MD -MP -MF $depbase.Tpo -c -o chdir-long.o chdir-long.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT chdir-long.o -MD -MP -MF $depbase.Tpo -c -o chdir-long.o chdir-long.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo fcntl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT fcntl.o -MD -MP -MF $depbase.Tpo -c -o fcntl.o fcntl.c &&\
-mv -f $depbase.Tpo $depbase.Po
-depbase=`echo getcwd.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT getcwd.o -MD -MP -MF $depbase.Tpo -c -o getcwd.o getcwd.c &&\
-mv -f $depbase.Tpo $depbase.Po
-depbase=`echo getcwd-lgpl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT getcwd-lgpl.o -MD -MP -MF $depbase.Tpo -c -o getcwd-lgpl.o getcwd-lgpl.c &&\
-mv -f $depbase.Tpo $depbase.Po
-depbase=`echo getdelim.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT getdelim.o -MD -MP -MF $depbase.Tpo -c -o getdelim.o getdelim.c &&\
-mv -f $depbase.Tpo $depbase.Po
-depbase=`echo getline.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT getline.o -MD -MP -MF $depbase.Tpo -c -o getline.o getline.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT fcntl.o -MD -MP -MF $depbase.Tpo -c -o fcntl.o fcntl.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo getopt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT getopt.o -MD -MP -MF $depbase.Tpo -c -o getopt.o getopt.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT getopt.o -MD -MP -MF $depbase.Tpo -c -o getopt.o getopt.c &&\
 mv -f $depbase.Tpo $depbase.Po
-In file included from getopt.c:36:
-./gettext.h:191:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-     ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-./gettext.h:215:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-    ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-./gettext.h:230:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-     ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-./gettext.h:261:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-    ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-./gettext.h:276:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
-#if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
-     ^
-./gettext.h:188:42: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
-  (((__GNUC__ >= 3 || __GNUG__ >= 2) && !defined __STRICT_ANSI__) \
-                                         ^
-5 warnings generated.
 depbase=`echo getopt1.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT getopt1.o -MD -MP -MF $depbase.Tpo -c -o getopt1.o getopt1.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT getopt1.o -MD -MP -MF $depbase.Tpo -c -o getopt1.o getopt1.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo glob.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT glob.o -MD -MP -MF $depbase.Tpo -c -o glob.o glob.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT glob.o -MD -MP -MF $depbase.Tpo -c -o glob.o glob.c &&\
 mv -f $depbase.Tpo $depbase.Po
+glob.c:166:1: warning: '__leaf__' attribute has no effect on unit local functions [-Wattributes]
+ static const char *next_brace_sub (const char *begin, int flags) __THROW;
+ ^
+glob.c:214:1: warning: '__leaf__' attribute has no effect on unit local functions [-Wattributes]
+ static int prefix_array (const char *prefix, char **array, size_t n) __THROW;
+ ^
+glob.c:215:1: warning: '__leaf__' attribute has no effect on unit local functions [-Wattributes]
+ static int collated_compare (const void *, const void *) __THROW;
+ ^
 depbase=`echo ioctl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT ioctl.o -MD -MP -MF $depbase.Tpo -c -o ioctl.o ioctl.c &&\
-mv -f $depbase.Tpo $depbase.Po
-depbase=`echo malloc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT malloc.o -MD -MP -MF $depbase.Tpo -c -o malloc.o malloc.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT ioctl.o -MD -MP -MF $depbase.Tpo -c -o ioctl.o ioctl.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo openat-proc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT openat-proc.o -MD -MP -MF $depbase.Tpo -c -o openat-proc.o openat-proc.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT openat-proc.o -MD -MP -MF $depbase.Tpo -c -o openat-proc.o openat-proc.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo printf-args.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT printf-args.o -MD -MP -MF $depbase.Tpo -c -o printf-args.o printf-args.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT printf-args.o -MD -MP -MF $depbase.Tpo -c -o printf-args.o printf-args.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo printf-parse.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT printf-parse.o -MD -MP -MF $depbase.Tpo -c -o printf-parse.o printf-parse.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT printf-parse.o -MD -MP -MF $depbase.Tpo -c -o printf-parse.o printf-parse.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo readutmp.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT readutmp.o -MD -MP -MF $depbase.Tpo -c -o readutmp.o readutmp.c &&\
-mv -f $depbase.Tpo $depbase.Po
-depbase=`echo realloc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT realloc.o -MD -MP -MF $depbase.Tpo -c -o realloc.o realloc.c &&\
-mv -f $depbase.Tpo $depbase.Po
-depbase=`echo regex.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT regex.o -MD -MP -MF $depbase.Tpo -c -o regex.o regex.c &&\
-mv -f $depbase.Tpo $depbase.Po
-In file included from regex.c:61:
-./regex_internal.c:1394:11: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
-  if (idx < 0 || idx >= set->nelem)
-      ~~~ ^ ~
-1 warning generated.
-depbase=`echo strndup.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT strndup.o -MD -MP -MF $depbase.Tpo -c -o strndup.o strndup.c &&\
-mv -f $depbase.Tpo $depbase.Po
-depbase=`echo strstr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT strstr.o -MD -MP -MF $depbase.Tpo -c -o strstr.o strstr.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT readutmp.o -MD -MP -MF $depbase.Tpo -c -o readutmp.o readutmp.c &&\
 mv -f $depbase.Tpo $depbase.Po
 depbase=`echo vasnprintf.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT vasnprintf.o -MD -MP -MF $depbase.Tpo -c -o vasnprintf.o vasnprintf.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT vasnprintf.o -MD -MP -MF $depbase.Tpo -c -o vasnprintf.o vasnprintf.c &&\
 mv -f $depbase.Tpo $depbase.Po
 rm -f libgnu.a
-ar cru libgnu.a argp-ba.o argp-eexst.o argp-fmtstream.o argp-fs-xinl.o argp-help.o argp-parse.o argp-pin.o argp-pv.o argp-pvh.o argp-xinl.o argp-version-etc.o gl_array_list.o c-strstr.o cloexec.o dirname-lgpl.o basename-lgpl.o stripslash.o exitfail.o fd-hook.o filemode.o filenamecat-lgpl.o fopen-safer.o fstrcmp.o fwriteerror.o imaxtostr.o inttostr.o offtostr.o uinttostr.o umaxtostr.o gl_linked_list.o gl_linkedhash_list.o gl_list.o localcharset.o glthread/lock.o malloca.o openat-die.o gl_oset.o progname.o gl_rbtree_oset.o gl_rbtreehash_list.o read-file.o save-cwd.o sockets.o strnlen1.o tempname.o glthread/threadlib.o glthread/tls.o dup-safer.o fd-safer.o pipe-safer.o version-etc.o version-etc-fsf.o xmalloc.o xalloc-die.o xgetcwd.o xgetdomainname.o xgethostname.o gl_xlist.o xmalloca.o xvasprintf.o xasprintf.o asnprintf.o chdir-long.o fcntl.o getcwd.o getcwd-lgpl.o getdelim.o getline.o getopt.o getopt1.o glob.o ioctl.o malloc.o openat-proc.o printf-args.o printf-parse.o readutmp.o realloc.o regex.o strndup.o strstr.o vasnprintf.o 
+ar cru libgnu.a argp-ba.o argp-eexst.o argp-fmtstream.o argp-fs-xinl.o argp-help.o argp-parse.o argp-pin.o argp-pv.o argp-pvh.o argp-xinl.o argp-version-etc.o gl_array_list.o c-strstr.o cloexec.o dirname-lgpl.o basename-lgpl.o stripslash.o exitfail.o fd-hook.o filemode.o filenamecat-lgpl.o fopen-safer.o fstrcmp.o fwriteerror.o imaxtostr.o inttostr.o offtostr.o uinttostr.o umaxtostr.o gl_linked_list.o gl_linkedhash_list.o gl_list.o localcharset.o glthread/lock.o malloca.o openat-die.o gl_oset.o progname.o gl_rbtree_oset.o gl_rbtreehash_list.o read-file.o save-cwd.o sockets.o strnlen1.o tempname.o glthread/threadlib.o glthread/tls.o dup-safer.o fd-safer.o pipe-safer.o version-etc.o version-etc-fsf.o xmalloc.o xalloc-die.o xgetcwd.o xgetdomainname.o xgethostname.o gl_xlist.o xmalloca.o xvasprintf.o xasprintf.o asnprintf.o chdir-long.o fcntl.o getopt.o getopt1.o glob.o ioctl.o openat-proc.o printf-args.o printf-parse.o readutmp.o vasnprintf.o 
 ar: `u' modifier ignored since `D' is the default (see `U')
 ranlib libgnu.a
 depbase=`echo git-merge-changelog.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
-clang -DHAVE_CONFIG_H -I. -I..  -I../intl   -fsanitize=address -fsanitize-coverage=bb -MT git-merge-changelog.o -MD -MP -MF $depbase.Tpo -c -o git-merge-changelog.o git-merge-changelog.c &&\
+gcc -DHAVE_CONFIG_H -I. -I..  -I../intl   -fPIC -MT git-merge-changelog.o -MD -MP -MF $depbase.Tpo -c -o git-merge-changelog.o git-merge-changelog.c &&\
 mv -f $depbase.Tpo $depbase.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o git-merge-changelog git-merge-changelog.o libgnu.a   -lresolv -lnsl 
-make[4]: Leaving directory '/home/jake/project/inetutils-1.9/lib'
-make[3]: Leaving directory '/home/jake/project/inetutils-1.9/lib'
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9/lib'
+gcc  -fPIC   -o git-merge-changelog git-merge-changelog.o libgnu.a   -lresolv -lnsl 
+rm -f t-charset.alias charset.alias && \
+/bin/bash ./config.charset 'x86_64-unknown-linux-gnu' > t-charset.alias && \
+mv t-charset.alias charset.alias
+rm -f t-ref-add.sed ref-add.sed && \
+sed -e '/^#/d' -e 's/@''PACKAGE''@/inetutils/g' ref-add.sin > t-ref-add.sed && \
+mv t-ref-add.sed ref-add.sed
+rm -f t-ref-del.sed ref-del.sed && \
+sed -e '/^#/d' -e 's/@''PACKAGE''@/inetutils/g' ref-del.sin > t-ref-del.sed && \
+mv t-ref-del.sed ref-del.sed
+make[4]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/lib'
+make[3]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/lib'
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/lib'
 Making all in libinetutils
-make[2]: Entering directory '/home/jake/project/inetutils-1.9/libinetutils'
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fsanitize=address -fsanitize-coverage=bb -MT argcv.o -MD -MP -MF .deps/argcv.Tpo -c -o argcv.o argcv.c
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/libinetutils'
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fPIC -MT argcv.o -MD -MP -MF .deps/argcv.Tpo -c -o argcv.o argcv.c
 mv -f .deps/argcv.Tpo .deps/argcv.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fsanitize=address -fsanitize-coverage=bb -MT cleansess.o -MD -MP -MF .deps/cleansess.Tpo -c -o cleansess.o cleansess.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fPIC -MT cleansess.o -MD -MP -MF .deps/cleansess.Tpo -c -o cleansess.o cleansess.c
 mv -f .deps/cleansess.Tpo .deps/cleansess.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fsanitize=address -fsanitize-coverage=bb -MT daemon.o -MD -MP -MF .deps/daemon.Tpo -c -o daemon.o daemon.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fPIC -MT daemon.o -MD -MP -MF .deps/daemon.Tpo -c -o daemon.o daemon.c
 mv -f .deps/daemon.Tpo .deps/daemon.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fsanitize=address -fsanitize-coverage=bb -MT defauthors.o -MD -MP -MF .deps/defauthors.Tpo -c -o defauthors.o defauthors.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fPIC -MT defauthors.o -MD -MP -MF .deps/defauthors.Tpo -c -o defauthors.o defauthors.c
 mv -f .deps/defauthors.Tpo .deps/defauthors.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fsanitize=address -fsanitize-coverage=bb -MT des_rw.o -MD -MP -MF .deps/des_rw.Tpo -c -o des_rw.o des_rw.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fPIC -MT des_rw.o -MD -MP -MF .deps/des_rw.Tpo -c -o des_rw.o des_rw.c
 mv -f .deps/des_rw.Tpo .deps/des_rw.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fsanitize=address -fsanitize-coverage=bb -MT kcmd.o -MD -MP -MF .deps/kcmd.Tpo -c -o kcmd.o kcmd.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fPIC -MT kcmd.o -MD -MP -MF .deps/kcmd.Tpo -c -o kcmd.o kcmd.c
 mv -f .deps/kcmd.Tpo .deps/kcmd.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fsanitize=address -fsanitize-coverage=bb -MT krcmd.o -MD -MP -MF .deps/krcmd.Tpo -c -o krcmd.o krcmd.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fPIC -MT krcmd.o -MD -MP -MF .deps/krcmd.Tpo -c -o krcmd.o krcmd.c
 mv -f .deps/krcmd.Tpo .deps/krcmd.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fsanitize=address -fsanitize-coverage=bb -MT localhost.o -MD -MP -MF .deps/localhost.Tpo -c -o localhost.o localhost.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fPIC -MT localhost.o -MD -MP -MF .deps/localhost.Tpo -c -o localhost.o localhost.c
 mv -f .deps/localhost.Tpo .deps/localhost.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fsanitize=address -fsanitize-coverage=bb -MT logwtmpko.o -MD -MP -MF .deps/logwtmpko.Tpo -c -o logwtmpko.o logwtmpko.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fPIC -MT logwtmpko.o -MD -MP -MF .deps/logwtmpko.Tpo -c -o logwtmpko.o logwtmpko.c
 mv -f .deps/logwtmpko.Tpo .deps/logwtmpko.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fsanitize=address -fsanitize-coverage=bb -MT setsig.o -MD -MP -MF .deps/setsig.Tpo -c -o setsig.o setsig.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fPIC -MT setsig.o -MD -MP -MF .deps/setsig.Tpo -c -o setsig.o setsig.c
 mv -f .deps/setsig.Tpo .deps/setsig.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fsanitize=address -fsanitize-coverage=bb -MT shishi.o -MD -MP -MF .deps/shishi.Tpo -c -o shishi.o shishi.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fPIC -MT shishi.o -MD -MP -MF .deps/shishi.Tpo -c -o shishi.o shishi.c
 mv -f .deps/shishi.Tpo .deps/shishi.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fsanitize=address -fsanitize-coverage=bb -MT tftpsubs.o -MD -MP -MF .deps/tftpsubs.Tpo -c -o tftpsubs.o tftpsubs.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fPIC -MT tftpsubs.o -MD -MP -MF .deps/tftpsubs.Tpo -c -o tftpsubs.o tftpsubs.c
 mv -f .deps/tftpsubs.Tpo .deps/tftpsubs.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fsanitize=address -fsanitize-coverage=bb -MT ttymsg.o -MD -MP -MF .deps/ttymsg.Tpo -c -o ttymsg.o ttymsg.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fPIC -MT ttymsg.o -MD -MP -MF .deps/ttymsg.Tpo -c -o ttymsg.o ttymsg.c
 mv -f .deps/ttymsg.Tpo .deps/ttymsg.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fsanitize=address -fsanitize-coverage=bb -MT utmp_init.o -MD -MP -MF .deps/utmp_init.Tpo -c -o utmp_init.o utmp_init.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fPIC -MT utmp_init.o -MD -MP -MF .deps/utmp_init.Tpo -c -o utmp_init.o utmp_init.c
 mv -f .deps/utmp_init.Tpo .deps/utmp_init.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fsanitize=address -fsanitize-coverage=bb -MT utmp_logout.o -MD -MP -MF .deps/utmp_logout.Tpo -c -o utmp_logout.o utmp_logout.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils       -fPIC -MT utmp_logout.o -MD -MP -MF .deps/utmp_logout.Tpo -c -o utmp_logout.o utmp_logout.c
 mv -f .deps/utmp_logout.Tpo .deps/utmp_logout.Po
 rm -f libinetutils.a
 ar cru libinetutils.a argcv.o cleansess.o daemon.o defauthors.o des_rw.o kcmd.o krcmd.o localhost.o logwtmpko.o setsig.o shishi.o tftpsubs.o ttymsg.o utmp_init.o utmp_logout.o 
 ar: `u' modifier ignored since `D' is the default (see `U')
 ranlib libinetutils.a
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9/libinetutils'
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/libinetutils'
 Making all in libtelnet
-make[2]: Entering directory '/home/jake/project/inetutils-1.9/libtelnet'
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT auth.o -MD -MP -MF .deps/auth.Tpo -c -o auth.o auth.c
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/libtelnet'
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT auth.o -MD -MP -MF .deps/auth.Tpo -c -o auth.o auth.c
 mv -f .deps/auth.Tpo .deps/auth.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT enc_des.o -MD -MP -MF .deps/enc_des.Tpo -c -o enc_des.o enc_des.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT enc_des.o -MD -MP -MF .deps/enc_des.Tpo -c -o enc_des.o enc_des.c
 mv -f .deps/enc_des.Tpo .deps/enc_des.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT encrypt.o -MD -MP -MF .deps/encrypt.Tpo -c -o encrypt.o encrypt.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT encrypt.o -MD -MP -MF .deps/encrypt.Tpo -c -o encrypt.o encrypt.c
 mv -f .deps/encrypt.Tpo .deps/encrypt.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT forward.o -MD -MP -MF .deps/forward.Tpo -c -o forward.o forward.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT forward.o -MD -MP -MF .deps/forward.Tpo -c -o forward.o forward.c
 mv -f .deps/forward.Tpo .deps/forward.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT genget.o -MD -MP -MF .deps/genget.Tpo -c -o genget.o genget.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT genget.o -MD -MP -MF .deps/genget.Tpo -c -o genget.o genget.c
 mv -f .deps/genget.Tpo .deps/genget.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT getent.o -MD -MP -MF .deps/getent.Tpo -c -o getent.o getent.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT getent.o -MD -MP -MF .deps/getent.Tpo -c -o getent.o getent.c
 mv -f .deps/getent.Tpo .deps/getent.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT kerberos.o -MD -MP -MF .deps/kerberos.Tpo -c -o kerberos.o kerberos.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT kerberos.o -MD -MP -MF .deps/kerberos.Tpo -c -o kerberos.o kerberos.c
 mv -f .deps/kerberos.Tpo .deps/kerberos.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT kerberos5.o -MD -MP -MF .deps/kerberos5.Tpo -c -o kerberos5.o kerberos5.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT kerberos5.o -MD -MP -MF .deps/kerberos5.Tpo -c -o kerberos5.o kerberos5.c
 mv -f .deps/kerberos5.Tpo .deps/kerberos5.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT misc.o -MD -MP -MF .deps/misc.Tpo -c -o misc.o misc.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT misc.o -MD -MP -MF .deps/misc.Tpo -c -o misc.o misc.c
 mv -f .deps/misc.Tpo .deps/misc.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT read_passwd.o -MD -MP -MF .deps/read_passwd.Tpo -c -o read_passwd.o read_passwd.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT read_passwd.o -MD -MP -MF .deps/read_passwd.Tpo -c -o read_passwd.o read_passwd.c
 mv -f .deps/read_passwd.Tpo .deps/read_passwd.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT shishi.o -MD -MP -MF .deps/shishi.Tpo -c -o shishi.o shishi.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT shishi.o -MD -MP -MF .deps/shishi.Tpo -c -o shishi.o shishi.c
 mv -f .deps/shishi.Tpo .deps/shishi.Po
 rm -f libtelnet.a
 ar cru libtelnet.a auth.o enc_des.o encrypt.o forward.o genget.o getent.o kerberos.o kerberos5.o misc.o read_passwd.o shishi.o 
 ar: `u' modifier ignored since `D' is the default (see `U')
 ranlib libtelnet.a
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9/libtelnet'
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/libtelnet'
 Making all in libicmp
-make[2]: Entering directory '/home/jake/project/inetutils-1.9/libicmp'
-clang -DHAVE_CONFIG_H -I. -I..     -fsanitize=address -fsanitize-coverage=bb -MT icmp_echo.o -MD -MP -MF .deps/icmp_echo.Tpo -c -o icmp_echo.o icmp_echo.c
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/libicmp'
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT icmp_echo.o -MD -MP -MF .deps/icmp_echo.Tpo -c -o icmp_echo.o icmp_echo.c
 mv -f .deps/icmp_echo.Tpo .deps/icmp_echo.Po
-clang -DHAVE_CONFIG_H -I. -I..     -fsanitize=address -fsanitize-coverage=bb -MT icmp_timestamp.o -MD -MP -MF .deps/icmp_timestamp.Tpo -c -o icmp_timestamp.o icmp_timestamp.c
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT icmp_timestamp.o -MD -MP -MF .deps/icmp_timestamp.Tpo -c -o icmp_timestamp.o icmp_timestamp.c
 mv -f .deps/icmp_timestamp.Tpo .deps/icmp_timestamp.Po
-clang -DHAVE_CONFIG_H -I. -I..     -fsanitize=address -fsanitize-coverage=bb -MT icmp_address.o -MD -MP -MF .deps/icmp_address.Tpo -c -o icmp_address.o icmp_address.c
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT icmp_address.o -MD -MP -MF .deps/icmp_address.Tpo -c -o icmp_address.o icmp_address.c
 mv -f .deps/icmp_address.Tpo .deps/icmp_address.Po
-clang -DHAVE_CONFIG_H -I. -I..     -fsanitize=address -fsanitize-coverage=bb -MT icmp_cksum.o -MD -MP -MF .deps/icmp_cksum.Tpo -c -o icmp_cksum.o icmp_cksum.c
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT icmp_cksum.o -MD -MP -MF .deps/icmp_cksum.Tpo -c -o icmp_cksum.o icmp_cksum.c
 mv -f .deps/icmp_cksum.Tpo .deps/icmp_cksum.Po
 rm -f libicmp.a
 ar cru libicmp.a icmp_echo.o icmp_timestamp.o icmp_address.o icmp_cksum.o 
 ar: `u' modifier ignored since `D' is the default (see `U')
 ranlib libicmp.a
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9/libicmp'
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/libicmp'
 Making all in libls
-make[2]: Entering directory '/home/jake/project/inetutils-1.9/libls'
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fsanitize=address -fsanitize-coverage=bb -MT cmp.o -MD -MP -MF .deps/cmp.Tpo -c -o cmp.o cmp.c
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/libls'
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fPIC -MT cmp.o -MD -MP -MF .deps/cmp.Tpo -c -o cmp.o cmp.c
 mv -f .deps/cmp.Tpo .deps/cmp.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fsanitize=address -fsanitize-coverage=bb -MT stat_flags.o -MD -MP -MF .deps/stat_flags.Tpo -c -o stat_flags.o stat_flags.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fPIC -MT stat_flags.o -MD -MP -MF .deps/stat_flags.Tpo -c -o stat_flags.o stat_flags.c
 mv -f .deps/stat_flags.Tpo .deps/stat_flags.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fsanitize=address -fsanitize-coverage=bb -MT ls.o -MD -MP -MF .deps/ls.Tpo -c -o ls.o ls.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fPIC -MT ls.o -MD -MP -MF .deps/ls.Tpo -c -o ls.o ls.c
 mv -f .deps/ls.Tpo .deps/ls.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fsanitize=address -fsanitize-coverage=bb -MT print.o -MD -MP -MF .deps/print.Tpo -c -o print.o print.c
-print.c:137:8: warning: format specifies type 'unsigned int' but the argument has type '__nlink_t' (aka 'unsigned long') [-Wformat]
-              sp->st_nlink, dp->s_user, np->user, dp->s_group, np->group);
-              ^~~~~~~~~~~~
-1 warning generated.
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fPIC -MT print.o -MD -MP -MF .deps/print.Tpo -c -o print.o print.c
+print.c: In function 'printlong':
+print.c:136:15: warning: format '%u' expects argument of type 'unsigned int', but argument 4 has type '__nlink_t {aka long unsigned int}' [-Wformat=]
+       printf ("%s %*u %-*s  %-*s  ", buf, dp->s_nlink,
+               ^
 mv -f .deps/print.Tpo .deps/print.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fsanitize=address -fsanitize-coverage=bb -MT util.o -MD -MP -MF .deps/util.Tpo -c -o util.o util.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fPIC -MT util.o -MD -MP -MF .deps/util.Tpo -c -o util.o util.c
 mv -f .deps/util.Tpo .deps/util.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fsanitize=address -fsanitize-coverage=bb -MT fts.o -MD -MP -MF .deps/fts.Tpo -c -o fts.o fts.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fPIC -MT fts.o -MD -MP -MF .deps/fts.Tpo -c -o fts.o fts.c
 mv -f .deps/fts.Tpo .deps/fts.Po
 rm -f libls.a
 ar cru libls.a cmp.o stat_flags.o ls.o print.o util.o fts.o 
 ar: `u' modifier ignored since `D' is the default (see `U')
 ranlib libls.a
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9/libls'
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/libls'
 Making all in src
-make[2]: Entering directory '/home/jake/project/inetutils-1.9/src'
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fsanitize=address -fsanitize-coverage=bb -MT hostname.o -MD -MP -MF .deps/hostname.Tpo -c -o hostname.o hostname.c
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/src'
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT hostname.o -MD -MP -MF .deps/hostname.Tpo -c -o hostname.o hostname.c
 mv -f .deps/hostname.Tpo .deps/hostname.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o hostname hostname.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fsanitize=address -fsanitize-coverage=bb -MT logger.o -MD -MP -MF .deps/logger.Tpo -c -o logger.o logger.c
+gcc  -fPIC   -o hostname hostname.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT logger.o -MD -MP -MF .deps/logger.Tpo -c -o logger.o logger.c
 mv -f .deps/logger.Tpo .deps/logger.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o logger logger.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fsanitize=address -fsanitize-coverage=bb -MT rcp.o -MD -MP -MF .deps/rcp.Tpo -c -o rcp.o rcp.c
+gcc  -fPIC   -o logger logger.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT rcp.o -MD -MP -MF .deps/rcp.Tpo -c -o rcp.o rcp.c
 mv -f .deps/rcp.Tpo .deps/rcp.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o rcp rcp.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fsanitize=address -fsanitize-coverage=bb -MT rexec.o -MD -MP -MF .deps/rexec.Tpo -c -o rexec.o rexec.c
+gcc  -fPIC   -o rcp rcp.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT rexec.o -MD -MP -MF .deps/rexec.Tpo -c -o rexec.o rexec.c
 mv -f .deps/rexec.Tpo .deps/rexec.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o rexec rexec.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fsanitize=address -fsanitize-coverage=bb -MT rlogin.o -MD -MP -MF .deps/rlogin.Tpo -c -o rlogin.o rlogin.c
+gcc  -fPIC   -o rexec rexec.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT rlogin.o -MD -MP -MF .deps/rlogin.Tpo -c -o rlogin.o rlogin.c
 mv -f .deps/rlogin.Tpo .deps/rlogin.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o rlogin rlogin.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fsanitize=address -fsanitize-coverage=bb -MT rsh.o -MD -MP -MF .deps/rsh.Tpo -c -o rsh.o rsh.c
+gcc  -fPIC   -o rlogin rlogin.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT rsh.o -MD -MP -MF .deps/rsh.Tpo -c -o rsh.o rsh.c
 mv -f .deps/rsh.Tpo .deps/rsh.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o rsh rsh.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fsanitize=address -fsanitize-coverage=bb -MT tftp.o -MD -MP -MF .deps/tftp.Tpo -c -o tftp.o tftp.c
+gcc  -fPIC   -o rsh rsh.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT tftp.o -MD -MP -MF .deps/tftp.Tpo -c -o tftp.o tftp.c
 mv -f .deps/tftp.Tpo .deps/tftp.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o tftp tftp.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fsanitize=address -fsanitize-coverage=bb -MT traceroute.o -MD -MP -MF .deps/traceroute.Tpo -c -o traceroute.o traceroute.c
+gcc  -fPIC   -o tftp tftp.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT traceroute.o -MD -MP -MF .deps/traceroute.Tpo -c -o traceroute.o traceroute.c
 mv -f .deps/traceroute.Tpo .deps/traceroute.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o traceroute traceroute.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fsanitize=address -fsanitize-coverage=bb -MT inetd.o -MD -MP -MF .deps/inetd.Tpo -c -o inetd.o inetd.c
+gcc  -fPIC   -o traceroute traceroute.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT inetd.o -MD -MP -MF .deps/inetd.Tpo -c -o inetd.o inetd.c
 mv -f .deps/inetd.Tpo .deps/inetd.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o inetd inetd.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fsanitize=address -fsanitize-coverage=bb -MT rexecd.o -MD -MP -MF .deps/rexecd.Tpo -c -o rexecd.o rexecd.c
+gcc  -fPIC   -o inetd inetd.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT rexecd.o -MD -MP -MF .deps/rexecd.Tpo -c -o rexecd.o rexecd.c
 mv -f .deps/rexecd.Tpo .deps/rexecd.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o rexecd rexecd.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fsanitize=address -fsanitize-coverage=bb -MT rlogind.o -MD -MP -MF .deps/rlogind.Tpo -c -o rlogind.o rlogind.c
+gcc  -fPIC   -o rexecd rexecd.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT rlogind.o -MD -MP -MF .deps/rlogind.Tpo -c -o rlogind.o rlogind.c
 mv -f .deps/rlogind.Tpo .deps/rlogind.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o rlogind rlogind.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fsanitize=address -fsanitize-coverage=bb -MT rshd.o -MD -MP -MF .deps/rshd.Tpo -c -o rshd.o rshd.c
+gcc  -fPIC   -o rlogind rlogind.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT rshd.o -MD -MP -MF .deps/rshd.Tpo -c -o rshd.o rshd.c
 mv -f .deps/rshd.Tpo .deps/rshd.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o rshd rshd.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fsanitize=address -fsanitize-coverage=bb -MT syslogd.o -MD -MP -MF .deps/syslogd.Tpo -c -o syslogd.o syslogd.c
+gcc  -fPIC   -o rshd rshd.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT syslogd.o -MD -MP -MF .deps/syslogd.Tpo -c -o syslogd.o syslogd.c
 mv -f .deps/syslogd.Tpo .deps/syslogd.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o syslogd syslogd.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fsanitize=address -fsanitize-coverage=bb -MT tftpd.o -MD -MP -MF .deps/tftpd.Tpo -c -o tftpd.o tftpd.c
+gcc  -fPIC   -o syslogd syslogd.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT tftpd.o -MD -MP -MF .deps/tftpd.Tpo -c -o tftpd.o tftpd.c
 mv -f .deps/tftpd.Tpo .deps/tftpd.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o tftpd tftpd.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fsanitize=address -fsanitize-coverage=bb -MT uucpd.o -MD -MP -MF .deps/uucpd.Tpo -c -o uucpd.o uucpd.c
+gcc  -fPIC   -o tftpd tftpd.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"   -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT uucpd.o -MD -MP -MF .deps/uucpd.Tpo -c -o uucpd.o uucpd.c
 mv -f .deps/uucpd.Tpo .deps/uucpd.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o uucpd uucpd.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9/src'
+gcc  -fPIC   -o uucpd uucpd.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a  -lcrypt -lutil -lresolv -lnsl 
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/src'
 Making all in telnet
-make[2]: Entering directory '/home/jake/project/inetutils-1.9/telnet'
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fsanitize=address -fsanitize-coverage=bb -MT authenc.o -MD -MP -MF .deps/authenc.Tpo -c -o authenc.o authenc.c
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/telnet'
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fPIC -MT authenc.o -MD -MP -MF .deps/authenc.Tpo -c -o authenc.o authenc.c
 mv -f .deps/authenc.Tpo .deps/authenc.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fsanitize=address -fsanitize-coverage=bb -MT commands.o -MD -MP -MF .deps/commands.Tpo -c -o commands.o commands.c
-commands.c:2969:18: warning: field width should have type 'int', but argument has type 'unsigned long' [-Wformat]
-            printf ("%-*s\t%s\n", HELPINDENT, c->name, c->help);
-                     ~~~^         ~~~~~~~~~~
-1 warning generated.
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fPIC -MT commands.o -MD -MP -MF .deps/commands.Tpo -c -o commands.o commands.c
+commands.c: In function 'help':
+commands.c:2969:14: warning: field width specifier '*' expects argument of type 'int', but argument 2 has type 'long unsigned int' [-Wformat=]
+      printf ("%-*s\t%s\n", HELPINDENT, c->name, c->help);
+              ^
 mv -f .deps/commands.Tpo .deps/commands.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fsanitize=address -fsanitize-coverage=bb -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fPIC -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c
 mv -f .deps/main.Tpo .deps/main.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fsanitize=address -fsanitize-coverage=bb -MT network.o -MD -MP -MF .deps/network.Tpo -c -o network.o network.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fPIC -MT network.o -MD -MP -MF .deps/network.Tpo -c -o network.o network.c
 mv -f .deps/network.Tpo .deps/network.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fsanitize=address -fsanitize-coverage=bb -MT ring.o -MD -MP -MF .deps/ring.Tpo -c -o ring.o ring.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fPIC -MT ring.o -MD -MP -MF .deps/ring.Tpo -c -o ring.o ring.c
 mv -f .deps/ring.Tpo .deps/ring.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fsanitize=address -fsanitize-coverage=bb -MT sys_bsd.o -MD -MP -MF .deps/sys_bsd.Tpo -c -o sys_bsd.o sys_bsd.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fPIC -MT sys_bsd.o -MD -MP -MF .deps/sys_bsd.Tpo -c -o sys_bsd.o sys_bsd.c
 mv -f .deps/sys_bsd.Tpo .deps/sys_bsd.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fsanitize=address -fsanitize-coverage=bb -MT telnet.o -MD -MP -MF .deps/telnet.Tpo -c -o telnet.o telnet.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fPIC -MT telnet.o -MD -MP -MF .deps/telnet.Tpo -c -o telnet.o telnet.c
 mv -f .deps/telnet.Tpo .deps/telnet.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fsanitize=address -fsanitize-coverage=bb -MT terminal.o -MD -MP -MF .deps/terminal.Tpo -c -o terminal.o terminal.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fPIC -MT terminal.o -MD -MP -MF .deps/terminal.Tpo -c -o terminal.o terminal.c
 mv -f .deps/terminal.Tpo .deps/terminal.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fsanitize=address -fsanitize-coverage=bb -MT tn3270.o -MD -MP -MF .deps/tn3270.Tpo -c -o tn3270.o tn3270.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fPIC -MT tn3270.o -MD -MP -MF .deps/tn3270.Tpo -c -o tn3270.o tn3270.c
 mv -f .deps/tn3270.Tpo .deps/tn3270.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fsanitize=address -fsanitize-coverage=bb -MT utilities.o -MD -MP -MF .deps/utilities.Tpo -c -o utilities.o utilities.c
-utilities.c:901:37: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
-                          fprintf (NetTrace, "\" VALUE " + noquote);
-                                             ~~~~~~~~~~~~^~~~~~~~~
-utilities.c:901:37: note: use array indexing to silence this warning
-                          fprintf (NetTrace, "\" VALUE " + noquote);
-                                                         ^
-                                             &           [        ]
-utilities.c:901:25: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
-                          fprintf (NetTrace, "\" VALUE " + noquote);
-                                             ^~~~~~~~~~~~~~~~~~~~~
-utilities.c:901:25: note: treat the string as an argument to avoid this
-                          fprintf (NetTrace, "\" VALUE " + noquote);
-                                             ^
-                                             "%s", 
-utilities.c:919:35: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
-                          fprintf (NetTrace, "\" VAR " + noquote);
-                                             ~~~~~~~~~~^~~~~~~~~
-utilities.c:919:35: note: use array indexing to silence this warning
-                          fprintf (NetTrace, "\" VAR " + noquote);
-                                                       ^
-                                             &         [        ]
-utilities.c:919:25: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
-                          fprintf (NetTrace, "\" VAR " + noquote);
-                                             ^~~~~~~~~~~~~~~~~~~
-utilities.c:919:25: note: treat the string as an argument to avoid this
-                          fprintf (NetTrace, "\" VAR " + noquote);
-                                             ^
-                                             "%s", 
-utilities.c:924:33: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
-                        fprintf (NetTrace, "\" ESC " + noquote);
-                                           ~~~~~~~~~~^~~~~~~~~
-utilities.c:924:33: note: use array indexing to silence this warning
-                        fprintf (NetTrace, "\" ESC " + noquote);
-                                                     ^
-                                           &         [        ]
-utilities.c:924:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
-                        fprintf (NetTrace, "\" ESC " + noquote);
-                                           ^~~~~~~~~~~~~~~~~~~
-utilities.c:924:23: note: treat the string as an argument to avoid this
-                        fprintf (NetTrace, "\" ESC " + noquote);
-                                           ^
-                                           "%s", 
-utilities.c:929:37: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
-                        fprintf (NetTrace, "\" USERVAR " + noquote);
-                                           ~~~~~~~~~~~~~~^~~~~~~~~
-utilities.c:929:37: note: use array indexing to silence this warning
-                        fprintf (NetTrace, "\" USERVAR " + noquote);
-                                                         ^
-                                           &             [        ]
-utilities.c:929:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
-                        fprintf (NetTrace, "\" USERVAR " + noquote);
-                                           ^~~~~~~~~~~~~~~~~~~~~~~
-utilities.c:929:23: note: treat the string as an argument to avoid this
-                        fprintf (NetTrace, "\" USERVAR " + noquote);
-                                           ^
-                                           "%s", 
-utilities.c:945:38: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
-                            fprintf (NetTrace, "\" %03o " + noquote,
-                                               ~~~~~~~~~~~^~~~~~~~~
-utilities.c:945:38: note: use array indexing to silence this warning
-                            fprintf (NetTrace, "\" %03o " + noquote,
-                                                          ^
-                                               &          [        ]
-9 warnings generated.
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK   -fPIC -MT utilities.o -MD -MP -MF .deps/utilities.Tpo -c -o utilities.o utilities.c
+utilities.c: In function 'printsub':
+utilities.c:901:6: warning: format not a string literal and no format arguments [-Wformat-security]
+      fprintf (NetTrace, "\" VALUE " + noquote);
+      ^
+utilities.c:919:6: warning: format not a string literal and no format arguments [-Wformat-security]
+      fprintf (NetTrace, "\" VAR " + noquote);
+      ^
+utilities.c:924:4: warning: format not a string literal and no format arguments [-Wformat-security]
+    fprintf (NetTrace, "\" ESC " + noquote);
+    ^
+utilities.c:929:4: warning: format not a string literal and no format arguments [-Wformat-security]
+    fprintf (NetTrace, "\" USERVAR " + noquote);
+    ^
 mv -f .deps/utilities.Tpo .deps/utilities.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o telnet authenc.o commands.o main.o network.o ring.o sys_bsd.o telnet.o terminal.o tn3270.o utilities.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libtelnet/libtelnet.a -ltermcap -lcrypt  -lreadline -lresolv -lnsl 
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9/telnet'
+gcc  -fPIC   -o telnet authenc.o commands.o main.o network.o ring.o sys_bsd.o telnet.o terminal.o tn3270.o utilities.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libtelnet/libtelnet.a -ltermcap -lcrypt  -lreadline -lresolv -lnsl 
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/telnet'
 Making all in telnetd
-make[2]: Entering directory '/home/jake/project/inetutils-1.9/telnetd'
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I..     -DPATH_LOGIN=\"/bin/login\"   -fsanitize=address -fsanitize-coverage=bb -MT telnetd.o -MD -MP -MF .deps/telnetd.Tpo -c -o telnetd.o telnetd.c
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/telnetd'
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I..     -DPATH_LOGIN=\"/bin/login\"   -fPIC -MT telnetd.o -MD -MP -MF .deps/telnetd.Tpo -c -o telnetd.o telnetd.c
 mv -f .deps/telnetd.Tpo .deps/telnetd.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I..     -DPATH_LOGIN=\"/bin/login\"   -fsanitize=address -fsanitize-coverage=bb -MT pty.o -MD -MP -MF .deps/pty.Tpo -c -o pty.o pty.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I..     -DPATH_LOGIN=\"/bin/login\"   -fPIC -MT pty.o -MD -MP -MF .deps/pty.Tpo -c -o pty.o pty.c
 mv -f .deps/pty.Tpo .deps/pty.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I..     -DPATH_LOGIN=\"/bin/login\"   -fsanitize=address -fsanitize-coverage=bb -MT term.o -MD -MP -MF .deps/term.Tpo -c -o term.o term.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I..     -DPATH_LOGIN=\"/bin/login\"   -fPIC -MT term.o -MD -MP -MF .deps/term.Tpo -c -o term.o term.c
 mv -f .deps/term.Tpo .deps/term.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I..     -DPATH_LOGIN=\"/bin/login\"   -fsanitize=address -fsanitize-coverage=bb -MT utility.o -MD -MP -MF .deps/utility.Tpo -c -o utility.o utility.c
-utility.c:1328:36: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
-                    debug_output_data ("\" VAR " + noquote);
-                                       ~~~~~~~~~~^~~~~~~~~
-utility.c:1328:36: note: use array indexing to silence this warning
-                    debug_output_data ("\" VAR " + noquote);
-                                                 ^
-                                       &         [        ]
-utility.c:1333:38: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
-                    debug_output_data ("\" VALUE " + noquote);
-                                       ~~~~~~~~~~~~^~~~~~~~~
-utility.c:1333:38: note: use array indexing to silence this warning
-                    debug_output_data ("\" VALUE " + noquote);
-                                                   ^
-                                       &           [        ]
-utility.c:1338:36: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
-                    debug_output_data ("\" ESC " + noquote);
-                                       ~~~~~~~~~~^~~~~~~~~
-utility.c:1338:36: note: use array indexing to silence this warning
-                    debug_output_data ("\" ESC " + noquote);
-                                                 ^
-                                       &         [        ]
-utility.c:1343:40: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
-                    debug_output_data ("\" USERVAR " + noquote);
-                                       ~~~~~~~~~~~~~~^~~~~~~~~
-utility.c:1343:40: note: use array indexing to silence this warning
-                    debug_output_data ("\" USERVAR " + noquote);
-                                                     ^
-                                       &             [        ]
-utility.c:1359:34: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
-                        debug_output_data ("\" %03o " + noquote, pointer[i]);
-                                           ~~~~~~~~~~~^~~~~~~~~
-utility.c:1359:34: note: use array indexing to silence this warning
-                        debug_output_data ("\" %03o " + noquote, pointer[i]);
-                                                      ^
-                                           &          [        ]
-5 warnings generated.
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I..     -DPATH_LOGIN=\"/bin/login\"   -fPIC -MT utility.o -MD -MP -MF .deps/utility.Tpo -c -o utility.o utility.c
 mv -f .deps/utility.Tpo .deps/utility.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I..     -DPATH_LOGIN=\"/bin/login\"   -fsanitize=address -fsanitize-coverage=bb -MT state.o -MD -MP -MF .deps/state.Tpo -c -o state.o state.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I..     -DPATH_LOGIN=\"/bin/login\"   -fPIC -MT state.o -MD -MP -MF .deps/state.Tpo -c -o state.o state.c
 mv -f .deps/state.Tpo .deps/state.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I..     -DPATH_LOGIN=\"/bin/login\"   -fsanitize=address -fsanitize-coverage=bb -MT termstat.o -MD -MP -MF .deps/termstat.Tpo -c -o termstat.o termstat.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I..     -DPATH_LOGIN=\"/bin/login\"   -fPIC -MT termstat.o -MD -MP -MF .deps/termstat.Tpo -c -o termstat.o termstat.c
 mv -f .deps/termstat.Tpo .deps/termstat.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I..     -DPATH_LOGIN=\"/bin/login\"   -fsanitize=address -fsanitize-coverage=bb -MT slc.o -MD -MP -MF .deps/slc.Tpo -c -o slc.o slc.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I..     -DPATH_LOGIN=\"/bin/login\"   -fPIC -MT slc.o -MD -MP -MF .deps/slc.Tpo -c -o slc.o slc.c
 mv -f .deps/slc.Tpo .deps/slc.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o telnetd telnetd.o pty.o term.o utility.o state.o termstat.o slc.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libtelnet/libtelnet.a -ltermcap -lutil -lcrypt  -lreadline -lresolv -lnsl 
-/usr/bin/ld: Warning: size of symbol `not42' changed from 4 in utility.o to 64 in state.o
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9/telnetd'
+gcc  -fPIC   -o telnetd telnetd.o pty.o term.o utility.o state.o termstat.o slc.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libtelnet/libtelnet.a -ltermcap -lutil -lcrypt  -lreadline -lresolv -lnsl 
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/telnetd'
 Making all in ftp
-make[2]: Entering directory '/home/jake/project/inetutils-1.9/ftp'
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT cmds.o -MD -MP -MF .deps/cmds.Tpo -c -o cmds.o cmds.c
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/ftp'
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT cmds.o -MD -MP -MF .deps/cmds.Tpo -c -o cmds.o cmds.c
 mv -f .deps/cmds.Tpo .deps/cmds.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT cmdtab.o -MD -MP -MF .deps/cmdtab.Tpo -c -o cmdtab.o cmdtab.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT cmdtab.o -MD -MP -MF .deps/cmdtab.Tpo -c -o cmdtab.o cmdtab.c
 mv -f .deps/cmdtab.Tpo .deps/cmdtab.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT domacro.o -MD -MP -MF .deps/domacro.Tpo -c -o domacro.o domacro.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT domacro.o -MD -MP -MF .deps/domacro.Tpo -c -o domacro.o domacro.c
 mv -f .deps/domacro.Tpo .deps/domacro.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT ftp.o -MD -MP -MF .deps/ftp.Tpo -c -o ftp.o ftp.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT ftp.o -MD -MP -MF .deps/ftp.Tpo -c -o ftp.o ftp.c
 mv -f .deps/ftp.Tpo .deps/ftp.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c
 mv -f .deps/main.Tpo .deps/main.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT ruserpass.o -MD -MP -MF .deps/ruserpass.Tpo -c -o ruserpass.o ruserpass.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT ruserpass.o -MD -MP -MF .deps/ruserpass.Tpo -c -o ruserpass.o ruserpass.c
 mv -f .deps/ruserpass.Tpo .deps/ruserpass.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o ftp cmds.o cmdtab.o domacro.o ftp.o main.o ruserpass.o ../libinetutils/libinetutils.a ../lib/libgnu.a  -lreadline -ltermcap  -lresolv -lnsl 
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9/ftp'
+gcc  -fPIC   -o ftp cmds.o cmdtab.o domacro.o ftp.o main.o ruserpass.o ../libinetutils/libinetutils.a ../lib/libgnu.a  -lreadline -ltermcap  -lresolv -lnsl 
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/ftp'
 Making all in ftpd
-make[2]: Entering directory '/home/jake/project/inetutils-1.9/ftpd'
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"       -fsanitize=address -fsanitize-coverage=bb -MT ftpcmd.o -MD -MP -MF .deps/ftpcmd.Tpo -c -o ftpcmd.o ftpcmd.c
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/ftpd'
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"       -fPIC -MT ftpcmd.o -MD -MP -MF .deps/ftpcmd.Tpo -c -o ftpcmd.o ftpcmd.c
 mv -f .deps/ftpcmd.Tpo .deps/ftpcmd.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"       -fsanitize=address -fsanitize-coverage=bb -MT ftpd.o -MD -MP -MF .deps/ftpd.Tpo -c -o ftpd.o ftpd.c
-ftpd.c:1088:13: warning: comparison of unsigned expression < 0 is always false [-Wtautological-compare]
-      if (s < 0)
-          ~ ^ ~
-1 warning generated.
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"       -fPIC -MT ftpd.o -MD -MP -MF .deps/ftpd.Tpo -c -o ftpd.o ftpd.c
 mv -f .deps/ftpd.Tpo .deps/ftpd.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"       -fsanitize=address -fsanitize-coverage=bb -MT popen.o -MD -MP -MF .deps/popen.Tpo -c -o popen.o popen.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"       -fPIC -MT popen.o -MD -MP -MF .deps/popen.Tpo -c -o popen.o popen.c
 mv -f .deps/popen.Tpo .deps/popen.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"       -fsanitize=address -fsanitize-coverage=bb -MT pam.o -MD -MP -MF .deps/pam.Tpo -c -o pam.o pam.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"       -fPIC -MT pam.o -MD -MP -MF .deps/pam.Tpo -c -o pam.o pam.c
 mv -f .deps/pam.Tpo .deps/pam.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"       -fsanitize=address -fsanitize-coverage=bb -MT auth.o -MD -MP -MF .deps/auth.Tpo -c -o auth.o auth.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"       -fPIC -MT auth.o -MD -MP -MF .deps/auth.Tpo -c -o auth.o auth.c
 mv -f .deps/auth.Tpo .deps/auth.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"       -fsanitize=address -fsanitize-coverage=bb -MT conf.o -MD -MP -MF .deps/conf.Tpo -c -o conf.o conf.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"       -fPIC -MT conf.o -MD -MP -MF .deps/conf.Tpo -c -o conf.o conf.c
 mv -f .deps/conf.Tpo .deps/conf.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"       -fsanitize=address -fsanitize-coverage=bb -MT server_mode.o -MD -MP -MF .deps/server_mode.Tpo -c -o server_mode.o server_mode.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"       -fPIC -MT server_mode.o -MD -MP -MF .deps/server_mode.Tpo -c -o server_mode.o server_mode.c
 mv -f .deps/server_mode.Tpo .deps/server_mode.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o ftpd ftpcmd.o ftpd.o popen.o pam.o auth.o conf.o server_mode.o ../libls/libls.a -lcrypt   ../libinetutils/libinetutils.a ../lib/libgnu.a -lresolv -lnsl 
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9/ftpd'
+gcc  -fPIC   -o ftpd ftpcmd.o ftpd.o popen.o pam.o auth.o conf.o server_mode.o ../libls/libls.a -lcrypt   ../libinetutils/libinetutils.a ../lib/libgnu.a -lresolv -lnsl 
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/ftpd'
 Making all in talk
-make[2]: Entering directory '/home/jake/project/inetutils-1.9/talk'
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT ctl.o -MD -MP -MF .deps/ctl.Tpo -c -o ctl.o ctl.c
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/talk'
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT ctl.o -MD -MP -MF .deps/ctl.Tpo -c -o ctl.o ctl.c
 mv -f .deps/ctl.Tpo .deps/ctl.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT ctl_transact.o -MD -MP -MF .deps/ctl_transact.Tpo -c -o ctl_transact.o ctl_transact.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT ctl_transact.o -MD -MP -MF .deps/ctl_transact.Tpo -c -o ctl_transact.o ctl_transact.c
 mv -f .deps/ctl_transact.Tpo .deps/ctl_transact.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT display.o -MD -MP -MF .deps/display.Tpo -c -o display.o display.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT display.o -MD -MP -MF .deps/display.Tpo -c -o display.o display.c
 mv -f .deps/display.Tpo .deps/display.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT get_addrs.o -MD -MP -MF .deps/get_addrs.Tpo -c -o get_addrs.o get_addrs.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT get_addrs.o -MD -MP -MF .deps/get_addrs.Tpo -c -o get_addrs.o get_addrs.c
 mv -f .deps/get_addrs.Tpo .deps/get_addrs.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT get_names.o -MD -MP -MF .deps/get_names.Tpo -c -o get_names.o get_names.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT get_names.o -MD -MP -MF .deps/get_names.Tpo -c -o get_names.o get_names.c
 mv -f .deps/get_names.Tpo .deps/get_names.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT init_disp.o -MD -MP -MF .deps/init_disp.Tpo -c -o init_disp.o init_disp.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT init_disp.o -MD -MP -MF .deps/init_disp.Tpo -c -o init_disp.o init_disp.c
 mv -f .deps/init_disp.Tpo .deps/init_disp.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT invite.o -MD -MP -MF .deps/invite.Tpo -c -o invite.o invite.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT invite.o -MD -MP -MF .deps/invite.Tpo -c -o invite.o invite.c
 mv -f .deps/invite.Tpo .deps/invite.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT io.o -MD -MP -MF .deps/io.Tpo -c -o io.o io.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT io.o -MD -MP -MF .deps/io.Tpo -c -o io.o io.c
 mv -f .deps/io.Tpo .deps/io.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT look_up.o -MD -MP -MF .deps/look_up.Tpo -c -o look_up.o look_up.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT look_up.o -MD -MP -MF .deps/look_up.Tpo -c -o look_up.o look_up.c
 mv -f .deps/look_up.Tpo .deps/look_up.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT msgs.o -MD -MP -MF .deps/msgs.Tpo -c -o msgs.o msgs.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT msgs.o -MD -MP -MF .deps/msgs.Tpo -c -o msgs.o msgs.c
 mv -f .deps/msgs.Tpo .deps/msgs.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fsanitize=address -fsanitize-coverage=bb -MT talk.o -MD -MP -MF .deps/talk.Tpo -c -o talk.o talk.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils     -fPIC -MT talk.o -MD -MP -MF .deps/talk.Tpo -c -o talk.o talk.c
 mv -f .deps/talk.Tpo .deps/talk.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o talk ctl.o ctl_transact.o display.o get_addrs.o get_names.o init_disp.o invite.o io.o look_up.o msgs.o talk.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lcurses -lresolv -lnsl 
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9/talk'
+gcc  -fPIC   -o talk ctl.o ctl_transact.o display.o get_addrs.o get_names.o init_disp.o invite.o io.o look_up.o msgs.o talk.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lcurses -lresolv -lnsl 
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/talk'
 Making all in talkd
-make[2]: Entering directory '/home/jake/project/inetutils-1.9/talkd'
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fsanitize=address -fsanitize-coverage=bb -MT acl.o -MD -MP -MF .deps/acl.Tpo -c -o acl.o acl.c
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/talkd'
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fPIC -MT acl.o -MD -MP -MF .deps/acl.Tpo -c -o acl.o acl.c
 mv -f .deps/acl.Tpo .deps/acl.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fsanitize=address -fsanitize-coverage=bb -MT announce.o -MD -MP -MF .deps/announce.Tpo -c -o announce.o announce.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fPIC -MT announce.o -MD -MP -MF .deps/announce.Tpo -c -o announce.o announce.c
 mv -f .deps/announce.Tpo .deps/announce.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fsanitize=address -fsanitize-coverage=bb -MT print.o -MD -MP -MF .deps/print.Tpo -c -o print.o print.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fPIC -MT print.o -MD -MP -MF .deps/print.Tpo -c -o print.o print.c
 mv -f .deps/print.Tpo .deps/print.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fsanitize=address -fsanitize-coverage=bb -MT process.o -MD -MP -MF .deps/process.Tpo -c -o process.o process.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fPIC -MT process.o -MD -MP -MF .deps/process.Tpo -c -o process.o process.c
 mv -f .deps/process.Tpo .deps/process.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fsanitize=address -fsanitize-coverage=bb -MT table.o -MD -MP -MF .deps/table.Tpo -c -o table.o table.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fPIC -MT table.o -MD -MP -MF .deps/table.Tpo -c -o table.o table.c
 mv -f .deps/table.Tpo .deps/table.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fsanitize=address -fsanitize-coverage=bb -MT talkd.o -MD -MP -MF .deps/talkd.Tpo -c -o talkd.o talkd.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fPIC -MT talkd.o -MD -MP -MF .deps/talkd.Tpo -c -o talkd.o talkd.c
 mv -f .deps/talkd.Tpo .deps/talkd.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o talkd acl.o announce.o print.o process.o table.o talkd.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lresolv -lnsl 
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9/talkd'
+gcc  -fPIC   -o talkd acl.o announce.o print.o process.o table.o talkd.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lresolv -lnsl 
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/talkd'
 Making all in whois
-make[2]: Entering directory '/home/jake/project/inetutils-1.9/whois'
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/whois'
 make  all-am
-make[3]: Entering directory '/home/jake/project/inetutils-1.9/whois'
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fsanitize=address -fsanitize-coverage=bb -MT whois.o -MD -MP -MF .deps/whois.Tpo -c -o whois.o whois.c
+make[3]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/whois'
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils    -fPIC -MT whois.o -MD -MP -MF .deps/whois.Tpo -c -o whois.o whois.c
 mv -f .deps/whois.Tpo .deps/whois.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o whois whois.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lresolv -lnsl 
-make[3]: Leaving directory '/home/jake/project/inetutils-1.9/whois'
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9/whois'
+gcc  -fPIC   -o whois whois.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lresolv -lnsl 
+make[3]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/whois'
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/whois'
 Making all in ping
-make[2]: Entering directory '/home/jake/project/inetutils-1.9/ping'
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp    -fsanitize=address -fsanitize-coverage=bb -MT ping.o -MD -MP -MF .deps/ping.Tpo -c -o ping.o ping.c
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/ping'
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp    -fPIC -MT ping.o -MD -MP -MF .deps/ping.Tpo -c -o ping.o ping.c
 mv -f .deps/ping.Tpo .deps/ping.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp    -fsanitize=address -fsanitize-coverage=bb -MT ping_common.o -MD -MP -MF .deps/ping_common.Tpo -c -o ping_common.o ping_common.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp    -fPIC -MT ping_common.o -MD -MP -MF .deps/ping_common.Tpo -c -o ping_common.o ping_common.c
 mv -f .deps/ping_common.Tpo .deps/ping_common.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp    -fsanitize=address -fsanitize-coverage=bb -MT ping_echo.o -MD -MP -MF .deps/ping_echo.Tpo -c -o ping_echo.o ping_echo.c
-ping_echo.c:106:56: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
-          inet_ntoa (ping->ping_dest.ping_sockaddr.sin_addr), data_length);
-                                                              ^~~~~~~~~~~
-1 warning generated.
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp    -fPIC -MT ping_echo.o -MD -MP -MF .deps/ping_echo.Tpo -c -o ping_echo.o ping_echo.c
+ping_echo.c: In function 'ping_echo':
+ping_echo.c:104:11: warning: format '%d' expects argument of type 'int', but argument 4 has type 'size_t {aka long unsigned int}' [-Wformat=]
+   printf ("PING %s (%s): %d data bytes\n",
+           ^
 mv -f .deps/ping_echo.Tpo .deps/ping_echo.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp    -fsanitize=address -fsanitize-coverage=bb -MT ping_address.o -MD -MP -MF .deps/ping_address.Tpo -c -o ping_address.o ping_address.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp    -fPIC -MT ping_address.o -MD -MP -MF .deps/ping_address.Tpo -c -o ping_address.o ping_address.c
 mv -f .deps/ping_address.Tpo .deps/ping_address.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp    -fsanitize=address -fsanitize-coverage=bb -MT ping_router.o -MD -MP -MF .deps/ping_router.Tpo -c -o ping_router.o ping_router.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp    -fPIC -MT ping_router.o -MD -MP -MF .deps/ping_router.Tpo -c -o ping_router.o ping_router.c
 mv -f .deps/ping_router.Tpo .deps/ping_router.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp    -fsanitize=address -fsanitize-coverage=bb -MT ping_timestamp.o -MD -MP -MF .deps/ping_timestamp.Tpo -c -o ping_timestamp.o ping_timestamp.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp    -fPIC -MT ping_timestamp.o -MD -MP -MF .deps/ping_timestamp.Tpo -c -o ping_timestamp.o ping_timestamp.c
 mv -f .deps/ping_timestamp.Tpo .deps/ping_timestamp.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp    -fsanitize=address -fsanitize-coverage=bb -MT libping.o -MD -MP -MF .deps/libping.Tpo -c -o libping.o libping.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp    -fPIC -MT libping.o -MD -MP -MF .deps/libping.Tpo -c -o libping.o libping.c
 mv -f .deps/libping.Tpo .deps/libping.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o ping ping.o ping_common.o ping_echo.o ping_address.o ping_router.o ping_timestamp.o libping.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a -lresolv -lnsl 
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp    -fsanitize=address -fsanitize-coverage=bb -MT ping6.o -MD -MP -MF .deps/ping6.Tpo -c -o ping6.o ping6.c
-ping6.c:466:33: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
-          ping->ping_hostname, buffer, data_length);
-                                       ^~~~~~~~~~~
-1 warning generated.
+gcc  -fPIC   -o ping ping.o ping_common.o ping_echo.o ping_address.o ping_router.o ping_timestamp.o libping.o ../libinetutils/libinetutils.a ../lib/libgnu.a ../libicmp/libicmp.a -lresolv -lnsl 
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -I../libicmp    -fPIC -MT ping6.o -MD -MP -MF .deps/ping6.Tpo -c -o ping6.o ping6.c
+ping6.c: In function 'ping_echo':
+ping6.c:465:11: warning: format '%d' expects argument of type 'int', but argument 4 has type 'size_t {aka long unsigned int}' [-Wformat=]
+   printf ("PING %s (%s): %d data bytes\n",
+           ^
 mv -f .deps/ping6.Tpo .deps/ping6.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o ping6 ping6.o ping_common.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lresolv -lnsl 
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9/ping'
+gcc  -fPIC   -o ping6 ping6.o ping_common.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lresolv -lnsl 
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/ping'
 Making all in ifconfig
-make[2]: Entering directory '/home/jake/project/inetutils-1.9/ifconfig'
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/ifconfig'
 Making all in system
-make[3]: Entering directory '/home/jake/project/inetutils-1.9/ifconfig/system'
+make[3]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/ifconfig/system'
 make[3]: Nothing to be done for 'all'.
-make[3]: Leaving directory '/home/jake/project/inetutils-1.9/ifconfig/system'
-make[3]: Entering directory '/home/jake/project/inetutils-1.9/ifconfig'
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fsanitize=address -fsanitize-coverage=bb -MT ifconfig.o -MD -MP -MF .deps/ifconfig.Tpo -c -o ifconfig.o ifconfig.c
+make[3]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/ifconfig/system'
+make[3]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/ifconfig'
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fPIC -MT ifconfig.o -MD -MP -MF .deps/ifconfig.Tpo -c -o ifconfig.o ifconfig.c
 mv -f .deps/ifconfig.Tpo .deps/ifconfig.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fsanitize=address -fsanitize-coverage=bb -MT flags.o -MD -MP -MF .deps/flags.Tpo -c -o flags.o flags.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fPIC -MT flags.o -MD -MP -MF .deps/flags.Tpo -c -o flags.o flags.c
 mv -f .deps/flags.Tpo .deps/flags.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fsanitize=address -fsanitize-coverage=bb -MT changeif.o -MD -MP -MF .deps/changeif.Tpo -c -o changeif.o changeif.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fPIC -MT changeif.o -MD -MP -MF .deps/changeif.Tpo -c -o changeif.o changeif.c
 mv -f .deps/changeif.Tpo .deps/changeif.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fsanitize=address -fsanitize-coverage=bb -MT options.o -MD -MP -MF .deps/options.Tpo -c -o options.o options.c
-options.c:352:42: warning: field width should have type 'int', but argument has type 'size_t' (aka 'unsigned long') [-Wformat]
-        error (EXIT_FAILURE, 0, "unknown flag %*.*s", len, len, name);
-                                              ~~^~~   ~~~
-1 warning generated.
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fPIC -MT options.o -MD -MP -MF .deps/options.Tpo -c -o options.o options.c
+options.c: In function 'parse_opt_flag_list':
+options.c:352:26: warning: field width specifier '*' expects argument of type 'int', but argument 4 has type 'size_t {aka long unsigned int}' [-Wformat=]
+  error (EXIT_FAILURE, 0, "unknown flag %*.*s", len, len, name);
+                          ^
+options.c:352:26: warning: field precision specifier '.*' expects argument of type 'int', but argument 5 has type 'size_t {aka long unsigned int}' [-Wformat=]
 mv -f .deps/options.Tpo .deps/options.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fsanitize=address -fsanitize-coverage=bb -MT printif.o -MD -MP -MF .deps/printif.Tpo -c -o printif.o printif.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fPIC -MT printif.o -MD -MP -MF .deps/printif.Tpo -c -o printif.o printif.c
 mv -f .deps/printif.Tpo .deps/printif.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fsanitize=address -fsanitize-coverage=bb -MT system.o -MD -MP -MF .deps/system.Tpo -c -o system.o system.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fPIC -MT system.o -MD -MP -MF .deps/system.Tpo -c -o system.o system.c
 mv -f .deps/system.Tpo .deps/system.Po
-clang -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fsanitize=address -fsanitize-coverage=bb -MT if_index.o -MD -MP -MF .deps/if_index.Tpo -c -o if_index.o if_index.c
+gcc -DHAVE_CONFIG_H -I. -I.. -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fPIC -MT if_index.o -MD -MP -MF .deps/if_index.Tpo -c -o if_index.o if_index.c
 mv -f .deps/if_index.Tpo .deps/if_index.Po
-clang  -fsanitize=address -fsanitize-coverage=bb   -o ifconfig ifconfig.o flags.o changeif.o options.o printif.o system.o if_index.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lresolv -lnsl 
-make[3]: Leaving directory '/home/jake/project/inetutils-1.9/ifconfig'
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9/ifconfig'
+gcc  -fPIC   -o ifconfig ifconfig.o flags.o changeif.o options.o printif.o system.o if_index.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lresolv -lnsl 
+make[3]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/ifconfig'
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/ifconfig'
 Making all in doc
-make[2]: Entering directory '/home/jake/project/inetutils-1.9/doc'
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/doc'
 make[2]: Nothing to be done for 'all'.
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9/doc'
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/doc'
 Making all in man
-make[2]: Entering directory '/home/jake/project/inetutils-1.9/man'
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/man'
 make[2]: Nothing to be done for 'all'.
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9/man'
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/man'
 Making all in tests
-make[2]: Entering directory '/home/jake/project/inetutils-1.9/tests'
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9/tests'
 make[2]: Nothing to be done for 'all'.
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9/tests'
-make[2]: Entering directory '/home/jake/project/inetutils-1.9'
-make[2]: Leaving directory '/home/jake/project/inetutils-1.9'
-make[1]: Leaving directory '/home/jake/project/inetutils-1.9'
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9/tests'
+make[2]: Entering directory '/home/jake/git_stuff/project/inetutils-1.9'
+make[2]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9'
+make[1]: Leaving directory '/home/jake/git_stuff/project/inetutils-1.9'

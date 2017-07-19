@@ -1,4 +1,7 @@
-kcmd.o: kcmd.c ../config.h ../confpaths.h /usr/include/paths.h
+kcmd.o: kcmd.c /usr/include/stdc-predef.h ../config.h ../confpaths.h \
+ /usr/include/paths.h
+
+/usr/include/stdc-predef.h:
 
 ../config.h:
 
