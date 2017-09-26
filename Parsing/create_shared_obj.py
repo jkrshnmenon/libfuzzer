@@ -27,8 +27,10 @@ if __name__ == '__main__':
             ldflags.append(args[x])
         elif args[x].endswith('.o'):
             depends.append(args[x])
-    final_cmd = ['clang', '-shared', '-o', 'libproject.so'] + depends
+    final_cmd = ['clang', '-shared', '-o', 'libproject.so'] 
+    final_cmd += depends
     final_cmd += ['-Wl,--whole-archive']
     final_cmd += static_libs
+    final_cmd += ldflags
     final_cmd += ['-lresolv', '-lnsl', '-Wl,--no-whole-archive']
     print subprocess.check_output(final_cmd)
