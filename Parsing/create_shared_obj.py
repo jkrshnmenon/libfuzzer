@@ -4,8 +4,8 @@ import subprocess
 import os
 
 if __name__ == '__main__':
-    if len(sys.argv) <= 2:
-        print "Usage: {} <make_output> <executable>".format(sys.argv[0])
+    if len(sys.argv) <= 3:
+        print "Usage: {} <make_output> <executable> <path>".format(sys.argv[0])
         sys.exit()
     make_out = open(sys.argv[1]).readlines()
     cmd = "-o "+sys.argv[2]+" "
@@ -15,7 +15,7 @@ if __name__ == '__main__':
     if cmd not in line:
         print "Could not get command from make_output"
         sys.exit()
-    os.chdir(sys.argv[2])
+    os.chdir(sys.argv[3])
     args = re.sub(' +', ' ', line).strip().split(' ')
     static_libs = []
     ldflags = []
