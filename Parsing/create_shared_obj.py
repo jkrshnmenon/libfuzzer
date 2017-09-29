@@ -29,8 +29,9 @@ if __name__ == '__main__':
             depends.append(args[x])
     final_cmd = ['clang', '-shared', '-o', 'libproject.so'] 
     final_cmd += depends
-    final_cmd += ['-Wl,--whole-archive']
-    final_cmd += static_libs
-    final_cmd += ldflags
-    final_cmd += ['-lresolv', '-lnsl', '-Wl,--no-whole-archive']
+    final_cmd += list(set(static_libs))
+    if len(ldflags) > 0:
+         final_cmd += ['-Wl,--whole-archive']
+         final_cmd += list(set(ldflags))
+         final_cmd += ['-Wl,--no-whole-archive']
     print subprocess.check_output(final_cmd)
