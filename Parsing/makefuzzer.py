@@ -39,7 +39,7 @@ class makeFuzzer:
 
     def getCode(self):
         self.getInvocation()
-        self.code = '#include<stdint.h>\n+#include<stdio.h>\n'
+        self.code = '#include<stdint.h>\n#include<stdio.h>\n'
         self.code += self.prototype
         if self.prototype.count(';') < 1:
             self.code += ';'

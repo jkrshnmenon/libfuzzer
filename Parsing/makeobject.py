@@ -42,7 +42,7 @@ class makeObject:
             self.cmd += list(set(ldflags))
             self.cmd += ['-Wl, --no-whole-archive']
 
-    def getLdFlags(self):
+    def getLibFlags(self):
         return self.ldflags+self.static_libs
 
     def runner(self):
