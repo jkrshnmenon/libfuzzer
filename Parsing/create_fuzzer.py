@@ -1,27 +1,25 @@
 import sys
+import re
 
 code = '''
-     extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size)\n
+#include <stdint.h>
+
+extern "C" int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
 '''
 
 if __name__ == '__main__':
-    if len(sys.argv) < 4:
-        print "Usage:{} <name> <array_offset> <size_offset> [args]"
+    if len(sys.argv) < 2:
+        print "Usage: {} prototype".format(sys.argv[0])
         sys.exit()
-    array_offset = int(sys.argv[2])
-    size_offset = int(sys.argv[3])
-    args = sys.argv[4].split(' ')
-    for x in xrange(len(args)):
-        if args[x] == '':
-            args.pop(x)
-    if len(args) < max(array_offset, size_offset)-2:
-        print "Not enough arguments"
-        sys.exit()
-    args.insert(array_offset, 'Data')
-    if size_offset != 0:
-        args.insert(size_offset, 'Size')
-    code += '''{ %s(''' % sys.argv[1]
-    code += ''.join(x+',' for x in args)
-    code = code[:-1]
-    code += ''');\n}'''
-    print code
+    prototype = re.sub(' *\(', '(', sys.argv[1])
+    newargs = []
+    name = re.sub('\**', '', prototype.split('(')[0].split(' ')[-1])
+    args = re.sub(', *', ',', prototype.split('(')[1].split(')')[0])
+    if args.count(',') < 1:
+        newargs = args.split(' ')[:-1]
+        newargs[0] += '*'*args.split(' ')[-1].count('*')
+    else:
+        for x in args.split(','):
+            dtype = ''.join(y for y in x.split(' ')[:-1])
+            dtype += '*'*x.split(' ')[-1].count('*')
+            newargs.append(dtype)

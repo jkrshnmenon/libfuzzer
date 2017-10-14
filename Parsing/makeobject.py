@@ -21,7 +21,7 @@ class makeObject:
             if cmd in fixed_line:
                 return fixed_line.strip().split(' ')
 
-    def getStaticLibs(self):
+    def getLibs(self):
         args = self.getContents()
         if len(args) == 0:
             throw Exception
@@ -34,13 +34,16 @@ class makeObject:
                 self.depends.append(self.path+x)
 
     def getCommand(self):
-        self.getStaticLibs()
+        self.getLibs()
         self.cmd += list(set(self.depends))
         self.cmd += list(set(self.static_libs))
         if len(self.ldflags) > 0:
             self.cmd += ['-Wl, --whole-archive']
             self.cmd += list(set(ldflags))
             self.cmd += ['-Wl, --no-whole-archive']
+
+    def getLdFlags(self):
+        return self.ldflags+self.static_libs
 
     def runner(self):
         self.getCommand()
