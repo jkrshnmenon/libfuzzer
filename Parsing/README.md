@@ -1,5 +1,7 @@
 
-initialize.py => Creates backup of file which contains `main`
+initialize.py
+
+                 Creates backup of file which contains `main`
 
                  Modifies the file to change `main` to `runner`
 
@@ -8,13 +10,17 @@ initialize.py => Creates backup of file which contains `main`
 
 -------------------------------------------------------------------
 
-makeobject.py => Parses output of make to extract relevant information
+makeobject.py    
+
+                 Parses output of make to extract relevant information
 
                  Creates a shared object (libproject.so) using this information
 
 -------------------------------------------------------------------
 
-makefuzzer.py => Parses function prototype
+makefuzzer.py
+
+                 Parses function prototype
 
                  Determines if function can be targeted or not.
 
@@ -22,7 +28,9 @@ makefuzzer.py => Parses function prototype
 
 -------------------------------------------------------------------
 
-compilefuzzer.py => Compiles test.cpp to generate fuzzer
+compilefuzzer.py
+
+                    Compiles test.cpp to generate fuzzer
 
                     test.cpp can be either the template for fuzzing main
 
