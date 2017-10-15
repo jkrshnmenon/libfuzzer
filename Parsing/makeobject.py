@@ -6,7 +6,6 @@ class makeObject:
     def __init__(self, filename, executable):
         self.filename = filename
         self.executable = executable
-        self.path = ''.join(x for x in self.executable.split('/').pop(-1))
         self.args = []
         self.static_libs = []
         self.ldflags = []
@@ -27,11 +26,11 @@ class makeObject:
             throw Exception
         for x in args:
             if x.endswith('.a'):
-                self.static_libs.append(self.path+x)
+                self.static_libs.append(x)
             elif x[:2] == '-l':
-                self.ldflags.append(self.path+x)
+                self.ldflags.append(x)
             elif x.endswith('.o'):
-                self.depends.append(self.path+x)
+                self.depends.append(x)
 
     def getCommand(self):
         self.getLibs()

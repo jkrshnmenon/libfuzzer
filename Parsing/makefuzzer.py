@@ -4,12 +4,16 @@ from re import sub
 class makeFuzzer:
     def __init__(self, prototype):
         self.prototype = sub(' *\(', '(', prototype.split('{')[0])
+        self.prototype = sub('extern ', 'extern "C" ', self.prototype)
         self.args = []
         self.invocation = ""
-        self.name = ""
+        self.name = sub('\**', '', self.prototype.split('(')[0].split(' ')[-1])
+        self.header = '#include<stdint.h>\n#include<stdio.h>\n'
+        self.fuzzer = 'extern "C" in LLVMFuzzerTestOneInput'
+        self.fuzzer += '(const uint8_t *Data, size_t Size) {\n'
+        self.footer = '    return 0;\n}'
 
     def getArgs(self):
-        self.name = sub('\**', '', self.prototype.split('(')[0].split(' ')[-1])
         args = sub(', *', ',', self.prototype.split('(')[1].split(')')[0])
         if args.count(',') < 1:
             self.args = args.split(' ')[:-1]
@@ -36,22 +40,36 @@ class makeFuzzer:
             return 'Size'
         elif 'int' in dtype:
             return 'Size'
+        elif 'long' in dtype:
+            return 'Size'
+        else:
+            raise CustomDatatype
 
     def getCode(self):
         self.getInvocation()
-        self.code = '#include<stdint.h>\n#include<stdio.h>\n'
+        self.code = self.header
         self.code += self.prototype
         if self.prototype.count(';') < 1:
             self.code += ';'
         self.code += '\n'
-        self.code += 'extern "C" int LLVMFuzzerTestOneInput'
-        self.code += '(const uint8_t *Data, size_t Size)\n'
-        self.code += 'int main() {\n'
+        self.code += self.fuzzer
         self.code += ' '*4 + self.invocation
-        self.code += '    return 0;\n}'
+        self.code += self.footer
 
     def writeCode(self):
-        self.getCode()
+        try:
+            self.getCode()
+        except CustomDatatype:
+            print "Invalid arguments detected\n Try another function"
+            return
         f = open('test.cpp', 'w')
         f.write(self.code+'\n')
         f.close()
+
+
+class Error(Exception):
+    pass
+
+
+class CustomDatatype(Error):
+    pass
