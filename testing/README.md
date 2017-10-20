@@ -8,7 +8,7 @@ Testing unexit.so with \_exit()
 
 -----------------------------------------------------------------------------------
 
-Testing unext.so without \_exit()
+Testing unexit.so without \_exit()
 
     INFO: Seed: 3173239660
     INFO: Loaded 0 modules (0 guards): 
