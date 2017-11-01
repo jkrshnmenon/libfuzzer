@@ -1,21 +1,22 @@
 import re
+import os
 import subprocess
 
 
 class makeObject:
-    def __init__(self, filename, executable):
-        self.filename = filename
+    def __init__(self, makeout, executable):
+        self.makeout = makeout.split()
         self.executable = executable
         self.args = []
         self.static_libs = []
         self.ldflags = []
         self.depends = []
         self.cmd = ['clang', '-shared', '-o ', 'libproject.so']
+        self.runner()
 
     def getContents(self):
-        contents = open(self.filename).readlines()
         cmd = '-o '+self.executable+' '
-        for line in contents:
+        for line in self.makeout:
             fixed_line = re.sub(' +', '', line)
             if cmd in fixed_line:
                 return fixed_line.strip().split(' ')

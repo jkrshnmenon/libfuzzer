@@ -1,3 +1,4 @@
+
 from re import sub
 
 
@@ -12,6 +13,7 @@ class makeFuzzer:
         self.fuzzer = 'extern "C" in LLVMFuzzerTestOneInput'
         self.fuzzer += '(const uint8_t *Data, size_t Size) {\n'
         self.footer = '    return 0;\n}'
+        self.writeCode()
 
     def getArgs(self):
         args = sub(', *', ',', self.prototype.split('(')[1].split(')')[0])

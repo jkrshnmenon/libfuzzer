@@ -1,5 +1,14 @@
-
 initialize.py
+
+                 Changes dir to the specified directory
+
+                 Executes `configure`
+
+                 Executes `make V=1` and saves output for makeobject to use
+
+-------------------------------------------------------------------
+
+backup.py
 
                  Creates backup of file which contains `main`
 
@@ -30,8 +39,18 @@ makefuzzer.py
 
 compilefuzzer.py
 
-                    Compiles test.cpp to generate fuzzer
+                 Compiles test.cpp to generate fuzzer
 
-                    test.cpp can be either the template for fuzzing main
+                 test.cpp can be either the template for fuzzing main
 
-                    Or the code to target individual functions
+                 Or the code to target individual functions
+
+-------------------------------------------------------------------
+
+dofuzz.py
+
+                 Invokes all the above scripts in order to create final fuzzer
+
+                 Executes fuzzer with the update LD_LIBRARY_PATH
+
+-------------------------------------------------------------------

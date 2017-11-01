@@ -1,26 +1,22 @@
-import re
 import os
-import subprocess
+import sys
+from subprocess import PIPE, check_call, Popen
 
 
 class initialize:
-    def __init__(self, filename, path):
-        self.filename = filename
-        self.path = path
-        self.regex = re.compile('[ |\n]main *\(.*\)')
-        self.sub = ' runner(int argc, char **argv)'
+    def __init__(self, path):
+        if 'configure' not in os.listdir(path):
+            print "Wrong path"
+            sys.exit()
+        os.chdir(path)
+        if check_call('./configure', stdout=PIPE, stderr=PIPE) != 0:
+            print "Couldn't configure"
+            sys.exit()
+        p = Popen(['make', 'V=1'], stdout=PIPE, stderr=PIPE)
+        if p.returncode != 0:
+            print "Couldn't make"
+            sys.exit()
+        self.makeout = p.communicate()[0]
 
-    def modifyFile(self):
-        f = open(self.path+'/'+self.filename, 'r')
-        inp = f.read()
-        f.close()
-        open(self.filename+'.bak', 'w').write(inp)
-        self.out = re.sub(self.regex, self.sub, inp)
-        open(self.filename, 'w').write(self.out)
-
-    def buildAgain(self):
-        subprocess.check_output(['./configure'], "CFLAGS='-fPIC'")
-        subprocess.check_output('make')
-
-    def changeDir(self):
-        os.chdir(self.path)
+    def getOutput(self):
+        return self.makeout
