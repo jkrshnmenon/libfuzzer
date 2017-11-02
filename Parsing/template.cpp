@@ -16,7 +16,7 @@ extern "C" int LLVMFuzzerTestOneInput(const uint8_t * Data,size_t Size){
                     i++;    //Don’t need an argv of nulls
                 if(Data[i]==NULL)
                     break; //There are no more args
-                buffers[j++] = strndup(Data+k,i-k);
+                buffers[j++] = strndup((char *)Data+k,i-k);
                 k = i;
             }
         }

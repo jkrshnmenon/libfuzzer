@@ -5,26 +5,30 @@ import subprocess
 
 class makeObject:
     def __init__(self, makeout, executable):
-        self.makeout = makeout.split()
+        self.makeout = makeout
         self.executable = executable
         self.args = []
         self.static_libs = []
         self.ldflags = []
         self.depends = []
-        self.cmd = ['clang', '-shared', '-o ', 'libproject.so']
+        self.cmd = ['clang', '-shared', '-o', 'libproject.so']
         self.runner()
 
     def getContents(self):
         cmd = '-o '+self.executable+' '
         for line in self.makeout:
-            fixed_line = re.sub(' +', '', line)
+            fixed_line = re.sub(' +', ' ', line)
             if cmd in fixed_line:
                 return fixed_line.strip().split(' ')
+            elif ' '+self.executable+'.o' in fixed_line:
+                self.compilecmd = fixed_line.strip().split(' ')
 
     def getLibs(self):
         args = self.getContents()
+        if args is None:
+            raise ParseException
         if len(args) == 0:
-            throw Exception
+            raise ParseException
         for x in args:
             if x.endswith('.a'):
                 self.static_libs.append(x)
@@ -45,6 +49,17 @@ class makeObject:
     def getLibFlags(self):
         return self.ldflags+self.static_libs
 
+    def getCompileCmd(self):
+        return self.compilecmd
+
+    def getCmd(self):
+        return self.cmd
+
     def runner(self):
         self.getCommand()
         return subprocess.check_output(self.cmd)
+
+
+class ParseException(Exception):
+    def __init__(self, *args, **kwargs):
+        Exception.__init__(self, *args, **kwargs)
