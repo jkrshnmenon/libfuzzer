@@ -11,12 +11,13 @@ class backup:
         self.regex = re.compile('[ |\n]main *\(.*\)')
         self.sub = ' runner(int argc, char **argv)'
         for line in makeout:
-            fixed_line = re.sub(' +', ' ', line)
+            fixed_line = re.sub(' +', ' ', line).replace('\\', '')
             if '-o '+objectfile in fixed_line:
                 cmd = fixed_line
-        self.modifyFile(cmd)
+        self.modifyFile(cmd.replace(';', ''))
 
     def modifyFile(self, cmd):
+        print cmd
         f = open(self.filename, 'r')
         inp = f.read()
         f.close()

@@ -1,0 +1,1652 @@
+echo 1.9.4 > .version-t && mv .version-t .version
+make  all-recursive
+make[1]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4'
+Making all in lib
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/lib'
+rm -f alloca.h-t alloca.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  cat ./alloca.in.h; \
+} > alloca.h-t && \
+mv -f alloca.h-t alloca.h
+rm -f c++defs.h-t c++defs.h && \
+sed -n -e '/_GL_CXXDEFS/,$p' \
+  < ../build-aux/snippet/c++defs.h \
+  > c++defs.h-t && \
+mv c++defs.h-t c++defs.h
+rm -f warn-on-use.h-t warn-on-use.h && \
+sed -n -e '/^.ifndef/,$p' \
+  < ../build-aux/snippet/warn-on-use.h \
+  > warn-on-use.h-t && \
+mv warn-on-use.h-t warn-on-use.h
+rm -f arg-nonnull.h-t arg-nonnull.h && \
+sed -n -e '/GL_ARG_NONNULL/,$p' \
+  < ../build-aux/snippet/arg-nonnull.h \
+  > arg-nonnull.h-t && \
+mv arg-nonnull.h-t arg-nonnull.h
+/bin/mkdir -p arpa
+rm -f arpa/inet.h-t arpa/inet.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''HAVE_FEATURES_H''@|1|g' \
+      -e 's|@''NEXT_ARPA_INET_H''@|<arpa/inet.h>|g' \
+      -e 's|@''HAVE_ARPA_INET_H''@|1|g' \
+      -e 's/@''GNULIB_INET_NTOP''@/1/g' \
+      -e 's/@''GNULIB_INET_PTON''@/0/g' \
+      -e 's|@''HAVE_DECL_INET_NTOP''@|1|g' \
+      -e 's|@''HAVE_DECL_INET_PTON''@|1|g' \
+      -e 's|@''REPLACE_INET_NTOP''@|0|g' \
+      -e 's|@''REPLACE_INET_PTON''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./arpa_inet.in.h; \
+} > arpa/inet.h-t && \
+mv arpa/inet.h-t arpa/inet.h
+rm -f configmake.h-t && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  echo '#define PREFIX "/usr/local"'; \
+  echo '#define EXEC_PREFIX "/usr/local"'; \
+  echo '#define BINDIR "/usr/local/bin"'; \
+  echo '#define SBINDIR "/usr/local/sbin"'; \
+  echo '#define LIBEXECDIR "/usr/local/libexec"'; \
+  echo '#define DATAROOTDIR "/usr/local/share"'; \
+  echo '#define DATADIR "/usr/local/share"'; \
+  echo '#define SYSCONFDIR "/usr/local/etc"'; \
+  echo '#define SHAREDSTATEDIR "/usr/local/com"'; \
+  echo '#define LOCALSTATEDIR "/usr/local/var"'; \
+  echo '#define RUNSTATEDIR "/usr/local/var/run"'; \
+  echo '#define INCLUDEDIR "/usr/local/include"'; \
+  echo '#define OLDINCLUDEDIR "/usr/include"'; \
+  echo '#define DOCDIR "/usr/local/share/doc/inetutils"'; \
+  echo '#define INFODIR "/usr/local/share/info"'; \
+  echo '#define HTMLDIR "/usr/local/share/doc/inetutils"'; \
+  echo '#define DVIDIR "/usr/local/share/doc/inetutils"'; \
+  echo '#define PDFDIR "/usr/local/share/doc/inetutils"'; \
+  echo '#define PSDIR "/usr/local/share/doc/inetutils"'; \
+  echo '#define LIBDIR "/usr/local/lib"'; \
+  echo '#define LISPDIR "/usr/local/share/emacs/site-lisp"'; \
+  echo '#define LOCALEDIR "/usr/local/share/locale"'; \
+  echo '#define MANDIR "/usr/local/share/man"'; \
+  echo '#define MANEXT ""'; \
+  echo '#define PKGDATADIR "/usr/local/share/inetutils"'; \
+  echo '#define PKGINCLUDEDIR "/usr/local/include/inetutils"'; \
+  echo '#define PKGLIBDIR "/usr/local/lib/inetutils"'; \
+  echo '#define PKGLIBEXECDIR "/usr/local/libexec/inetutils"'; \
+} | sed '/""/d' > configmake.h-t && \
+mv -f configmake.h-t configmake.h
+rm -f dirent.h-t dirent.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_DIRENT_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_DIRENT_H''@|<dirent.h>|g' \
+      -e 's/@''GNULIB_OPENDIR''@/1/g' \
+      -e 's/@''GNULIB_READDIR''@/1/g' \
+      -e 's/@''GNULIB_REWINDDIR''@/1/g' \
+      -e 's/@''GNULIB_CLOSEDIR''@/1/g' \
+      -e 's/@''GNULIB_DIRFD''@/1/g' \
+      -e 's/@''GNULIB_FDOPENDIR''@/1/g' \
+      -e 's/@''GNULIB_SCANDIR''@/0/g' \
+      -e 's/@''GNULIB_ALPHASORT''@/0/g' \
+      -e 's/@''HAVE_OPENDIR''@/1/g' \
+      -e 's/@''HAVE_READDIR''@/1/g' \
+      -e 's/@''HAVE_REWINDDIR''@/1/g' \
+      -e 's/@''HAVE_CLOSEDIR''@/1/g' \
+      -e 's|@''HAVE_DECL_DIRFD''@|1|g' \
+      -e 's|@''HAVE_DECL_FDOPENDIR''@|1|g' \
+      -e 's|@''HAVE_FDOPENDIR''@|1|g' \
+      -e 's|@''HAVE_SCANDIR''@|1|g' \
+      -e 's|@''HAVE_ALPHASORT''@|1|g' \
+      -e 's|@''REPLACE_OPENDIR''@|0|g' \
+      -e 's|@''REPLACE_CLOSEDIR''@|0|g' \
+      -e 's|@''REPLACE_DIRFD''@|0|g' \
+      -e 's|@''REPLACE_FDOPENDIR''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./dirent.in.h; \
+} > dirent.h-t && \
+mv dirent.h-t dirent.h
+rm -f fcntl.h-t fcntl.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_FCNTL_H''@|<fcntl.h>|g' \
+      -e 's/@''GNULIB_FCNTL''@/1/g' \
+      -e 's/@''GNULIB_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_OPEN''@/1/g' \
+      -e 's/@''GNULIB_OPENAT''@/1/g' \
+      -e 's|@''HAVE_FCNTL''@|1|g' \
+      -e 's|@''HAVE_OPENAT''@|1|g' \
+      -e 's|@''REPLACE_FCNTL''@|1|g' \
+      -e 's|@''REPLACE_OPEN''@|0|g' \
+      -e 's|@''REPLACE_OPENAT''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./fcntl.in.h; \
+} > fcntl.h-t && \
+mv fcntl.h-t fcntl.h
+rm -f getopt.h-t getopt.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_GETOPT_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_GETOPT_H''@|<getopt.h>|g' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      < ./getopt.in.h; \
+} > getopt.h-t && \
+mv -f getopt.h-t getopt.h
+rm -f glob.h-t glob.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''HAVE_SYS_CDEFS_H''@|1|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./glob.in.h; \
+} > glob.h-t && \
+mv -f glob.h-t glob.h
+rm -f langinfo.h-t langinfo.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_LANGINFO_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_LANGINFO_H''@|<langinfo.h>|g' \
+      -e 's/@''GNULIB_NL_LANGINFO''@/1/g' \
+      -e 's|@''HAVE_LANGINFO_CODESET''@|1|g' \
+      -e 's|@''HAVE_LANGINFO_T_FMT_AMPM''@|1|g' \
+      -e 's|@''HAVE_LANGINFO_ERA''@|1|g' \
+      -e 's|@''HAVE_LANGINFO_YESEXPR''@|1|g' \
+      -e 's|@''HAVE_NL_LANGINFO''@|1|g' \
+      -e 's|@''REPLACE_NL_LANGINFO''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./langinfo.in.h; \
+} > langinfo.h-t && \
+mv langinfo.h-t langinfo.h
+rm -f locale.h-t locale.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_LOCALE_H''@|<locale.h>|g' \
+      -e 's/@''GNULIB_LOCALECONV''@/1/g' \
+      -e 's/@''GNULIB_SETLOCALE''@/0/g' \
+      -e 's/@''GNULIB_DUPLOCALE''@/0/g' \
+      -e 's|@''HAVE_DUPLOCALE''@|1|g' \
+      -e 's|@''HAVE_XLOCALE_H''@|1|g' \
+      -e 's|@''REPLACE_LOCALECONV''@|0|g' \
+      -e 's|@''REPLACE_SETLOCALE''@|0|g' \
+      -e 's|@''REPLACE_DUPLOCALE''@|0|g' \
+      -e 's|@''REPLACE_STRUCT_LCONV''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./locale.in.h; \
+} > locale.h-t && \
+mv locale.h-t locale.h
+rm -f netdb.h-t netdb.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_NETDB_H''@|<netdb.h>|g' \
+      -e 's|@''HAVE_NETDB_H''@|1|g' \
+      -e 's/@''GNULIB_GETADDRINFO''@/1/g' \
+      -e 's|@''HAVE_STRUCT_ADDRINFO''@|1|g' \
+      -e 's|@''HAVE_DECL_FREEADDRINFO''@|1|g' \
+      -e 's|@''HAVE_DECL_GAI_STRERROR''@|1|g' \
+      -e 's|@''HAVE_DECL_GETADDRINFO''@|1|g' \
+      -e 's|@''HAVE_DECL_GETNAMEINFO''@|1|g' \
+      -e 's|@''REPLACE_GAI_STRERROR''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./netdb.in.h; \
+} > netdb.h-t && \
+mv netdb.h-t netdb.h
+rm -f poll.h-t poll.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_POLL_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_POLL_H''@|<poll.h>|g' \
+      -e 's/@''GNULIB_POLL''@/1/g' \
+      -e 's|@''HAVE_POLL''@|1|g' \
+      -e 's|@''REPLACE_POLL''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./poll.in.h; \
+} > poll.h-t && \
+mv -f poll.h-t poll.h
+rm -f pty.h-t pty.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_PTY_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_PTY_H''@|<pty.h>|g' \
+      -e 's/@''GNULIB_FORKPTY''@/1/g' \
+      -e 's/@''GNULIB_OPENPTY''@/1/g' \
+      -e 's|@''HAVE_UTIL_H''@|0|g' \
+      -e 's|@''HAVE_LIBUTIL_H''@|0|g' \
+      -e 's|@''HAVE_FORKPTY''@|1|g' \
+      -e 's|@''HAVE_OPENPTY''@|1|g' \
+      -e 's|@''REPLACE_FORKPTY''@|0|g' \
+      -e 's|@''REPLACE_OPENPTY''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./pty.in.h; \
+} > pty.h-t && \
+mv pty.h-t pty.h
+rm -f signal.h-t signal.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SIGNAL_H''@|<signal.h>|g' \
+      -e 's|@''GNULIB_PTHREAD_SIGMASK''@|0|g' \
+      -e 's|@''GNULIB_RAISE''@|0|g' \
+      -e 's/@''GNULIB_SIGNAL_H_SIGPIPE''@/0/g' \
+      -e 's/@''GNULIB_SIGPROCMASK''@/0/g' \
+      -e 's/@''GNULIB_SIGACTION''@/0/g' \
+      -e 's|@''HAVE_POSIX_SIGNALBLOCKING''@|1|g' \
+      -e 's|@''HAVE_PTHREAD_SIGMASK''@|1|g' \
+      -e 's|@''HAVE_RAISE''@|1|g' \
+      -e 's|@''HAVE_SIGSET_T''@|1|g' \
+      -e 's|@''HAVE_SIGINFO_T''@|1|g' \
+      -e 's|@''HAVE_SIGACTION''@|1|g' \
+      -e 's|@''HAVE_STRUCT_SIGACTION_SA_SIGACTION''@|1|g' \
+      -e 's|@''HAVE_TYPE_VOLATILE_SIG_ATOMIC_T''@|1|g' \
+      -e 's|@''HAVE_SIGHANDLER_T''@|1|g' \
+      -e 's|@''REPLACE_PTHREAD_SIGMASK''@|0|g' \
+      -e 's|@''REPLACE_RAISE''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./signal.in.h; \
+} > signal.h-t && \
+mv signal.h-t signal.h
+rm -f unused-parameter.h-t unused-parameter.h && \
+sed -n -e '/GL_UNUSED_PARAMETER/,$p' \
+  < ../build-aux/snippet/unused-parameter.h \
+  > unused-parameter.h-t && \
+mv unused-parameter.h-t unused-parameter.h
+rm -f stdio.h-t stdio.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STDIO_H''@|<stdio.h>|g' \
+      -e 's/@''GNULIB_DPRINTF''@/0/g' \
+      -e 's/@''GNULIB_FCLOSE''@/0/g' \
+      -e 's/@''GNULIB_FDOPEN''@/0/g' \
+      -e 's/@''GNULIB_FFLUSH''@/0/g' \
+      -e 's/@''GNULIB_FGETC''@/1/g' \
+      -e 's/@''GNULIB_FGETS''@/1/g' \
+      -e 's/@''GNULIB_FOPEN''@/1/g' \
+      -e 's/@''GNULIB_FPRINTF''@/1/g' \
+      -e 's/@''GNULIB_FPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_FPURGE''@/0/g' \
+      -e 's/@''GNULIB_FPUTC''@/1/g' \
+      -e 's/@''GNULIB_FPUTS''@/1/g' \
+      -e 's/@''GNULIB_FREAD''@/1/g' \
+      -e 's/@''GNULIB_FREOPEN''@/0/g' \
+      -e 's/@''GNULIB_FSCANF''@/1/g' \
+      -e 's/@''GNULIB_FSEEK''@/1/g' \
+      -e 's/@''GNULIB_FSEEKO''@/1/g' \
+      -e 's/@''GNULIB_FTELL''@/1/g' \
+      -e 's/@''GNULIB_FTELLO''@/1/g' \
+      -e 's/@''GNULIB_FWRITE''@/1/g' \
+      -e 's/@''GNULIB_GETC''@/1/g' \
+      -e 's/@''GNULIB_GETCHAR''@/1/g' \
+      -e 's/@''GNULIB_GETDELIM''@/1/g' \
+      -e 's/@''GNULIB_GETLINE''@/1/g' \
+      -e 's/@''GNULIB_OBSTACK_PRINTF''@/0/g' \
+      -e 's/@''GNULIB_OBSTACK_PRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_PCLOSE''@/0/g' \
+      -e 's/@''GNULIB_PERROR''@/0/g' \
+      -e 's/@''GNULIB_POPEN''@/0/g' \
+      -e 's/@''GNULIB_PRINTF''@/1/g' \
+      -e 's/@''GNULIB_PRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_PUTC''@/1/g' \
+      -e 's/@''GNULIB_PUTCHAR''@/1/g' \
+      -e 's/@''GNULIB_PUTS''@/1/g' \
+      -e 's/@''GNULIB_REMOVE''@/0/g' \
+      -e 's/@''GNULIB_RENAME''@/0/g' \
+      -e 's/@''GNULIB_RENAMEAT''@/0/g' \
+      -e 's/@''GNULIB_SCANF''@/1/g' \
+      -e 's/@''GNULIB_SNPRINTF''@/1/g' \
+      -e 's/@''GNULIB_SPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_STDIO_H_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_STDIO_H_SIGPIPE''@/0/g' \
+      -e 's/@''GNULIB_TMPFILE''@/0/g' \
+      -e 's/@''GNULIB_VASPRINTF''@/1/g' \
+      -e 's/@''GNULIB_VDPRINTF''@/0/g' \
+      -e 's/@''GNULIB_VFPRINTF''@/1/g' \
+      -e 's/@''GNULIB_VFPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_VFSCANF''@/0/g' \
+      -e 's/@''GNULIB_VSCANF''@/0/g' \
+      -e 's/@''GNULIB_VPRINTF''@/1/g' \
+      -e 's/@''GNULIB_VPRINTF_POSIX''@/0/g' \
+      -e 's/@''GNULIB_VSNPRINTF''@/1/g' \
+      -e 's/@''GNULIB_VSPRINTF_POSIX''@/0/g' \
+      < ./stdio.in.h | \
+  sed -e 's|@''HAVE_DECL_FPURGE''@|1|g' \
+      -e 's|@''HAVE_DECL_FSEEKO''@|1|g' \
+      -e 's|@''HAVE_DECL_FTELLO''@|1|g' \
+      -e 's|@''HAVE_DECL_GETDELIM''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLINE''@|1|g' \
+      -e 's|@''HAVE_DECL_OBSTACK_PRINTF''@|1|g' \
+      -e 's|@''HAVE_DECL_SNPRINTF''@|1|g' \
+      -e 's|@''HAVE_DECL_VSNPRINTF''@|1|g' \
+      -e 's|@''HAVE_DPRINTF''@|1|g' \
+      -e 's|@''HAVE_FSEEKO''@|1|g' \
+      -e 's|@''HAVE_FTELLO''@|1|g' \
+      -e 's|@''HAVE_PCLOSE''@|1|g' \
+      -e 's|@''HAVE_POPEN''@|1|g' \
+      -e 's|@''HAVE_RENAMEAT''@|1|g' \
+      -e 's|@''HAVE_VASPRINTF''@|1|g' \
+      -e 's|@''HAVE_VDPRINTF''@|1|g' \
+      -e 's|@''REPLACE_DPRINTF''@|0|g' \
+      -e 's|@''REPLACE_FCLOSE''@|0|g' \
+      -e 's|@''REPLACE_FDOPEN''@|0|g' \
+      -e 's|@''REPLACE_FFLUSH''@|0|g' \
+      -e 's|@''REPLACE_FOPEN''@|0|g' \
+      -e 's|@''REPLACE_FPRINTF''@|0|g' \
+      -e 's|@''REPLACE_FPURGE''@|0|g' \
+      -e 's|@''REPLACE_FREOPEN''@|0|g' \
+      -e 's|@''REPLACE_FSEEK''@|0|g' \
+      -e 's|@''REPLACE_FSEEKO''@|0|g' \
+      -e 's|@''REPLACE_FTELL''@|0|g' \
+      -e 's|@''REPLACE_FTELLO''@|0|g' \
+      -e 's|@''REPLACE_GETDELIM''@|0|g' \
+      -e 's|@''REPLACE_GETLINE''@|0|g' \
+      -e 's|@''REPLACE_OBSTACK_PRINTF''@|0|g' \
+      -e 's|@''REPLACE_PERROR''@|0|g' \
+      -e 's|@''REPLACE_POPEN''@|0|g' \
+      -e 's|@''REPLACE_PRINTF''@|0|g' \
+      -e 's|@''REPLACE_REMOVE''@|0|g' \
+      -e 's|@''REPLACE_RENAME''@|0|g' \
+      -e 's|@''REPLACE_RENAMEAT''@|0|g' \
+      -e 's|@''REPLACE_SNPRINTF''@|0|g' \
+      -e 's|@''REPLACE_SPRINTF''@|0|g' \
+      -e 's|@''REPLACE_STDIO_READ_FUNCS''@|0|g' \
+      -e 's|@''REPLACE_STDIO_WRITE_FUNCS''@|0|g' \
+      -e 's|@''REPLACE_TMPFILE''@|0|g' \
+      -e 's|@''REPLACE_VASPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VDPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VFPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VSNPRINTF''@|0|g' \
+      -e 's|@''REPLACE_VSPRINTF''@|0|g' \
+      -e 's|@''ASM_SYMBOL_PREFIX''@||g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+} > stdio.h-t && \
+mv stdio.h-t stdio.h
+rm -f stdlib.h-t stdlib.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STDLIB_H''@|<stdlib.h>|g' \
+      -e 's/@''GNULIB__EXIT''@/0/g' \
+      -e 's/@''GNULIB_ATOLL''@/0/g' \
+      -e 's/@''GNULIB_CALLOC_POSIX''@/0/g' \
+      -e 's/@''GNULIB_CANONICALIZE_FILE_NAME''@/0/g' \
+      -e 's/@''GNULIB_GETLOADAVG''@/0/g' \
+      -e 's/@''GNULIB_GETSUBOPT''@/0/g' \
+      -e 's/@''GNULIB_GRANTPT''@/0/g' \
+      -e 's/@''GNULIB_MALLOC_POSIX''@/1/g' \
+      -e 's/@''GNULIB_MBTOWC''@/1/g' \
+      -e 's/@''GNULIB_MKDTEMP''@/0/g' \
+      -e 's/@''GNULIB_MKOSTEMP''@/0/g' \
+      -e 's/@''GNULIB_MKOSTEMPS''@/0/g' \
+      -e 's/@''GNULIB_MKSTEMP''@/1/g' \
+      -e 's/@''GNULIB_MKSTEMPS''@/0/g' \
+      -e 's/@''GNULIB_POSIX_OPENPT''@/1/g' \
+      -e 's/@''GNULIB_PTSNAME''@/0/g' \
+      -e 's/@''GNULIB_PTSNAME_R''@/0/g' \
+      -e 's/@''GNULIB_PUTENV''@/0/g' \
+      -e 's/@''GNULIB_QSORT_R''@/0/g' \
+      -e 's/@''GNULIB_RANDOM''@/0/g' \
+      -e 's/@''GNULIB_RANDOM_R''@/0/g' \
+      -e 's/@''GNULIB_REALLOC_POSIX''@/1/g' \
+      -e 's/@''GNULIB_REALPATH''@/0/g' \
+      -e 's/@''GNULIB_RPMATCH''@/0/g' \
+      -e 's/@''GNULIB_SECURE_GETENV''@/1/g' \
+      -e 's/@''GNULIB_SETENV''@/1/g' \
+      -e 's/@''GNULIB_STRTOD''@/0/g' \
+      -e 's/@''GNULIB_STRTOLL''@/0/g' \
+      -e 's/@''GNULIB_STRTOULL''@/0/g' \
+      -e 's/@''GNULIB_SYSTEM_POSIX''@/0/g' \
+      -e 's/@''GNULIB_UNLOCKPT''@/0/g' \
+      -e 's/@''GNULIB_UNSETENV''@/0/g' \
+      -e 's/@''GNULIB_WCTOMB''@/0/g' \
+      < ./stdlib.in.h | \
+  sed -e 's|@''HAVE__EXIT''@|1|g' \
+      -e 's|@''HAVE_ATOLL''@|1|g' \
+      -e 's|@''HAVE_CANONICALIZE_FILE_NAME''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOADAVG''@|1|g' \
+      -e 's|@''HAVE_GETSUBOPT''@|1|g' \
+      -e 's|@''HAVE_GRANTPT''@|1|g' \
+      -e 's|@''HAVE_MKDTEMP''@|1|g' \
+      -e 's|@''HAVE_MKOSTEMP''@|1|g' \
+      -e 's|@''HAVE_MKOSTEMPS''@|1|g' \
+      -e 's|@''HAVE_MKSTEMP''@|1|g' \
+      -e 's|@''HAVE_MKSTEMPS''@|1|g' \
+      -e 's|@''HAVE_POSIX_OPENPT''@|1|g' \
+      -e 's|@''HAVE_PTSNAME''@|1|g' \
+      -e 's|@''HAVE_PTSNAME_R''@|1|g' \
+      -e 's|@''HAVE_RANDOM''@|1|g' \
+      -e 's|@''HAVE_RANDOM_H''@|1|g' \
+      -e 's|@''HAVE_RANDOM_R''@|1|g' \
+      -e 's|@''HAVE_REALPATH''@|1|g' \
+      -e 's|@''HAVE_RPMATCH''@|1|g' \
+      -e 's|@''HAVE_SECURE_GETENV''@|1|g' \
+      -e 's|@''HAVE_DECL_SETENV''@|1|g' \
+      -e 's|@''HAVE_STRTOD''@|1|g' \
+      -e 's|@''HAVE_STRTOLL''@|1|g' \
+      -e 's|@''HAVE_STRTOULL''@|1|g' \
+      -e 's|@''HAVE_STRUCT_RANDOM_DATA''@|1|g' \
+      -e 's|@''HAVE_SYS_LOADAVG_H''@|0|g' \
+      -e 's|@''HAVE_UNLOCKPT''@|1|g' \
+      -e 's|@''HAVE_DECL_UNSETENV''@|1|g' \
+      -e 's|@''REPLACE_CALLOC''@|0|g' \
+      -e 's|@''REPLACE_CANONICALIZE_FILE_NAME''@|0|g' \
+      -e 's|@''REPLACE_MALLOC''@|0|g' \
+      -e 's|@''REPLACE_MBTOWC''@|0|g' \
+      -e 's|@''REPLACE_MKSTEMP''@|0|g' \
+      -e 's|@''REPLACE_PTSNAME''@|0|g' \
+      -e 's|@''REPLACE_PTSNAME_R''@|0|g' \
+      -e 's|@''REPLACE_PUTENV''@|0|g' \
+      -e 's|@''REPLACE_QSORT_R''@|0|g' \
+      -e 's|@''REPLACE_RANDOM_R''@|0|g' \
+      -e 's|@''REPLACE_REALLOC''@|0|g' \
+      -e 's|@''REPLACE_REALPATH''@|0|g' \
+      -e 's|@''REPLACE_SETENV''@|0|g' \
+      -e 's|@''REPLACE_STRTOD''@|0|g' \
+      -e 's|@''REPLACE_UNSETENV''@|0|g' \
+      -e 's|@''REPLACE_WCTOMB''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _Noreturn/r ../build-aux/snippet/_Noreturn.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+} > stdlib.h-t && \
+mv stdlib.h-t stdlib.h
+rm -f string.h-t string.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STRING_H''@|<string.h>|g' \
+      -e 's/@''GNULIB_FFSL''@/0/g' \
+      -e 's/@''GNULIB_FFSLL''@/0/g' \
+      -e 's/@''GNULIB_MBSLEN''@/0/g' \
+      -e 's/@''GNULIB_MBSNLEN''@/0/g' \
+      -e 's/@''GNULIB_MBSCHR''@/0/g' \
+      -e 's/@''GNULIB_MBSRCHR''@/0/g' \
+      -e 's/@''GNULIB_MBSSTR''@/0/g' \
+      -e 's/@''GNULIB_MBSCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSNCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSPCASECMP''@/0/g' \
+      -e 's/@''GNULIB_MBSCASESTR''@/0/g' \
+      -e 's/@''GNULIB_MBSCSPN''@/0/g' \
+      -e 's/@''GNULIB_MBSPBRK''@/0/g' \
+      -e 's/@''GNULIB_MBSSPN''@/0/g' \
+      -e 's/@''GNULIB_MBSSEP''@/0/g' \
+      -e 's/@''GNULIB_MBSTOK_R''@/0/g' \
+      -e 's/@''GNULIB_MEMCHR''@/1/g' \
+      -e 's/@''GNULIB_MEMMEM''@/0/g' \
+      -e 's/@''GNULIB_MEMPCPY''@/1/g' \
+      -e 's/@''GNULIB_MEMRCHR''@/1/g' \
+      -e 's/@''GNULIB_RAWMEMCHR''@/1/g' \
+      -e 's/@''GNULIB_STPCPY''@/0/g' \
+      -e 's/@''GNULIB_STPNCPY''@/0/g' \
+      -e 's/@''GNULIB_STRCHRNUL''@/1/g' \
+      -e 's/@''GNULIB_STRDUP''@/1/g' \
+      -e 's/@''GNULIB_STRNCAT''@/0/g' \
+      -e 's/@''GNULIB_STRNDUP''@/1/g' \
+      -e 's/@''GNULIB_STRNLEN''@/1/g' \
+      -e 's/@''GNULIB_STRPBRK''@/0/g' \
+      -e 's/@''GNULIB_STRSEP''@/0/g' \
+      -e 's/@''GNULIB_STRSTR''@/0/g' \
+      -e 's/@''GNULIB_STRCASESTR''@/0/g' \
+      -e 's/@''GNULIB_STRTOK_R''@/0/g' \
+      -e 's/@''GNULIB_STRERROR''@/1/g' \
+      -e 's/@''GNULIB_STRERROR_R''@/0/g' \
+      -e 's/@''GNULIB_STRSIGNAL''@/0/g' \
+      -e 's/@''GNULIB_STRVERSCMP''@/0/g' \
+      < ./string.in.h | \
+  sed -e 's|@''HAVE_FFSL''@|1|g' \
+      -e 's|@''HAVE_FFSLL''@|1|g' \
+      -e 's|@''HAVE_MBSLEN''@|0|g' \
+      -e 's|@''HAVE_MEMCHR''@|1|g' \
+      -e 's|@''HAVE_DECL_MEMMEM''@|1|g' \
+      -e 's|@''HAVE_MEMPCPY''@|1|g' \
+      -e 's|@''HAVE_DECL_MEMRCHR''@|1|g' \
+      -e 's|@''HAVE_RAWMEMCHR''@|1|g' \
+      -e 's|@''HAVE_STPCPY''@|1|g' \
+      -e 's|@''HAVE_STPNCPY''@|1|g' \
+      -e 's|@''HAVE_STRCHRNUL''@|1|g' \
+      -e 's|@''HAVE_DECL_STRDUP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRNDUP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRNLEN''@|1|g' \
+      -e 's|@''HAVE_STRPBRK''@|1|g' \
+      -e 's|@''HAVE_STRSEP''@|1|g' \
+      -e 's|@''HAVE_STRCASESTR''@|1|g' \
+      -e 's|@''HAVE_DECL_STRTOK_R''@|1|g' \
+      -e 's|@''HAVE_DECL_STRERROR_R''@|1|g' \
+      -e 's|@''HAVE_DECL_STRSIGNAL''@|1|g' \
+      -e 's|@''HAVE_STRVERSCMP''@|1|g' \
+      -e 's|@''REPLACE_STPNCPY''@|0|g' \
+      -e 's|@''REPLACE_MEMCHR''@|0|g' \
+      -e 's|@''REPLACE_MEMMEM''@|0|g' \
+      -e 's|@''REPLACE_STRCASESTR''@|0|g' \
+      -e 's|@''REPLACE_STRCHRNUL''@|0|g' \
+      -e 's|@''REPLACE_STRDUP''@|0|g' \
+      -e 's|@''REPLACE_STRSTR''@|0|g' \
+      -e 's|@''REPLACE_STRERROR''@|0|g' \
+      -e 's|@''REPLACE_STRERROR_R''@|0|g' \
+      -e 's|@''REPLACE_STRNCAT''@|0|g' \
+      -e 's|@''REPLACE_STRNDUP''@|0|g' \
+      -e 's|@''REPLACE_STRNLEN''@|0|g' \
+      -e 's|@''REPLACE_STRSIGNAL''@|0|g' \
+      -e 's|@''REPLACE_STRTOK_R''@|0|g' \
+      -e 's|@''UNDEFINE_STRTOK_R''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+      < ./string.in.h; \
+} > string.h-t && \
+mv string.h-t string.h
+rm -f strings.h-t strings.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_STRINGS_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_STRINGS_H''@|<strings.h>|g' \
+      -e 's|@''GNULIB_FFS''@|0|g' \
+      -e 's|@''HAVE_FFS''@|1|g' \
+      -e 's|@''HAVE_STRCASECMP''@|1|g' \
+      -e 's|@''HAVE_DECL_STRNCASECMP''@|1|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./strings.in.h; \
+} > strings.h-t && \
+mv strings.h-t strings.h
+/bin/mkdir -p sys
+rm -f sys/ioctl.h-t sys/ioctl.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_SYS_IOCTL_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_IOCTL_H''@|<sys/ioctl.h>|g' \
+      -e 's/@''GNULIB_IOCTL''@/1/g' \
+      -e 's|@''SYS_IOCTL_H_HAVE_WINSOCK2_H''@|0|g' \
+      -e 's|@''SYS_IOCTL_H_HAVE_WINSOCK2_H_AND_USE_SOCKETS''@|0|g' \
+      -e 's|@''REPLACE_IOCTL''@|1|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./sys_ioctl.in.h; \
+} > sys/ioctl.h-t && \
+mv sys/ioctl.h-t sys/ioctl.h
+/bin/mkdir -p sys
+rm -f sys/select.h-t sys/select.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_SELECT_H''@|<sys/select.h>|g' \
+      -e 's|@''HAVE_SYS_SELECT_H''@|1|g' \
+      -e 's/@''GNULIB_PSELECT''@/0/g' \
+      -e 's/@''GNULIB_SELECT''@/1/g' \
+      -e 's|@''HAVE_WINSOCK2_H''@|0|g' \
+      -e 's|@''HAVE_PSELECT''@|1|g' \
+      -e 's|@''REPLACE_PSELECT''@|0|g' \
+      -e 's|@''REPLACE_SELECT''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./sys_select.in.h; \
+} > sys/select.h-t && \
+mv sys/select.h-t sys/select.h
+/bin/mkdir -p sys
+rm -f sys/socket.h-t sys/socket.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_SOCKET_H''@|<sys/socket.h>|g' \
+      -e 's|@''HAVE_SYS_SOCKET_H''@|1|g' \
+      -e 's/@''GNULIB_CLOSE''@/1/g' \
+      -e 's/@''GNULIB_SOCKET''@/0/g' \
+      -e 's/@''GNULIB_CONNECT''@/0/g' \
+      -e 's/@''GNULIB_ACCEPT''@/0/g' \
+      -e 's/@''GNULIB_BIND''@/0/g' \
+      -e 's/@''GNULIB_GETPEERNAME''@/0/g' \
+      -e 's/@''GNULIB_GETSOCKNAME''@/0/g' \
+      -e 's/@''GNULIB_GETSOCKOPT''@/0/g' \
+      -e 's/@''GNULIB_LISTEN''@/0/g' \
+      -e 's/@''GNULIB_RECV''@/0/g' \
+      -e 's/@''GNULIB_SEND''@/0/g' \
+      -e 's/@''GNULIB_RECVFROM''@/0/g' \
+      -e 's/@''GNULIB_SENDTO''@/0/g' \
+      -e 's/@''GNULIB_SETSOCKOPT''@/0/g' \
+      -e 's/@''GNULIB_SHUTDOWN''@/0/g' \
+      -e 's/@''GNULIB_ACCEPT4''@/0/g' \
+      -e 's|@''HAVE_WINSOCK2_H''@|0|g' \
+      -e 's|@''HAVE_WS2TCPIP_H''@|0|g' \
+      -e 's|@''HAVE_STRUCT_SOCKADDR_STORAGE''@|1|g' \
+      -e 's|@''HAVE_STRUCT_SOCKADDR_STORAGE_SS_FAMILY''@|1|g' \
+      -e 's|@''HAVE_SA_FAMILY_T''@|1|g' \
+      -e 's|@''HAVE_ACCEPT4''@|1|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./sys_socket.in.h; \
+} > sys/socket.h-t && \
+mv -f sys/socket.h-t sys/socket.h
+/bin/mkdir -p sys
+rm -f sys/stat.h-t sys/stat.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_STAT_H''@|<sys/stat.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_ST_SIZE''@|0|g' \
+      -e 's/@''GNULIB_FCHMODAT''@/0/g' \
+      -e 's/@''GNULIB_FSTAT''@/1/g' \
+      -e 's/@''GNULIB_FSTATAT''@/1/g' \
+      -e 's/@''GNULIB_FUTIMENS''@/0/g' \
+      -e 's/@''GNULIB_LCHMOD''@/0/g' \
+      -e 's/@''GNULIB_LSTAT''@/1/g' \
+      -e 's/@''GNULIB_MKDIRAT''@/0/g' \
+      -e 's/@''GNULIB_MKFIFO''@/0/g' \
+      -e 's/@''GNULIB_MKFIFOAT''@/0/g' \
+      -e 's/@''GNULIB_MKNOD''@/0/g' \
+      -e 's/@''GNULIB_MKNODAT''@/0/g' \
+      -e 's/@''GNULIB_STAT''@/1/g' \
+      -e 's/@''GNULIB_UTIMENSAT''@/0/g' \
+      -e 's|@''HAVE_FCHMODAT''@|1|g' \
+      -e 's|@''HAVE_FSTATAT''@|1|g' \
+      -e 's|@''HAVE_FUTIMENS''@|1|g' \
+      -e 's|@''HAVE_LCHMOD''@|1|g' \
+      -e 's|@''HAVE_LSTAT''@|1|g' \
+      -e 's|@''HAVE_MKDIRAT''@|1|g' \
+      -e 's|@''HAVE_MKFIFO''@|1|g' \
+      -e 's|@''HAVE_MKFIFOAT''@|1|g' \
+      -e 's|@''HAVE_MKNOD''@|1|g' \
+      -e 's|@''HAVE_MKNODAT''@|1|g' \
+      -e 's|@''HAVE_UTIMENSAT''@|1|g' \
+      -e 's|@''REPLACE_FSTAT''@|0|g' \
+      -e 's|@''REPLACE_FSTATAT''@|0|g' \
+      -e 's|@''REPLACE_FUTIMENS''@|0|g' \
+      -e 's|@''REPLACE_LSTAT''@|0|g' \
+      -e 's|@''REPLACE_MKDIR''@|0|g' \
+      -e 's|@''REPLACE_MKFIFO''@|0|g' \
+      -e 's|@''REPLACE_MKNOD''@|0|g' \
+      -e 's|@''REPLACE_STAT''@|0|g' \
+      -e 's|@''REPLACE_UTIMENSAT''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./sys_stat.in.h; \
+} > sys/stat.h-t && \
+mv sys/stat.h-t sys/stat.h
+/bin/mkdir -p sys
+rm -f sys/time.h-t sys/time.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's/@''HAVE_SYS_TIME_H''@/1/g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_TIME_H''@|<sys/time.h>|g' \
+      -e 's/@''GNULIB_GETTIMEOFDAY''@/1/g' \
+      -e 's|@''HAVE_WINSOCK2_H''@|0|g' \
+      -e 's/@''HAVE_GETTIMEOFDAY''@/1/g' \
+      -e 's/@''HAVE_STRUCT_TIMEVAL''@/1/g' \
+      -e 's/@''REPLACE_GETTIMEOFDAY''@/0/g' \
+      -e 's/@''REPLACE_STRUCT_TIMEVAL''@/0/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./sys_time.in.h; \
+} > sys/time.h-t && \
+mv sys/time.h-t sys/time.h
+/bin/mkdir -p sys
+rm -f sys/types.h-t sys/types.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_TYPES_H''@|<sys/types.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+      < ./sys_types.in.h; \
+} > sys/types.h-t && \
+mv sys/types.h-t sys/types.h
+/bin/mkdir -p sys
+rm -f sys/uio.h-t sys/uio.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_SYS_UIO_H''@|<sys/uio.h>|g' \
+      -e 's|@''HAVE_SYS_UIO_H''@|1|g' \
+      < ./sys_uio.in.h; \
+} > sys/uio.h-t && \
+mv -f sys/uio.h-t sys/uio.h
+rm -f termios.h-t termios.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_TERMIOS_H''@|<termios.h>|g' \
+      -e 's/@''GNULIB_TCGETSID''@/0/g' \
+      -e 's|@''HAVE_DECL_TCGETSID''@|1|g' \
+      -e 's|@''HAVE_TERMIOS_H''@|1|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+    < ./termios.in.h; \
+} > termios.h-t && \
+mv termios.h-t termios.h
+rm -f time.h-t time.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */' && \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_TIME_H''@|<time.h>|g' \
+      -e 's/@''GNULIB_GETTIMEOFDAY''@/1/g' \
+      -e 's/@''GNULIB_MKTIME''@/0/g' \
+      -e 's/@''GNULIB_NANOSLEEP''@/0/g' \
+      -e 's/@''GNULIB_STRPTIME''@/0/g' \
+      -e 's/@''GNULIB_TIMEGM''@/0/g' \
+      -e 's/@''GNULIB_TIME_R''@/0/g' \
+      -e 's|@''HAVE_DECL_LOCALTIME_R''@|1|g' \
+      -e 's|@''HAVE_NANOSLEEP''@|1|g' \
+      -e 's|@''HAVE_STRPTIME''@|1|g' \
+      -e 's|@''HAVE_TIMEGM''@|1|g' \
+      -e 's|@''REPLACE_GMTIME''@|0|g' \
+      -e 's|@''REPLACE_LOCALTIME''@|0|g' \
+      -e 's|@''REPLACE_LOCALTIME_R''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_MKTIME''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_NANOSLEEP''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''REPLACE_TIMEGM''@|GNULIB_PORTCHECK|g' \
+      -e 's|@''PTHREAD_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e 's|@''SYS_TIME_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e 's|@''TIME_H_DEFINES_STRUCT_TIMESPEC''@|1|g' \
+      -e 's|@''UNISTD_H_DEFINES_STRUCT_TIMESPEC''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./time.in.h; \
+} > time.h-t && \
+mv time.h-t time.h
+rm -f unistd.h-t unistd.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''HAVE_UNISTD_H''@|1|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_UNISTD_H''@|<unistd.h>|g' \
+      -e 's|@''WINDOWS_64_BIT_OFF_T''@|0|g' \
+      -e 's/@''GNULIB_CHDIR''@/1/g' \
+      -e 's/@''GNULIB_CHOWN''@/0/g' \
+      -e 's/@''GNULIB_CLOSE''@/1/g' \
+      -e 's/@''GNULIB_DUP''@/1/g' \
+      -e 's/@''GNULIB_DUP2''@/1/g' \
+      -e 's/@''GNULIB_DUP3''@/0/g' \
+      -e 's/@''GNULIB_ENVIRON''@/1/g' \
+      -e 's/@''GNULIB_EUIDACCESS''@/0/g' \
+      -e 's/@''GNULIB_FACCESSAT''@/0/g' \
+      -e 's/@''GNULIB_FCHDIR''@/1/g' \
+      -e 's/@''GNULIB_FCHOWNAT''@/0/g' \
+      -e 's/@''GNULIB_FDATASYNC''@/0/g' \
+      -e 's/@''GNULIB_FSYNC''@/0/g' \
+      -e 's/@''GNULIB_FTRUNCATE''@/0/g' \
+      -e 's/@''GNULIB_GETCWD''@/1/g' \
+      -e 's/@''GNULIB_GETDOMAINNAME''@/1/g' \
+      -e 's/@''GNULIB_GETDTABLESIZE''@/1/g' \
+      -e 's/@''GNULIB_GETGROUPS''@/1/g' \
+      -e 's/@''GNULIB_GETHOSTNAME''@/1/g' \
+      -e 's/@''GNULIB_GETLOGIN''@/0/g' \
+      -e 's/@''GNULIB_GETLOGIN_R''@/1/g' \
+      -e 's/@''GNULIB_GETPAGESIZE''@/0/g' \
+      -e 's/@''GNULIB_GETUSERSHELL''@/1/g' \
+      -e 's/@''GNULIB_GROUP_MEMBER''@/0/g' \
+      -e 's/@''GNULIB_ISATTY''@/0/g' \
+      -e 's/@''GNULIB_LCHOWN''@/0/g' \
+      -e 's/@''GNULIB_LINK''@/0/g' \
+      -e 's/@''GNULIB_LINKAT''@/0/g' \
+      -e 's/@''GNULIB_LSEEK''@/1/g' \
+      -e 's/@''GNULIB_PIPE''@/0/g' \
+      -e 's/@''GNULIB_PIPE2''@/0/g' \
+      -e 's/@''GNULIB_PREAD''@/0/g' \
+      -e 's/@''GNULIB_PWRITE''@/0/g' \
+      -e 's/@''GNULIB_READ''@/0/g' \
+      -e 's/@''GNULIB_READLINK''@/0/g' \
+      -e 's/@''GNULIB_READLINKAT''@/0/g' \
+      -e 's/@''GNULIB_RMDIR''@/0/g' \
+      -e 's/@''GNULIB_SETHOSTNAME''@/1/g' \
+      -e 's/@''GNULIB_SLEEP''@/1/g' \
+      -e 's/@''GNULIB_SYMLINK''@/0/g' \
+      -e 's/@''GNULIB_SYMLINKAT''@/0/g' \
+      -e 's/@''GNULIB_TTYNAME_R''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_GETOPT''@/01/g' \
+      -e 's/@''GNULIB_UNISTD_H_NONBLOCKING''@/0/g' \
+      -e 's/@''GNULIB_UNISTD_H_SIGPIPE''@/0/g' \
+      -e 's/@''GNULIB_UNLINK''@/0/g' \
+      -e 's/@''GNULIB_UNLINKAT''@/0/g' \
+      -e 's/@''GNULIB_USLEEP''@/0/g' \
+      -e 's/@''GNULIB_WRITE''@/0/g' \
+      < ./unistd.in.h | \
+  sed -e 's|@''HAVE_CHOWN''@|1|g' \
+      -e 's|@''HAVE_DUP2''@|1|g' \
+      -e 's|@''HAVE_DUP3''@|1|g' \
+      -e 's|@''HAVE_EUIDACCESS''@|1|g' \
+      -e 's|@''HAVE_FACCESSAT''@|1|g' \
+      -e 's|@''HAVE_FCHDIR''@|1|g' \
+      -e 's|@''HAVE_FCHOWNAT''@|1|g' \
+      -e 's|@''HAVE_FDATASYNC''@|1|g' \
+      -e 's|@''HAVE_FSYNC''@|1|g' \
+      -e 's|@''HAVE_FTRUNCATE''@|1|g' \
+      -e 's|@''HAVE_GETDTABLESIZE''@|1|g' \
+      -e 's|@''HAVE_GETGROUPS''@|1|g' \
+      -e 's|@''HAVE_GETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_GETLOGIN''@|1|g' \
+      -e 's|@''HAVE_GETPAGESIZE''@|1|g' \
+      -e 's|@''HAVE_GROUP_MEMBER''@|1|g' \
+      -e 's|@''HAVE_LCHOWN''@|1|g' \
+      -e 's|@''HAVE_LINK''@|1|g' \
+      -e 's|@''HAVE_LINKAT''@|1|g' \
+      -e 's|@''HAVE_PIPE''@|1|g' \
+      -e 's|@''HAVE_PIPE2''@|1|g' \
+      -e 's|@''HAVE_PREAD''@|1|g' \
+      -e 's|@''HAVE_PWRITE''@|1|g' \
+      -e 's|@''HAVE_READLINK''@|1|g' \
+      -e 's|@''HAVE_READLINKAT''@|1|g' \
+      -e 's|@''HAVE_SETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_SLEEP''@|1|g' \
+      -e 's|@''HAVE_SYMLINK''@|1|g' \
+      -e 's|@''HAVE_SYMLINKAT''@|1|g' \
+      -e 's|@''HAVE_UNLINKAT''@|1|g' \
+      -e 's|@''HAVE_USLEEP''@|1|g' \
+      -e 's|@''HAVE_DECL_ENVIRON''@|1|g' \
+      -e 's|@''HAVE_DECL_FCHDIR''@|1|g' \
+      -e 's|@''HAVE_DECL_FDATASYNC''@|1|g' \
+      -e 's|@''HAVE_DECL_GETDOMAINNAME''@|1|g' \
+      -e 's|@''HAVE_DECL_GETLOGIN_R''@|1|g' \
+      -e 's|@''HAVE_DECL_GETPAGESIZE''@|1|g' \
+      -e 's|@''HAVE_DECL_GETUSERSHELL''@|1|g' \
+      -e 's|@''HAVE_DECL_SETHOSTNAME''@|1|g' \
+      -e 's|@''HAVE_DECL_TTYNAME_R''@|1|g' \
+      -e 's|@''HAVE_OS_H''@|0|g' \
+      -e 's|@''HAVE_SYS_PARAM_H''@|0|g' \
+  | \
+  sed -e 's|@''REPLACE_CHOWN''@|0|g' \
+      -e 's|@''REPLACE_CLOSE''@|0|g' \
+      -e 's|@''REPLACE_DUP''@|0|g' \
+      -e 's|@''REPLACE_DUP2''@|0|g' \
+      -e 's|@''REPLACE_FCHOWNAT''@|0|g' \
+      -e 's|@''REPLACE_FTRUNCATE''@|0|g' \
+      -e 's|@''REPLACE_GETCWD''@|0|g' \
+      -e 's|@''REPLACE_GETDOMAINNAME''@|0|g' \
+      -e 's|@''REPLACE_GETDTABLESIZE''@|0|g' \
+      -e 's|@''REPLACE_GETLOGIN_R''@|0|g' \
+      -e 's|@''REPLACE_GETGROUPS''@|0|g' \
+      -e 's|@''REPLACE_GETPAGESIZE''@|0|g' \
+      -e 's|@''REPLACE_ISATTY''@|0|g' \
+      -e 's|@''REPLACE_LCHOWN''@|0|g' \
+      -e 's|@''REPLACE_LINK''@|0|g' \
+      -e 's|@''REPLACE_LINKAT''@|0|g' \
+      -e 's|@''REPLACE_LSEEK''@|0|g' \
+      -e 's|@''REPLACE_PREAD''@|0|g' \
+      -e 's|@''REPLACE_PWRITE''@|0|g' \
+      -e 's|@''REPLACE_READ''@|0|g' \
+      -e 's|@''REPLACE_READLINK''@|0|g' \
+      -e 's|@''REPLACE_READLINKAT''@|0|g' \
+      -e 's|@''REPLACE_RMDIR''@|0|g' \
+      -e 's|@''REPLACE_SLEEP''@|0|g' \
+      -e 's|@''REPLACE_SYMLINK''@|0|g' \
+      -e 's|@''REPLACE_SYMLINKAT''@|0|g' \
+      -e 's|@''REPLACE_TTYNAME_R''@|0|g' \
+      -e 's|@''REPLACE_UNLINK''@|0|g' \
+      -e 's|@''REPLACE_UNLINKAT''@|0|g' \
+      -e 's|@''REPLACE_USLEEP''@|0|g' \
+      -e 's|@''REPLACE_WRITE''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_WINSOCK2_H''@|0|g' \
+      -e 's|@''UNISTD_H_HAVE_WINSOCK2_H_AND_USE_SOCKETS''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+} > unistd.h-t && \
+mv unistd.h-t unistd.h
+rm -f wchar.h-t wchar.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''HAVE_FEATURES_H''@|1|g' \
+      -e 's|@''NEXT_WCHAR_H''@|<wchar.h>|g' \
+      -e 's|@''HAVE_WCHAR_H''@|1|g' \
+      -e 's/@''GNULIB_BTOWC''@/1/g' \
+      -e 's/@''GNULIB_WCTOB''@/0/g' \
+      -e 's/@''GNULIB_MBSINIT''@/1/g' \
+      -e 's/@''GNULIB_MBRTOWC''@/1/g' \
+      -e 's/@''GNULIB_MBRLEN''@/0/g' \
+      -e 's/@''GNULIB_MBSRTOWCS''@/1/g' \
+      -e 's/@''GNULIB_MBSNRTOWCS''@/0/g' \
+      -e 's/@''GNULIB_WCRTOMB''@/1/g' \
+      -e 's/@''GNULIB_WCSRTOMBS''@/0/g' \
+      -e 's/@''GNULIB_WCSNRTOMBS''@/0/g' \
+      -e 's/@''GNULIB_WCWIDTH''@/0/g' \
+      -e 's/@''GNULIB_WMEMCHR''@/0/g' \
+      -e 's/@''GNULIB_WMEMCMP''@/0/g' \
+      -e 's/@''GNULIB_WMEMCPY''@/0/g' \
+      -e 's/@''GNULIB_WMEMMOVE''@/0/g' \
+      -e 's/@''GNULIB_WMEMSET''@/0/g' \
+      -e 's/@''GNULIB_WCSLEN''@/0/g' \
+      -e 's/@''GNULIB_WCSNLEN''@/0/g' \
+      -e 's/@''GNULIB_WCSCPY''@/0/g' \
+      -e 's/@''GNULIB_WCPCPY''@/0/g' \
+      -e 's/@''GNULIB_WCSNCPY''@/0/g' \
+      -e 's/@''GNULIB_WCPNCPY''@/0/g' \
+      -e 's/@''GNULIB_WCSCAT''@/0/g' \
+      -e 's/@''GNULIB_WCSNCAT''@/0/g' \
+      -e 's/@''GNULIB_WCSCMP''@/0/g' \
+      -e 's/@''GNULIB_WCSNCMP''@/0/g' \
+      -e 's/@''GNULIB_WCSCASECMP''@/0/g' \
+      -e 's/@''GNULIB_WCSNCASECMP''@/0/g' \
+      -e 's/@''GNULIB_WCSCOLL''@/0/g' \
+      -e 's/@''GNULIB_WCSXFRM''@/0/g' \
+      -e 's/@''GNULIB_WCSDUP''@/0/g' \
+      -e 's/@''GNULIB_WCSCHR''@/0/g' \
+      -e 's/@''GNULIB_WCSRCHR''@/0/g' \
+      -e 's/@''GNULIB_WCSCSPN''@/0/g' \
+      -e 's/@''GNULIB_WCSSPN''@/0/g' \
+      -e 's/@''GNULIB_WCSPBRK''@/0/g' \
+      -e 's/@''GNULIB_WCSSTR''@/0/g' \
+      -e 's/@''GNULIB_WCSTOK''@/0/g' \
+      -e 's/@''GNULIB_WCSWIDTH''@/0/g' \
+      < ./wchar.in.h | \
+  sed -e 's|@''HAVE_WINT_T''@|1|g' \
+      -e 's|@''HAVE_BTOWC''@|1|g' \
+      -e 's|@''HAVE_MBSINIT''@|1|g' \
+      -e 's|@''HAVE_MBRTOWC''@|1|g' \
+      -e 's|@''HAVE_MBRLEN''@|1|g' \
+      -e 's|@''HAVE_MBSRTOWCS''@|1|g' \
+      -e 's|@''HAVE_MBSNRTOWCS''@|1|g' \
+      -e 's|@''HAVE_WCRTOMB''@|1|g' \
+      -e 's|@''HAVE_WCSRTOMBS''@|1|g' \
+      -e 's|@''HAVE_WCSNRTOMBS''@|1|g' \
+      -e 's|@''HAVE_WMEMCHR''@|1|g' \
+      -e 's|@''HAVE_WMEMCMP''@|1|g' \
+      -e 's|@''HAVE_WMEMCPY''@|1|g' \
+      -e 's|@''HAVE_WMEMMOVE''@|1|g' \
+      -e 's|@''HAVE_WMEMSET''@|1|g' \
+      -e 's|@''HAVE_WCSLEN''@|1|g' \
+      -e 's|@''HAVE_WCSNLEN''@|1|g' \
+      -e 's|@''HAVE_WCSCPY''@|1|g' \
+      -e 's|@''HAVE_WCPCPY''@|1|g' \
+      -e 's|@''HAVE_WCSNCPY''@|1|g' \
+      -e 's|@''HAVE_WCPNCPY''@|1|g' \
+      -e 's|@''HAVE_WCSCAT''@|1|g' \
+      -e 's|@''HAVE_WCSNCAT''@|1|g' \
+      -e 's|@''HAVE_WCSCMP''@|1|g' \
+      -e 's|@''HAVE_WCSNCMP''@|1|g' \
+      -e 's|@''HAVE_WCSCASECMP''@|1|g' \
+      -e 's|@''HAVE_WCSNCASECMP''@|1|g' \
+      -e 's|@''HAVE_WCSCOLL''@|1|g' \
+      -e 's|@''HAVE_WCSXFRM''@|1|g' \
+      -e 's|@''HAVE_WCSDUP''@|1|g' \
+      -e 's|@''HAVE_WCSCHR''@|1|g' \
+      -e 's|@''HAVE_WCSRCHR''@|1|g' \
+      -e 's|@''HAVE_WCSCSPN''@|1|g' \
+      -e 's|@''HAVE_WCSSPN''@|1|g' \
+      -e 's|@''HAVE_WCSPBRK''@|1|g' \
+      -e 's|@''HAVE_WCSSTR''@|1|g' \
+      -e 's|@''HAVE_WCSTOK''@|1|g' \
+      -e 's|@''HAVE_WCSWIDTH''@|1|g' \
+      -e 's|@''HAVE_DECL_WCTOB''@|1|g' \
+      -e 's|@''HAVE_DECL_WCWIDTH''@|1|g' \
+  | \
+  sed -e 's|@''REPLACE_MBSTATE_T''@|0|g' \
+      -e 's|@''REPLACE_BTOWC''@|0|g' \
+      -e 's|@''REPLACE_WCTOB''@|0|g' \
+      -e 's|@''REPLACE_MBSINIT''@|0|g' \
+      -e 's|@''REPLACE_MBRTOWC''@|0|g' \
+      -e 's|@''REPLACE_MBRLEN''@|0|g' \
+      -e 's|@''REPLACE_MBSRTOWCS''@|0|g' \
+      -e 's|@''REPLACE_MBSNRTOWCS''@|0|g' \
+      -e 's|@''REPLACE_WCRTOMB''@|0|g' \
+      -e 's|@''REPLACE_WCSRTOMBS''@|0|g' \
+      -e 's|@''REPLACE_WCSNRTOMBS''@|0|g' \
+      -e 's|@''REPLACE_WCWIDTH''@|0|g' \
+      -e 's|@''REPLACE_WCSWIDTH''@|0|g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_ARG_NONNULL/r arg-nonnull.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h'; \
+} > wchar.h-t && \
+mv wchar.h-t wchar.h
+rm -f wctype.h-t wctype.h && \
+{ echo '/* DO NOT EDIT! GENERATED AUTOMATICALLY! */'; \
+  sed -e 's|@''GUARD_PREFIX''@|GL|g' \
+      -e 's/@''HAVE_WCTYPE_H''@/1/g' \
+      -e 's|@''INCLUDE_NEXT''@|include_next|g' \
+      -e 's|@''PRAGMA_SYSTEM_HEADER''@|#pragma GCC system_header|g' \
+      -e 's|@''PRAGMA_COLUMNS''@||g' \
+      -e 's|@''NEXT_WCTYPE_H''@|<wctype.h>|g' \
+      -e 's/@''GNULIB_ISWBLANK''@/0/g' \
+      -e 's/@''GNULIB_WCTYPE''@/0/g' \
+      -e 's/@''GNULIB_ISWCTYPE''@/0/g' \
+      -e 's/@''GNULIB_WCTRANS''@/0/g' \
+      -e 's/@''GNULIB_TOWCTRANS''@/0/g' \
+      -e 's/@''HAVE_ISWBLANK''@/1/g' \
+      -e 's/@''HAVE_ISWCNTRL''@/1/g' \
+      -e 's/@''HAVE_WCTYPE_T''@/1/g' \
+      -e 's/@''HAVE_WCTRANS_T''@/1/g' \
+      -e 's/@''HAVE_WINT_T''@/1/g' \
+      -e 's/@''REPLACE_ISWBLANK''@/0/g' \
+      -e 's/@''REPLACE_ISWCNTRL''@/0/g' \
+      -e 's/@''REPLACE_TOWLOWER''@/0/g' \
+      -e '/definitions of _GL_FUNCDECL_RPL/r c++defs.h' \
+      -e '/definition of _GL_WARN_ON_USE/r warn-on-use.h' \
+      < ./wctype.in.h; \
+} > wctype.h-t && \
+mv wctype.h-t wctype.h
+make  all-recursive
+make[3]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/lib'
+make[4]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/lib'
+depbase=`echo argp-ba.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT argp-ba.o -MD -MP -MF $depbase.Tpo -c -o argp-ba.o argp-ba.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo argp-eexst.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT argp-eexst.o -MD -MP -MF $depbase.Tpo -c -o argp-eexst.o argp-eexst.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo argp-fmtstream.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT argp-fmtstream.o -MD -MP -MF $depbase.Tpo -c -o argp-fmtstream.o argp-fmtstream.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo argp-fs-xinl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT argp-fs-xinl.o -MD -MP -MF $depbase.Tpo -c -o argp-fs-xinl.o argp-fs-xinl.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo argp-help.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT argp-help.o -MD -MP -MF $depbase.Tpo -c -o argp-help.o argp-help.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo argp-parse.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT argp-parse.o -MD -MP -MF $depbase.Tpo -c -o argp-parse.o argp-parse.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo argp-pin.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT argp-pin.o -MD -MP -MF $depbase.Tpo -c -o argp-pin.o argp-pin.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo argp-pv.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT argp-pv.o -MD -MP -MF $depbase.Tpo -c -o argp-pv.o argp-pv.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo argp-pvh.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT argp-pvh.o -MD -MP -MF $depbase.Tpo -c -o argp-pvh.o argp-pvh.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo argp-xinl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT argp-xinl.o -MD -MP -MF $depbase.Tpo -c -o argp-xinl.o argp-xinl.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo argp-version-etc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT argp-version-etc.o -MD -MP -MF $depbase.Tpo -c -o argp-version-etc.o argp-version-etc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo cloexec.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT cloexec.o -MD -MP -MF $depbase.Tpo -c -o cloexec.o cloexec.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo dirname-lgpl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT dirname-lgpl.o -MD -MP -MF $depbase.Tpo -c -o dirname-lgpl.o dirname-lgpl.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo basename-lgpl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT basename-lgpl.o -MD -MP -MF $depbase.Tpo -c -o basename-lgpl.o basename-lgpl.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo stripslash.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT stripslash.o -MD -MP -MF $depbase.Tpo -c -o stripslash.o stripslash.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo exitfail.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT exitfail.o -MD -MP -MF $depbase.Tpo -c -o exitfail.o exitfail.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo fd-hook.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT fd-hook.o -MD -MP -MF $depbase.Tpo -c -o fd-hook.o fd-hook.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo filemode.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT filemode.o -MD -MP -MF $depbase.Tpo -c -o filemode.o filemode.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo filenamecat-lgpl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT filenamecat-lgpl.o -MD -MP -MF $depbase.Tpo -c -o filenamecat-lgpl.o filenamecat-lgpl.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo fopen-safer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT fopen-safer.o -MD -MP -MF $depbase.Tpo -c -o fopen-safer.o fopen-safer.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo getugroups.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT getugroups.o -MD -MP -MF $depbase.Tpo -c -o getugroups.o getugroups.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo imaxtostr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT imaxtostr.o -MD -MP -MF $depbase.Tpo -c -o imaxtostr.o imaxtostr.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo inttostr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT inttostr.o -MD -MP -MF $depbase.Tpo -c -o inttostr.o inttostr.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo offtostr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT offtostr.o -MD -MP -MF $depbase.Tpo -c -o offtostr.o offtostr.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo uinttostr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT uinttostr.o -MD -MP -MF $depbase.Tpo -c -o uinttostr.o uinttostr.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo umaxtostr.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT umaxtostr.o -MD -MP -MF $depbase.Tpo -c -o umaxtostr.o umaxtostr.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo localcharset.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT localcharset.o -MD -MP -MF $depbase.Tpo -c -o localcharset.o localcharset.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo glthread/lock.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT glthread/lock.o -MD -MP -MF $depbase.Tpo -c -o glthread/lock.o glthread/lock.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo malloca.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT malloca.o -MD -MP -MF $depbase.Tpo -c -o malloca.o malloca.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo mgetgroups.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT mgetgroups.o -MD -MP -MF $depbase.Tpo -c -o mgetgroups.o mgetgroups.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo openat-die.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT openat-die.o -MD -MP -MF $depbase.Tpo -c -o openat-die.o openat-die.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo progname.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT progname.o -MD -MP -MF $depbase.Tpo -c -o progname.o progname.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo read-file.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT read-file.o -MD -MP -MF $depbase.Tpo -c -o read-file.o read-file.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo save-cwd.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT save-cwd.o -MD -MP -MF $depbase.Tpo -c -o save-cwd.o save-cwd.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo sockets.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT sockets.o -MD -MP -MF $depbase.Tpo -c -o sockets.o sockets.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo strnlen1.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT strnlen1.o -MD -MP -MF $depbase.Tpo -c -o strnlen1.o strnlen1.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo sys_socket.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT sys_socket.o -MD -MP -MF $depbase.Tpo -c -o sys_socket.o sys_socket.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo tempname.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT tempname.o -MD -MP -MF $depbase.Tpo -c -o tempname.o tempname.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo glthread/threadlib.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT glthread/threadlib.o -MD -MP -MF $depbase.Tpo -c -o glthread/threadlib.o glthread/threadlib.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo unistd.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT unistd.o -MD -MP -MF $depbase.Tpo -c -o unistd.o unistd.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo dup-safer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT dup-safer.o -MD -MP -MF $depbase.Tpo -c -o dup-safer.o dup-safer.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo fd-safer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT fd-safer.o -MD -MP -MF $depbase.Tpo -c -o fd-safer.o fd-safer.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo pipe-safer.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT pipe-safer.o -MD -MP -MF $depbase.Tpo -c -o pipe-safer.o pipe-safer.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo version-etc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT version-etc.o -MD -MP -MF $depbase.Tpo -c -o version-etc.o version-etc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo version-etc-fsf.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT version-etc-fsf.o -MD -MP -MF $depbase.Tpo -c -o version-etc-fsf.o version-etc-fsf.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo wctype-h.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT wctype-h.o -MD -MP -MF $depbase.Tpo -c -o wctype-h.o wctype-h.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo xmalloc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT xmalloc.o -MD -MP -MF $depbase.Tpo -c -o xmalloc.o xmalloc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo xalloc-die.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT xalloc-die.o -MD -MP -MF $depbase.Tpo -c -o xalloc-die.o xalloc-die.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo xgetcwd.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT xgetcwd.o -MD -MP -MF $depbase.Tpo -c -o xgetcwd.o xgetcwd.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo xgetdomainname.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT xgetdomainname.o -MD -MP -MF $depbase.Tpo -c -o xgetdomainname.o xgetdomainname.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo xgethostname.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT xgethostname.o -MD -MP -MF $depbase.Tpo -c -o xgethostname.o xgethostname.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo xsize.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT xsize.o -MD -MP -MF $depbase.Tpo -c -o xsize.o xsize.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo xvasprintf.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT xvasprintf.o -MD -MP -MF $depbase.Tpo -c -o xvasprintf.o xvasprintf.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo xasprintf.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT xasprintf.o -MD -MP -MF $depbase.Tpo -c -o xasprintf.o xasprintf.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo asnprintf.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT asnprintf.o -MD -MP -MF $depbase.Tpo -c -o asnprintf.o asnprintf.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo chdir-long.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT chdir-long.o -MD -MP -MF $depbase.Tpo -c -o chdir-long.o chdir-long.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo fcntl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT fcntl.o -MD -MP -MF $depbase.Tpo -c -o fcntl.o fcntl.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo getopt.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT getopt.o -MD -MP -MF $depbase.Tpo -c -o getopt.o getopt.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo getopt1.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT getopt1.o -MD -MP -MF $depbase.Tpo -c -o getopt1.o getopt1.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo glob.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT glob.o -MD -MP -MF $depbase.Tpo -c -o glob.o glob.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo ioctl.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT ioctl.o -MD -MP -MF $depbase.Tpo -c -o ioctl.o ioctl.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo obstack.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT obstack.o -MD -MP -MF $depbase.Tpo -c -o obstack.o obstack.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo openat-proc.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT openat-proc.o -MD -MP -MF $depbase.Tpo -c -o openat-proc.o openat-proc.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo printf-args.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT printf-args.o -MD -MP -MF $depbase.Tpo -c -o printf-args.o printf-args.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo printf-parse.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT printf-parse.o -MD -MP -MF $depbase.Tpo -c -o printf-parse.o printf-parse.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo readutmp.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT readutmp.o -MD -MP -MF $depbase.Tpo -c -o readutmp.o readutmp.c &&\
+mv -f $depbase.Tpo $depbase.Po
+depbase=`echo vasnprintf.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT vasnprintf.o -MD -MP -MF $depbase.Tpo -c -o vasnprintf.o vasnprintf.c &&\
+mv -f $depbase.Tpo $depbase.Po
+rm -f libgnu.a
+ar cru libgnu.a argp-ba.o argp-eexst.o argp-fmtstream.o argp-fs-xinl.o argp-help.o argp-parse.o argp-pin.o argp-pv.o argp-pvh.o argp-xinl.o argp-version-etc.o cloexec.o dirname-lgpl.o basename-lgpl.o stripslash.o exitfail.o fd-hook.o filemode.o filenamecat-lgpl.o fopen-safer.o getugroups.o imaxtostr.o inttostr.o offtostr.o uinttostr.o umaxtostr.o localcharset.o glthread/lock.o malloca.o mgetgroups.o openat-die.o progname.o read-file.o save-cwd.o sockets.o strnlen1.o sys_socket.o tempname.o glthread/threadlib.o unistd.o dup-safer.o fd-safer.o pipe-safer.o version-etc.o version-etc-fsf.o wctype-h.o xmalloc.o xalloc-die.o xgetcwd.o xgetdomainname.o xgethostname.o xsize.o xvasprintf.o xasprintf.o asnprintf.o chdir-long.o fcntl.o getopt.o getopt1.o glob.o ioctl.o obstack.o openat-proc.o printf-args.o printf-parse.o readutmp.o vasnprintf.o 
+ranlib libgnu.a
+rm -f t-charset.alias charset.alias && \
+/bin/bash ./config.charset 'x86_64-unknown-linux-gnu' > t-charset.alias && \
+mv t-charset.alias charset.alias
+rm -f t-ref-add.sed ref-add.sed && \
+sed -e '/^#/d' -e 's/@''PACKAGE''@/inetutils/g' ref-add.sin > t-ref-add.sed && \
+mv t-ref-add.sed ref-add.sed
+rm -f t-ref-del.sed ref-del.sed && \
+sed -e '/^#/d' -e 's/@''PACKAGE''@/inetutils/g' ref-del.sin > t-ref-del.sed && \
+mv t-ref-del.sed ref-del.sed
+make[4]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/lib'
+make[3]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/lib'
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/lib'
+Making all in libinetutils
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/libinetutils'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils        -fPIC -MT argcv.o -MD -MP -MF .deps/argcv.Tpo -c -o argcv.o argcv.c
+mv -f .deps/argcv.Tpo .deps/argcv.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils        -fPIC -MT cleansess.o -MD -MP -MF .deps/cleansess.Tpo -c -o cleansess.o cleansess.c
+mv -f .deps/cleansess.Tpo .deps/cleansess.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils        -fPIC -MT daemon.o -MD -MP -MF .deps/daemon.Tpo -c -o daemon.o daemon.c
+mv -f .deps/daemon.Tpo .deps/daemon.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils        -fPIC -MT defauthors.o -MD -MP -MF .deps/defauthors.Tpo -c -o defauthors.o defauthors.c
+mv -f .deps/defauthors.Tpo .deps/defauthors.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils        -fPIC -MT if_index.o -MD -MP -MF .deps/if_index.Tpo -c -o if_index.o if_index.c
+mv -f .deps/if_index.Tpo .deps/if_index.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils        -fPIC -MT kcmd.o -MD -MP -MF .deps/kcmd.Tpo -c -o kcmd.o kcmd.c
+mv -f .deps/kcmd.Tpo .deps/kcmd.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils        -fPIC -MT kerberos5.o -MD -MP -MF .deps/kerberos5.Tpo -c -o kerberos5.o kerberos5.c
+mv -f .deps/kerberos5.Tpo .deps/kerberos5.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils        -fPIC -MT krcmd.o -MD -MP -MF .deps/krcmd.Tpo -c -o krcmd.o krcmd.c
+mv -f .deps/krcmd.Tpo .deps/krcmd.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils        -fPIC -MT localhost.o -MD -MP -MF .deps/localhost.Tpo -c -o localhost.o localhost.c
+mv -f .deps/localhost.Tpo .deps/localhost.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils        -fPIC -MT logwtmpko.o -MD -MP -MF .deps/logwtmpko.Tpo -c -o logwtmpko.o logwtmpko.c
+mv -f .deps/logwtmpko.Tpo .deps/logwtmpko.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils        -fPIC -MT setsig.o -MD -MP -MF .deps/setsig.Tpo -c -o setsig.o setsig.c
+mv -f .deps/setsig.Tpo .deps/setsig.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils        -fPIC -MT shishi.o -MD -MP -MF .deps/shishi.Tpo -c -o shishi.o shishi.c
+mv -f .deps/shishi.Tpo .deps/shishi.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils        -fPIC -MT tftpsubs.o -MD -MP -MF .deps/tftpsubs.Tpo -c -o tftpsubs.o tftpsubs.c
+mv -f .deps/tftpsubs.Tpo .deps/tftpsubs.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils        -fPIC -MT ttymsg.o -MD -MP -MF .deps/ttymsg.Tpo -c -o ttymsg.o ttymsg.c
+mv -f .deps/ttymsg.Tpo .deps/ttymsg.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils        -fPIC -MT utmp_init.o -MD -MP -MF .deps/utmp_init.Tpo -c -o utmp_init.o utmp_init.c
+mv -f .deps/utmp_init.Tpo .deps/utmp_init.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils        -fPIC -MT utmp_logout.o -MD -MP -MF .deps/utmp_logout.Tpo -c -o utmp_logout.o utmp_logout.c
+mv -f .deps/utmp_logout.Tpo .deps/utmp_logout.Po
+rm -f libinetutils.a
+ar cru libinetutils.a argcv.o cleansess.o daemon.o defauthors.o if_index.o kcmd.o kerberos5.o krcmd.o localhost.o logwtmpko.o setsig.o shishi.o tftpsubs.o ttymsg.o utmp_init.o utmp_logout.o 
+ranlib libinetutils.a
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/libinetutils'
+Making all in libtelnet
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/libtelnet'
+gcc -DHAVE_CONFIG_H -I. -I..   -I../lib -I../lib -I../libinetutils   -fPIC -MT auth.o -MD -MP -MF .deps/auth.Tpo -c -o auth.o auth.c
+mv -f .deps/auth.Tpo .deps/auth.Po
+gcc -DHAVE_CONFIG_H -I. -I..   -I../lib -I../lib -I../libinetutils   -fPIC -MT enc_des.o -MD -MP -MF .deps/enc_des.Tpo -c -o enc_des.o enc_des.c
+mv -f .deps/enc_des.Tpo .deps/enc_des.Po
+gcc -DHAVE_CONFIG_H -I. -I..   -I../lib -I../lib -I../libinetutils   -fPIC -MT encrypt.o -MD -MP -MF .deps/encrypt.Tpo -c -o encrypt.o encrypt.c
+mv -f .deps/encrypt.Tpo .deps/encrypt.Po
+gcc -DHAVE_CONFIG_H -I. -I..   -I../lib -I../lib -I../libinetutils   -fPIC -MT forward.o -MD -MP -MF .deps/forward.Tpo -c -o forward.o forward.c
+mv -f .deps/forward.Tpo .deps/forward.Po
+gcc -DHAVE_CONFIG_H -I. -I..   -I../lib -I../lib -I../libinetutils   -fPIC -MT genget.o -MD -MP -MF .deps/genget.Tpo -c -o genget.o genget.c
+mv -f .deps/genget.Tpo .deps/genget.Po
+gcc -DHAVE_CONFIG_H -I. -I..   -I../lib -I../lib -I../libinetutils   -fPIC -MT kerberos.o -MD -MP -MF .deps/kerberos.Tpo -c -o kerberos.o kerberos.c
+mv -f .deps/kerberos.Tpo .deps/kerberos.Po
+gcc -DHAVE_CONFIG_H -I. -I..   -I../lib -I../lib -I../libinetutils   -fPIC -MT kerberos5.o -MD -MP -MF .deps/kerberos5.Tpo -c -o kerberos5.o kerberos5.c
+mv -f .deps/kerberos5.Tpo .deps/kerberos5.Po
+gcc -DHAVE_CONFIG_H -I. -I..   -I../lib -I../lib -I../libinetutils   -fPIC -MT misc.o -MD -MP -MF .deps/misc.Tpo -c -o misc.o misc.c
+mv -f .deps/misc.Tpo .deps/misc.Po
+gcc -DHAVE_CONFIG_H -I. -I..   -I../lib -I../lib -I../libinetutils   -fPIC -MT read_passwd.o -MD -MP -MF .deps/read_passwd.Tpo -c -o read_passwd.o read_passwd.c
+mv -f .deps/read_passwd.Tpo .deps/read_passwd.Po
+gcc -DHAVE_CONFIG_H -I. -I..   -I../lib -I../lib -I../libinetutils   -fPIC -MT shishi.o -MD -MP -MF .deps/shishi.Tpo -c -o shishi.o shishi.c
+mv -f .deps/shishi.Tpo .deps/shishi.Po
+rm -f libtelnet.a
+ar cru libtelnet.a auth.o enc_des.o encrypt.o forward.o genget.o kerberos.o kerberos5.o misc.o read_passwd.o shishi.o 
+ranlib libtelnet.a
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/libtelnet'
+Making all in libicmp
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/libicmp'
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT icmp_echo.o -MD -MP -MF .deps/icmp_echo.Tpo -c -o icmp_echo.o icmp_echo.c
+mv -f .deps/icmp_echo.Tpo .deps/icmp_echo.Po
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT icmp_timestamp.o -MD -MP -MF .deps/icmp_timestamp.Tpo -c -o icmp_timestamp.o icmp_timestamp.c
+mv -f .deps/icmp_timestamp.Tpo .deps/icmp_timestamp.Po
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT icmp_address.o -MD -MP -MF .deps/icmp_address.Tpo -c -o icmp_address.o icmp_address.c
+mv -f .deps/icmp_address.Tpo .deps/icmp_address.Po
+gcc -DHAVE_CONFIG_H -I. -I..     -fPIC -MT icmp_cksum.o -MD -MP -MF .deps/icmp_cksum.Tpo -c -o icmp_cksum.o icmp_cksum.c
+mv -f .deps/icmp_cksum.Tpo .deps/icmp_cksum.Po
+rm -f libicmp.a
+ar cru libicmp.a icmp_echo.o icmp_timestamp.o icmp_address.o icmp_cksum.o 
+ranlib libicmp.a
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/libicmp'
+Making all in libls
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/libls'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -fPIC -MT cmp.o -MD -MP -MF .deps/cmp.Tpo -c -o cmp.o cmp.c
+mv -f .deps/cmp.Tpo .deps/cmp.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -fPIC -MT stat_flags.o -MD -MP -MF .deps/stat_flags.Tpo -c -o stat_flags.o stat_flags.c
+mv -f .deps/stat_flags.Tpo .deps/stat_flags.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -fPIC -MT ls.o -MD -MP -MF .deps/ls.Tpo -c -o ls.o ls.c
+mv -f .deps/ls.Tpo .deps/ls.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -fPIC -MT print.o -MD -MP -MF .deps/print.Tpo -c -o print.o print.c
+mv -f .deps/print.Tpo .deps/print.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -fPIC -MT util.o -MD -MP -MF .deps/util.Tpo -c -o util.o util.c
+mv -f .deps/util.Tpo .deps/util.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -fPIC -MT fts.o -MD -MP -MF .deps/fts.Tpo -c -o fts.o fts.c
+mv -f .deps/fts.Tpo .deps/fts.Po
+rm -f libls.a
+ar cru libls.a cmp.o stat_flags.o ls.o print.o util.o fts.o 
+ranlib libls.a
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/libls'
+Making all in src
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/src'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGCONFD=\"/usr/local/etc/syslog.d\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"     -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT hostname.o -MD -MP -MF .deps/hostname.Tpo -c -o hostname.o hostname.c
+mv -f .deps/hostname.Tpo .deps/hostname.Po
+gcc  -fPIC   -o hostname hostname.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lutil  
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGCONFD=\"/usr/local/etc/syslog.d\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"     -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT dnsdomainname.o -MD -MP -MF .deps/dnsdomainname.Tpo -c -o dnsdomainname.o dnsdomainname.c
+mv -f .deps/dnsdomainname.Tpo .deps/dnsdomainname.Po
+gcc  -fPIC   -o dnsdomainname dnsdomainname.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lutil 
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGCONFD=\"/usr/local/etc/syslog.d\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"     -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT logger.o -MD -MP -MF .deps/logger.Tpo -c -o logger.o logger.c
+mv -f .deps/logger.Tpo .deps/logger.Po
+gcc  -fPIC   -o logger logger.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lutil 
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGCONFD=\"/usr/local/etc/syslog.d\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"     -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT rcp.o -MD -MP -MF .deps/rcp.Tpo -c -o rcp.o rcp.c
+mv -f .deps/rcp.Tpo .deps/rcp.Po
+gcc  -fPIC   -o rcp rcp.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lutil  
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGCONFD=\"/usr/local/etc/syslog.d\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"     -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT rexec.o -MD -MP -MF .deps/rexec.Tpo -c -o rexec.o rexec.c
+mv -f .deps/rexec.Tpo .deps/rexec.Po
+gcc  -fPIC   -o rexec rexec.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lutil 
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGCONFD=\"/usr/local/etc/syslog.d\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"     -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT rlogin.o -MD -MP -MF .deps/rlogin.Tpo -c -o rlogin.o rlogin.c
+mv -f .deps/rlogin.Tpo .deps/rlogin.Po
+gcc  -fPIC   -o rlogin rlogin.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lutil  
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGCONFD=\"/usr/local/etc/syslog.d\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"     -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT rsh.o -MD -MP -MF .deps/rsh.Tpo -c -o rsh.o rsh.c
+mv -f .deps/rsh.Tpo .deps/rsh.Po
+gcc  -fPIC   -o rsh rsh.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lutil  
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGCONFD=\"/usr/local/etc/syslog.d\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"     -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT tftp.o -MD -MP -MF .deps/tftp.Tpo -c -o tftp.o tftp.c
+mv -f .deps/tftp.Tpo .deps/tftp.Po
+gcc  -fPIC   -o tftp tftp.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lutil  
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGCONFD=\"/usr/local/etc/syslog.d\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"     -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT traceroute.o -MD -MP -MF .deps/traceroute.Tpo -c -o traceroute.o traceroute.c
+mv -f .deps/traceroute.Tpo .deps/traceroute.Po
+gcc  -fPIC   -o traceroute traceroute.o ../libicmp/libicmp.a ../libinetutils/libinetutils.a ../lib/libgnu.a -lutil  
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGCONFD=\"/usr/local/etc/syslog.d\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"     -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT inetd.o -MD -MP -MF .deps/inetd.Tpo -c -o inetd.o inetd.c
+mv -f .deps/inetd.Tpo .deps/inetd.Po
+gcc  -fPIC   -o inetd inetd.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lutil 
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGCONFD=\"/usr/local/etc/syslog.d\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"     -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT rexecd.o -MD -MP -MF .deps/rexecd.Tpo -c -o rexecd.o rexecd.c
+mv -f .deps/rexecd.Tpo .deps/rexecd.Po
+gcc  -fPIC   -o rexecd rexecd.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lutil -lcrypt   
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGCONFD=\"/usr/local/etc/syslog.d\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"     -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT rlogind.o -MD -MP -MF .deps/rlogind.Tpo -c -o rlogind.o rlogind.c
+mv -f .deps/rlogind.Tpo .deps/rlogind.Po
+gcc  -fPIC   -o rlogind rlogind.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lutil     
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGCONFD=\"/usr/local/etc/syslog.d\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"     -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT rshd.o -MD -MP -MF .deps/rshd.Tpo -c -o rshd.o rshd.c
+mv -f .deps/rshd.Tpo .deps/rshd.Po
+gcc  -fPIC   -o rshd rshd.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lutil    
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGCONFD=\"/usr/local/etc/syslog.d\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"     -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT syslogd.o -MD -MP -MF .deps/syslogd.Tpo -c -o syslogd.o syslogd.c
+mv -f .deps/syslogd.Tpo .deps/syslogd.Po
+gcc  -fPIC   -o syslogd syslogd.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lutil 
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGCONFD=\"/usr/local/etc/syslog.d\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"     -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT tftpd.o -MD -MP -MF .deps/tftpd.Tpo -c -o tftpd.o tftpd.c
+mv -f .deps/tftpd.Tpo .deps/tftpd.Po
+gcc  -fPIC   -o tftpd tftpd.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lutil 
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -I../libicmp   -DPATH_CP=\"/bin/cp\"   -DPATH_INETDCONF=\"/usr/local/etc/inetd.conf\" -DPATH_INETDDIR=\"/usr/local/etc/inetd.d\" -DPATH_INETDPID=\"/usr/local/var/run/inetd.pid\"   -DPATH_LOGCONF=\"/usr/local/etc/syslog.conf\" -DPATH_LOGCONFD=\"/usr/local/etc/syslog.d\" -DPATH_LOGIN=\"/bin/login\" -DPATH_LOGPID=\"/usr/local/var/run/syslog.pid\"  -DPATH_RLOGIN=\"/usr/local/bin/rlogin\" -DPATH_RSH=\"/usr/local/bin/rsh\"     -DPATH_UUCICO=\"/usr/local/libexec/uucp/uucico\"   -fPIC -MT uucpd.o -MD -MP -MF .deps/uucpd.Tpo -c -o uucpd.o uucpd.c
+mv -f .deps/uucpd.Tpo .deps/uucpd.Po
+gcc  -fPIC   -o uucpd uucpd.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lutil -lcrypt 
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/src'
+Making all in telnet
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/telnet'
+gcc -DHAVE_CONFIG_H -I. -I..  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK  -I../lib -I../lib -I../libinetutils -I..     -fPIC -MT authenc.o -MD -MP -MF .deps/authenc.Tpo -c -o authenc.o authenc.c
+mv -f .deps/authenc.Tpo .deps/authenc.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK  -I../lib -I../lib -I../libinetutils -I..     -fPIC -MT commands.o -MD -MP -MF .deps/commands.Tpo -c -o commands.o commands.c
+mv -f .deps/commands.Tpo .deps/commands.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK  -I../lib -I../lib -I../libinetutils -I..     -fPIC -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c
+mv -f .deps/main.Tpo .deps/main.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK  -I../lib -I../lib -I../libinetutils -I..     -fPIC -MT network.o -MD -MP -MF .deps/network.Tpo -c -o network.o network.c
+mv -f .deps/network.Tpo .deps/network.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK  -I../lib -I../lib -I../libinetutils -I..     -fPIC -MT ring.o -MD -MP -MF .deps/ring.Tpo -c -o ring.o ring.c
+mv -f .deps/ring.Tpo .deps/ring.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK  -I../lib -I../lib -I../libinetutils -I..     -fPIC -MT sys_bsd.o -MD -MP -MF .deps/sys_bsd.Tpo -c -o sys_bsd.o sys_bsd.c
+mv -f .deps/sys_bsd.Tpo .deps/sys_bsd.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK  -I../lib -I../lib -I../libinetutils -I..     -fPIC -MT telnet.o -MD -MP -MF .deps/telnet.Tpo -c -o telnet.o telnet.c
+mv -f .deps/telnet.Tpo .deps/telnet.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK  -I../lib -I../lib -I../libinetutils -I..     -fPIC -MT terminal.o -MD -MP -MF .deps/terminal.Tpo -c -o terminal.o terminal.c
+mv -f .deps/terminal.Tpo .deps/terminal.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK  -I../lib -I../lib -I../libinetutils -I..     -fPIC -MT tn3270.o -MD -MP -MF .deps/tn3270.Tpo -c -o tn3270.o tn3270.c
+mv -f .deps/tn3270.Tpo .deps/tn3270.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -DTERMCAP -DLINEMODE -DKLUDGELINEMODE -DENV_HACK  -I../lib -I../lib -I../libinetutils -I..     -fPIC -MT utilities.o -MD -MP -MF .deps/utilities.Tpo -c -o utilities.o utilities.c
+mv -f .deps/utilities.Tpo .deps/utilities.Po
+gcc  -fPIC   -o telnet authenc.o commands.o main.o network.o ring.o sys_bsd.o telnet.o terminal.o tn3270.o utilities.o ../libtelnet/libtelnet.a ../libinetutils/libinetutils.a ../lib/libgnu.a -ltermcap -lcrypt   
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/telnet'
+Making all in telnetd
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/telnetd'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -I..      -DPATH_LOGIN=\"/bin/login\"   -fPIC -MT telnetd.o -MD -MP -MF .deps/telnetd.Tpo -c -o telnetd.o telnetd.c
+mv -f .deps/telnetd.Tpo .deps/telnetd.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -I..      -DPATH_LOGIN=\"/bin/login\"   -fPIC -MT pty.o -MD -MP -MF .deps/pty.Tpo -c -o pty.o pty.c
+mv -f .deps/pty.Tpo .deps/pty.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -I..      -DPATH_LOGIN=\"/bin/login\"   -fPIC -MT term.o -MD -MP -MF .deps/term.Tpo -c -o term.o term.c
+mv -f .deps/term.Tpo .deps/term.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -I..      -DPATH_LOGIN=\"/bin/login\"   -fPIC -MT utility.o -MD -MP -MF .deps/utility.Tpo -c -o utility.o utility.c
+mv -f .deps/utility.Tpo .deps/utility.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -I..      -DPATH_LOGIN=\"/bin/login\"   -fPIC -MT state.o -MD -MP -MF .deps/state.Tpo -c -o state.o state.c
+mv -f .deps/state.Tpo .deps/state.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -I..      -DPATH_LOGIN=\"/bin/login\"   -fPIC -MT termstat.o -MD -MP -MF .deps/termstat.Tpo -c -o termstat.o termstat.c
+mv -f .deps/termstat.Tpo .deps/termstat.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -I..      -DPATH_LOGIN=\"/bin/login\"   -fPIC -MT slc.o -MD -MP -MF .deps/slc.Tpo -c -o slc.o slc.c
+mv -f .deps/slc.Tpo .deps/slc.Po
+gcc  -fPIC   -o telnetd telnetd.o pty.o term.o utility.o state.o termstat.o slc.o ../libtelnet/libtelnet.a ../libinetutils/libinetutils.a ../lib/libgnu.a -ltermcap -lutil -lcrypt   
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/telnetd'
+Making all in ftp
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/ftp'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils      -fPIC -MT cmds.o -MD -MP -MF .deps/cmds.Tpo -c -o cmds.o cmds.c
+mv -f .deps/cmds.Tpo .deps/cmds.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils      -fPIC -MT cmdtab.o -MD -MP -MF .deps/cmdtab.Tpo -c -o cmdtab.o cmdtab.c
+mv -f .deps/cmdtab.Tpo .deps/cmdtab.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils      -fPIC -MT domacro.o -MD -MP -MF .deps/domacro.Tpo -c -o domacro.o domacro.c
+mv -f .deps/domacro.Tpo .deps/domacro.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils      -fPIC -MT ftp.o -MD -MP -MF .deps/ftp.Tpo -c -o ftp.o ftp.c
+mv -f .deps/ftp.Tpo .deps/ftp.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils      -fPIC -MT main.o -MD -MP -MF .deps/main.Tpo -c -o main.o main.c
+mv -f .deps/main.Tpo .deps/main.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils      -fPIC -MT ruserpass.o -MD -MP -MF .deps/ruserpass.Tpo -c -o ruserpass.o ruserpass.c
+mv -f .deps/ruserpass.Tpo .deps/ruserpass.Po
+gcc  -fPIC   -o ftp cmds.o cmdtab.o domacro.o ftp.o main.o ruserpass.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lreadline   
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/ftp'
+Making all in ftpd
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/ftpd'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"      -fPIC -MT ftpcmd.o -MD -MP -MF .deps/ftpcmd.Tpo -c -o ftpcmd.o ftpcmd.c
+mv -f .deps/ftpcmd.Tpo .deps/ftpcmd.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"      -fPIC -MT ftpd.o -MD -MP -MF .deps/ftpd.Tpo -c -o ftpd.o ftpd.c
+mv -f .deps/ftpd.Tpo .deps/ftpd.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"      -fPIC -MT popen.o -MD -MP -MF .deps/popen.Tpo -c -o popen.o popen.c
+mv -f .deps/popen.Tpo .deps/popen.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"      -fPIC -MT pam.o -MD -MP -MF .deps/pam.Tpo -c -o pam.o pam.c
+mv -f .deps/pam.Tpo .deps/pam.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"      -fPIC -MT auth.o -MD -MP -MF .deps/auth.Tpo -c -o auth.o auth.c
+mv -f .deps/auth.Tpo .deps/auth.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"      -fPIC -MT conf.o -MD -MP -MF .deps/conf.Tpo -c -o conf.o conf.c
+mv -f .deps/conf.Tpo .deps/conf.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -DPATH_FTPWELCOME=\"/usr/local/etc/ftpwelcome\" -DPATH_FTPUSERS=\"/usr/local/etc/ftpusers\" -DPATH_FTPLOGINMESG=\"/etc/motd\" -DPATH_FTPCHROOT=\"/usr/local/etc/ftpchroot\" -DPATH_FTPDPID=\"/usr/local/var/run/ftpd.pid\"      -fPIC -MT server_mode.o -MD -MP -MF .deps/server_mode.Tpo -c -o server_mode.o server_mode.c
+mv -f .deps/server_mode.Tpo .deps/server_mode.Po
+gcc  -fPIC   -o ftpd ftpcmd.o ftpd.o popen.o pam.o auth.o conf.o server_mode.o ../libls/libls.a ../libinetutils/libinetutils.a ../lib/libgnu.a -lcrypt    
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/ftpd'
+Making all in talk
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/talk'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils     -fPIC -MT ctl.o -MD -MP -MF .deps/ctl.Tpo -c -o ctl.o ctl.c
+mv -f .deps/ctl.Tpo .deps/ctl.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils     -fPIC -MT ctl_transact.o -MD -MP -MF .deps/ctl_transact.Tpo -c -o ctl_transact.o ctl_transact.c
+mv -f .deps/ctl_transact.Tpo .deps/ctl_transact.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils     -fPIC -MT display.o -MD -MP -MF .deps/display.Tpo -c -o display.o display.c
+mv -f .deps/display.Tpo .deps/display.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils     -fPIC -MT get_addrs.o -MD -MP -MF .deps/get_addrs.Tpo -c -o get_addrs.o get_addrs.c
+mv -f .deps/get_addrs.Tpo .deps/get_addrs.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils     -fPIC -MT get_names.o -MD -MP -MF .deps/get_names.Tpo -c -o get_names.o get_names.c
+mv -f .deps/get_names.Tpo .deps/get_names.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils     -fPIC -MT init_disp.o -MD -MP -MF .deps/init_disp.Tpo -c -o init_disp.o init_disp.c
+mv -f .deps/init_disp.Tpo .deps/init_disp.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils     -fPIC -MT invite.o -MD -MP -MF .deps/invite.Tpo -c -o invite.o invite.c
+mv -f .deps/invite.Tpo .deps/invite.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils     -fPIC -MT io.o -MD -MP -MF .deps/io.Tpo -c -o io.o io.c
+mv -f .deps/io.Tpo .deps/io.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils     -fPIC -MT look_up.o -MD -MP -MF .deps/look_up.Tpo -c -o look_up.o look_up.c
+mv -f .deps/look_up.Tpo .deps/look_up.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils     -fPIC -MT msgs.o -MD -MP -MF .deps/msgs.Tpo -c -o msgs.o msgs.c
+mv -f .deps/msgs.Tpo .deps/msgs.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils     -fPIC -MT talk.o -MD -MP -MF .deps/talk.Tpo -c -o talk.o talk.c
+mv -f .deps/talk.Tpo .deps/talk.Po
+gcc  -fPIC   -o talk ctl.o ctl_transact.o display.o get_addrs.o get_names.o init_disp.o invite.o io.o look_up.o msgs.o talk.o ../libinetutils/libinetutils.a ../lib/libgnu.a -lcurses  
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/talk'
+Making all in talkd
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/talkd'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils       -fPIC -MT acl.o -MD -MP -MF .deps/acl.Tpo -c -o acl.o acl.c
+mv -f .deps/acl.Tpo .deps/acl.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils       -fPIC -MT announce.o -MD -MP -MF .deps/announce.Tpo -c -o announce.o announce.c
+mv -f .deps/announce.Tpo .deps/announce.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils       -fPIC -MT print.o -MD -MP -MF .deps/print.Tpo -c -o print.o print.c
+mv -f .deps/print.Tpo .deps/print.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils       -fPIC -MT process.o -MD -MP -MF .deps/process.Tpo -c -o process.o process.c
+mv -f .deps/process.Tpo .deps/process.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils       -fPIC -MT table.o -MD -MP -MF .deps/table.Tpo -c -o table.o table.c
+mv -f .deps/table.Tpo .deps/table.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils       -fPIC -MT talkd.o -MD -MP -MF .deps/talkd.Tpo -c -o talkd.o talkd.c
+mv -f .deps/talkd.Tpo .deps/talkd.Po
+gcc  -fPIC   -o talkd acl.o announce.o print.o process.o table.o talkd.o ../libinetutils/libinetutils.a ../lib/libgnu.a 
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/talkd'
+Making all in whois
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/whois'
+make  all-am
+make[3]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/whois'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -fPIC -MT whois.o -MD -MP -MF .deps/whois.Tpo -c -o whois.o whois.c
+mv -f .deps/whois.Tpo .deps/whois.Po
+gcc  -fPIC   -o whois whois.o ../libinetutils/libinetutils.a ../lib/libgnu.a 
+make[3]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/whois'
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/whois'
+Making all in ping
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/ping'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -I../libicmp    -fPIC -MT ping.o -MD -MP -MF .deps/ping.Tpo -c -o ping.o ping.c
+mv -f .deps/ping.Tpo .deps/ping.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -I../libicmp    -fPIC -MT ping_common.o -MD -MP -MF .deps/ping_common.Tpo -c -o ping_common.o ping_common.c
+mv -f .deps/ping_common.Tpo .deps/ping_common.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -I../libicmp    -fPIC -MT ping_echo.o -MD -MP -MF .deps/ping_echo.Tpo -c -o ping_echo.o ping_echo.c
+mv -f .deps/ping_echo.Tpo .deps/ping_echo.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -I../libicmp    -fPIC -MT ping_address.o -MD -MP -MF .deps/ping_address.Tpo -c -o ping_address.o ping_address.c
+mv -f .deps/ping_address.Tpo .deps/ping_address.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -I../libicmp    -fPIC -MT ping_router.o -MD -MP -MF .deps/ping_router.Tpo -c -o ping_router.o ping_router.c
+mv -f .deps/ping_router.Tpo .deps/ping_router.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -I../libicmp    -fPIC -MT ping_timestamp.o -MD -MP -MF .deps/ping_timestamp.Tpo -c -o ping_timestamp.o ping_timestamp.c
+mv -f .deps/ping_timestamp.Tpo .deps/ping_timestamp.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -I../libicmp    -fPIC -MT libping.o -MD -MP -MF .deps/libping.Tpo -c -o libping.o libping.c
+mv -f .deps/libping.Tpo .deps/libping.Po
+gcc  -fPIC   -o ping ping.o ping_common.o ping_echo.o ping_address.o ping_router.o ping_timestamp.o libping.o ../libicmp/libicmp.a ../libinetutils/libinetutils.a ../lib/libgnu.a  
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -I../libicmp    -fPIC -MT ping6.o -MD -MP -MF .deps/ping6.Tpo -c -o ping6.o ping6.c
+mv -f .deps/ping6.Tpo .deps/ping6.Po
+gcc  -fPIC   -o ping6 ping6.o ping_common.o ../libinetutils/libinetutils.a ../lib/libgnu.a  
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/ping'
+Making all in ifconfig
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/ifconfig'
+Making all in system
+make[3]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/ifconfig/system'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/ifconfig/system'
+make[3]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/ifconfig'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fPIC -MT ifconfig.o -MD -MP -MF .deps/ifconfig.Tpo -c -o ifconfig.o ifconfig.c
+mv -f .deps/ifconfig.Tpo .deps/ifconfig.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fPIC -MT flags.o -MD -MP -MF .deps/flags.Tpo -c -o flags.o flags.c
+mv -f .deps/flags.Tpo .deps/flags.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fPIC -MT changeif.o -MD -MP -MF .deps/changeif.Tpo -c -o changeif.o changeif.c
+mv -f .deps/changeif.Tpo .deps/changeif.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fPIC -MT options.o -MD -MP -MF .deps/options.Tpo -c -o options.o options.c
+mv -f .deps/options.Tpo .deps/options.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fPIC -MT printif.o -MD -MP -MF .deps/printif.Tpo -c -o printif.o printif.c
+mv -f .deps/printif.Tpo .deps/printif.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils -DPATH_PROCNET_DEV=\"/proc/net/dev\"   -fPIC -MT system.o -MD -MP -MF .deps/system.Tpo -c -o system.o system.c
+mv -f .deps/system.Tpo .deps/system.Po
+gcc  -fPIC   -o ifconfig ifconfig.o flags.o changeif.o options.o printif.o system.o ../libinetutils/libinetutils.a ../lib/libgnu.a 
+make[3]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/ifconfig'
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/ifconfig'
+Making all in doc
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/doc'
+Making all in man
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/man'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/man'
+Making all in tests
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/tests'
+sed -e 's,[@]GREP[@],/bin/grep,g' -e 's,[@]SED[@],/bin/sed,g' -e 's,[@]DD[@],/bin/dd,g' -e 's,[@]MKTEMP[@],/bin/mktemp,g' -e 's,[@]NETSTAT[@],/bin/netstat,g' -e 's,[@]TARGET[@],127.0.0.1,g' -e 's,[@]TARGET6[@],::1,g' -e 's,[@]TEST_IPV6[@],auto,g' < ./tools.sh.in > tools.sh
+make  all-am
+make[3]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/tests'
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -fPIC -MT identify.o -MD -MP -MF .deps/identify.Tpo -c -o identify.o identify.c
+mv -f .deps/identify.Tpo .deps/identify.Po
+gcc  -fPIC   -o identify identify.o  
+gcc -DHAVE_CONFIG_H -I. -I..  -I../lib -I../lib -I../libinetutils   -fPIC -MT ls.o -MD -MP -MF .deps/ls.Tpo -c -o ls.o ls.c
+mv -f .deps/ls.Tpo .deps/ls.Po
+gcc  -fPIC   -o ls ls.o ../libls/libls.a ../libinetutils/libinetutils.a ../lib/libgnu.a 
+make[3]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/tests'
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4/tests'
+make[2]: Entering directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4'
+make[2]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4'
+make[1]: Leaving directory '/home/jake/git_stuff/libfuzzer/inetutils-1.9.4'

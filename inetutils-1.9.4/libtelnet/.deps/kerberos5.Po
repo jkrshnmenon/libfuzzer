@@ -1,0 +1,10 @@
+kerberos5.o: kerberos5.c /usr/include/stdc-predef.h ../config.h \
+ ../confpaths.h /usr/include/paths.h
+
+/usr/include/stdc-predef.h:
+
+../config.h:
+
+../confpaths.h:
+
+/usr/include/paths.h:
