@@ -1,5 +1,5 @@
 from backup import backup
-from os import chdir, environ
+from os import listdir, chdir, environ
 from initialize import initialize
 from makefuzzer import makeFuzzer
 from makeobject import makeObject
@@ -29,24 +29,24 @@ class dofuzz:
         print "[+] Done"
         chdir(self.sourcepath)
         open('test.cpp', 'w').write(self.template)
+
+        print "[-] Modifying main to runner"
+        backupObject = backup(self.filename,
+                              initializeObject.getOutput())
+        print "[+] Done"
+
         print "[-] Building shared object"
         libraryObject = makeObject(initializeObject.getOutput(),
                                    self.filename[:-2])
         print "[+] Done"
-        if use_default is True:
-            print "[-] Modifying main to runner"
-            backupObject = backup(self.filename,
-                                  libraryObject.getCompileCmd())
-            print "[+] Done"
 
-        elif use_default is False and prototype is not '':
+        if use_default is False and prototype is not '':
             print "[-] Creating fuzzer targeting arbitrary function"
             customObject = makeFuzzer(prototype)
             print "[+] Done"
 
         print "[-] Compiling fuzzer"
-        compilefuzzer(libraryObject.getLibFlags(),
-                      '../'+fuzzer, libraryObject.getCmd())
+        compilefuzzer(libraryObject.getLibFlags(), '../'+fuzzer)
         print "[+] Done"
 
         print "[-] Starting fuzzing"

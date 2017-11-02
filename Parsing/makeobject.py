@@ -20,8 +20,6 @@ class makeObject:
             fixed_line = re.sub(' +', ' ', line)
             if cmd in fixed_line:
                 return fixed_line.strip().split(' ')
-            elif ' '+self.executable+'.o' in fixed_line:
-                self.compilecmd = fixed_line.strip().split(' ')
 
     def getLibs(self):
         args = self.getContents()
@@ -48,9 +46,6 @@ class makeObject:
 
     def getLibFlags(self):
         return self.ldflags+self.static_libs
-
-    def getCompileCmd(self):
-        return self.compilecmd
 
     def getCmd(self):
         return self.cmd
