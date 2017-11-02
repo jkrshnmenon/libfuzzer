@@ -4,13 +4,12 @@ from re import sub
 
 class makeFuzzer:
     def __init__(self, prototype):
-        self.prototype = sub(' *\(', '(', prototype.split('{')[0])
-        self.prototype = sub('extern ', 'extern "C" ', self.prototype)
+        self.prototype = 'extern "C" '+sub(' *\(', '(', prototype)
         self.args = []
         self.invocation = ""
         self.name = sub('\**', '', self.prototype.split('(')[0].split(' ')[-1])
         self.header = '#include<stdint.h>\n#include<stdio.h>\n'
-        self.fuzzer = 'extern "C" in LLVMFuzzerTestOneInput'
+        self.fuzzer = 'extern "C" int LLVMFuzzerTestOneInput'
         self.fuzzer += '(const uint8_t *Data, size_t Size) {\n'
         self.footer = '    return 0;\n}'
         self.writeCode()

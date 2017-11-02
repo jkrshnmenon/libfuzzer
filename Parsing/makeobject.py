@@ -40,9 +40,9 @@ class makeObject:
         self.cmd += list(set(self.depends))
         self.cmd += list(set(self.static_libs))
         if len(self.ldflags) > 0:
-            self.cmd += ['-Wl, --whole-archive']
-            self.cmd += list(set(ldflags))
-            self.cmd += ['-Wl, --no-whole-archive']
+            self.cmd += ['-Wl,--whole-archive']
+            self.cmd += list(set(self.ldflags))
+            self.cmd += ['-Wl,--no-whole-archive']
 
     def getLibFlags(self):
         return self.ldflags+self.static_libs

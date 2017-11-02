@@ -8,11 +8,13 @@ from compilefuzzer import compilefuzzer
 
 
 class dofuzz:
-    def __init__(self, path, filepath, fuzzer, use_default=True, prototype=''):
+    def __init__(self, path, filepath, executable,
+                 fuzzer, use_default=True, prototype=''):
         """
         path => Path to the root directory of source to be fuzzed
         filepath => Relative path of file containing main from root directory
-                of source. Should be same as the final executable generated.
+                of source
+        executable => Name of final executable generated
         fuzzer => Relative path to fuzzer from root directory of source
         use_default => Flag indicating whether to fuzz a particular function or
                        start fuzzing from main
@@ -22,6 +24,7 @@ class dofuzz:
         self.template = open('template.cpp', 'r').read()
         self.path = path
         self.filename = filepath.split('/')[-1]
+        self.executable = executable
         self.sourcepath = ''.join(x for x in filepath.split('/')[:-1])
         self.libpath = self.path+'/'+self.sourcepath
 
@@ -38,7 +41,7 @@ class dofuzz:
 
         print "[-] Building shared object"
         libraryObject = makeObject(initializeObject.getOutput(),
-                                   self.filename[:-2])
+                                   self.executable)
         print "[+] Done"
 
         if use_default is False and prototype is not '':
