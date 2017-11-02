@@ -51,6 +51,6 @@ dofuzz.py
 
                  Invokes all the above scripts in order to create final fuzzer
 
-                 Executes fuzzer with the update LD_LIBRARY_PATH
+                 Executes fuzzer with the updated LD_LIBRARY_PATH
 
 -------------------------------------------------------------------
