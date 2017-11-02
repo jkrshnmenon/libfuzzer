@@ -8,6 +8,8 @@ Fuzzing main
 
                  ob = dofuzz('/home/foo/source', 'subdir/filename.c', '../libFuzzer.a')
 
+-------------------------------------------------------------------------------------------
+
                  
 Fuzzing arbitrary function
 
@@ -15,3 +17,5 @@ Fuzzing arbitrary function
 
                  ob = dofuzz('/home/foo/source', 'subdir/filename.c', '../libFuzzer.a',
                              use_default=False, prototype='blah(int, char*)')
+
+-------------------------------------------------------------------------------------------
