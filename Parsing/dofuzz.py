@@ -3,7 +3,7 @@ from os import listdir, chdir, environ
 from initialize import initialize
 from makefuzzer import makeFuzzer
 from makeobject import makeObject
-from subprocess import check_output
+from subprocess import check_output, PIPE
 from compilefuzzer import compilefuzzer
 
 
@@ -23,6 +23,7 @@ class dofuzz:
         self.path = path
         self.filename = filepath.split('/')[-1]
         self.sourcepath = ''.join(x for x in filepath.split('/')[:-1])
+        self.libpath = self.path+'/'+self.sourcepath
 
         print "[-] Intializing"
         initializeObject = initialize(self.path)
@@ -51,4 +52,4 @@ class dofuzz:
 
         print "[-] Starting fuzzing"
         check_output('./test', env=dict(environ,
-                                        LD_LIBRARY_PATH=environ['PWD']))
+                                        LD_LIBRARY_PATH=self.libpath))
