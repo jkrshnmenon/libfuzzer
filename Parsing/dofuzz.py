@@ -3,7 +3,7 @@ from os import listdir, chdir, environ
 from initialize import initialize
 from makefuzzer import makeFuzzer
 from makeobject import makeObject
-from subprocess import check_output, PIPE
+from subprocess import check_output, PIPE, call
 from compilefuzzer import compilefuzzer
 
 
@@ -54,5 +54,5 @@ class dofuzz:
         print "[+] Done"
 
         print "[-] Starting fuzzing"
-        check_output('./test', env=dict(environ,
-                                        LD_LIBRARY_PATH=self.libpath))
+        call('./test', env=dict(environ,
+                                LD_LIBRARY_PATH=self.libpath))

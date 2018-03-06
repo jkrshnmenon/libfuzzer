@@ -1,8 +1,9 @@
 from dofuzz import dofuzz
 
-path = '/home/jake/project/inetutils-1.9.4'
-filepath = 'ping/ping.c'
-executable = 'ping'
+path = '/home/jake/project/libfuzzer_stuff/binutils-2.29'
+filepath = 'binutils/objdump.c'
+executable = 'objdump'
 fuzzer = '../libFuzzer.a'
-prototype = 'int ping_echo (char *hostname)'
-ob = dofuzz(path, filepath, executable, fuzzer, use_default=False, prototype=prototype)
+# ob = dofuzz(path, filepath, executable, fuzzer,
+#             use_default=False, prototype='int ping_echo(char* hostname)')
+ob = dofuzz(path, filepath, executable, fuzzer)

@@ -19,6 +19,8 @@ class makeObject:
         for line in self.makeout:
             fixed_line = re.sub(' +', ' ', line)
             if cmd in fixed_line:
+                if fixed_line.startswith('/bin/bash'):
+                    continue
                 return fixed_line.strip().split(' ')
 
     def getLibs(self):
@@ -31,6 +33,8 @@ class makeObject:
             if x.endswith('.a'):
                 self.static_libs.append(x)
             elif x[:2] == '-l':
+                self.ldflags.append(x)
+            elif x[:2] == '-L':
                 self.ldflags.append(x)
             elif x.endswith('.o'):
                 self.depends.append(x)

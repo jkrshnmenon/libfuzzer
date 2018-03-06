@@ -1,0 +1,1569 @@
+[-] Intializing
+[+] Done
+[-] Modifying main to runner
+make[1]: Entering directory '/home/jake/project/binutils-2.29'
+Configuring in ./libiberty
+configure: loading cache ./config.cache
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for makeinfo... (cached) makeinfo --split-size=5000000
+checking for perl... (cached) perl
+checking build system type... (cached) x86_64-pc-linux-gnu
+checking host system type... (cached) x86_64-pc-linux-gnu
+checking for x86_64-pc-linux-gnu-ar... (cached) ar
+checking for x86_64-pc-linux-gnu-ranlib... (cached) ranlib
+checking whether to install libiberty headers and static library... no
+configure: target_header_dir = 
+checking for x86_64-pc-linux-gnu-gcc... (cached) gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking how to run the C preprocessor... (cached) gcc -E
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for minix/config.h... (cached) no
+checking whether it is safe to define __EXTENSIONS__... (cached) yes
+checking for special C compiler options needed for large files... (cached) no
+checking for _FILE_OFFSET_BITS value needed for large files... (cached) no
+checking whether gcc supports -W... (cached) yes
+checking whether gcc supports -Wall... (cached) yes
+checking whether gcc supports -Wwrite-strings... (cached) yes
+checking whether gcc supports -Wc++-compat... (cached) yes
+checking whether gcc supports -Wstrict-prototypes... (cached) yes
+checking whether gcc supports -Wshadow=local... (cached) no
+checking whether gcc supports -pedantic ... (cached) yes
+checking whether gcc and cc understand -c and -o together... (cached) yes
+checking for an ANSI C-conforming const... (cached) yes
+checking for inline... (cached) inline
+checking whether byte ordering is bigendian... (cached) no
+checking for a BSD-compatible install... /usr/bin/install -c
+checking for sys/file.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for limits.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for malloc.h... (cached) yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for time.h... (cached) yes
+checking for sys/resource.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/mman.h... (cached) yes
+checking for fcntl.h... (cached) yes
+checking for alloca.h... (cached) yes
+checking for sys/pstat.h... (cached) no
+checking for sys/sysmp.h... (cached) no
+checking for sys/sysinfo.h... (cached) yes
+checking for machine/hal_sysinfo.h... (cached) no
+checking for sys/table.h... (cached) no
+checking for sys/sysctl.h... (cached) yes
+checking for sys/systemcfg.h... (cached) no
+checking for stdint.h... (cached) yes
+checking for stdio_ext.h... (cached) yes
+checking for process.h... (cached) no
+checking for sys/prctl.h... (cached) yes
+checking for sys/wait.h that is POSIX.1 compatible... (cached) yes
+checking whether time.h and sys/time.h may both be included... (cached) yes
+checking whether errno must be declared... (cached) no
+checking size of int... (cached) 4
+checking size of long... (cached) 8
+checking size of size_t... (cached) 8
+checking for long long... (cached) yes
+checking size of long long... (cached) 8
+checking for a 64-bit type... (cached) uint64_t
+checking for intptr_t... (cached) yes
+checking for uintptr_t... (cached) yes
+checking for ssize_t... (cached) yes
+checking for pid_t... (cached) yes
+checking for library containing strerror... (cached) none required
+checking for asprintf... (cached) yes
+checking for atexit... (cached) yes
+checking for basename... (cached) yes
+checking for bcmp... (cached) yes
+checking for bcopy... (cached) yes
+checking for bsearch... (cached) yes
+checking for bzero... (cached) yes
+checking for calloc... (cached) yes
+checking for clock... (cached) yes
+checking for ffs... (cached) yes
+checking for getcwd... (cached) yes
+checking for getpagesize... (cached) yes
+checking for gettimeofday... (cached) yes
+checking for index... (cached) yes
+checking for insque... (cached) yes
+checking for memchr... (cached) yes
+checking for memcmp... (cached) yes
+checking for memcpy... (cached) yes
+checking for memmem... (cached) yes
+checking for memmove... (cached) yes
+checking for mempcpy... (cached) yes
+checking for memset... (cached) yes
+checking for mkstemps... (cached) yes
+checking for putenv... (cached) yes
+checking for random... (cached) yes
+checking for rename... (cached) yes
+checking for rindex... (cached) yes
+checking for setenv... (cached) yes
+checking for snprintf... (cached) yes
+checking for sigsetmask... (cached) yes
+checking for stpcpy... (cached) yes
+checking for stpncpy... (cached) yes
+checking for strcasecmp... (cached) yes
+checking for strchr... (cached) yes
+checking for strdup... (cached) yes
+checking for strncasecmp... (cached) yes
+checking for strndup... (cached) yes
+checking for strnlen... (cached) yes
+checking for strrchr... (cached) yes
+checking for strstr... (cached) yes
+checking for strtod... (cached) yes
+checking for strtol... (cached) yes
+checking for strtoul... (cached) yes
+checking for strtoll... (cached) yes
+checking for strtoull... (cached) yes
+checking for strverscmp... (cached) yes
+checking for tmpnam... (cached) yes
+checking for vasprintf... (cached) yes
+checking for vfprintf... (cached) yes
+checking for vprintf... (cached) yes
+checking for vsnprintf... (cached) yes
+checking for vsprintf... (cached) yes
+checking for waitpid... (cached) yes
+checking for setproctitle... (cached) no
+checking whether alloca needs Cray hooks... (cached) no
+checking stack direction for C alloca... (cached) -1
+checking for vfork.h... (cached) no
+checking for fork... (cached) yes
+checking for vfork... (cached) yes
+checking for working fork... (cached) yes
+checking for working vfork... (cached) yes
+checking for _doprnt... (cached) no
+checking for sys_errlist... (cached) yes
+checking for sys_nerr... (cached) yes
+checking for sys_siglist... (cached) yes
+checking for external symbol _system_configuration... no
+checking for __fsetlocking... (cached) yes
+checking for canonicalize_file_name... (cached) yes
+checking for dup3... (cached) yes
+checking for getrlimit... (cached) yes
+checking for getrusage... (cached) yes
+checking for getsysinfo... (cached) no
+checking for gettimeofday... (cached) yes
+checking for on_exit... (cached) yes
+checking for psignal... (cached) yes
+checking for pstat_getdynamic... (cached) no
+checking for pstat_getstatic... (cached) no
+checking for realpath... (cached) yes
+checking for setrlimit... (cached) yes
+checking for sbrk... (cached) yes
+checking for spawnve... (cached) no
+checking for spawnvpe... (cached) no
+checking for strerror... (cached) yes
+checking for strsignal... (cached) yes
+checking for sysconf... (cached) yes
+checking for sysctl... (cached) yes
+checking for sysmp... (cached) no
+checking for table... (cached) no
+checking for times... (cached) yes
+checking for wait3... (cached) yes
+checking for wait4... (cached) yes
+checking whether basename is declared... (cached) yes
+checking whether ffs is declared... (cached) yes
+checking whether asprintf is declared... (cached) yes
+checking whether vasprintf is declared... (cached) yes
+checking whether snprintf is declared... (cached) yes
+checking whether vsnprintf is declared... (cached) yes
+checking whether calloc is declared... (cached) yes
+checking whether getenv is declared... (cached) yes
+checking whether getopt is declared... (cached) yes
+checking whether malloc is declared... (cached) yes
+checking whether realloc is declared... (cached) yes
+checking whether sbrk is declared... (cached) yes
+checking whether strtol is declared... (cached) yes
+checking whether strtoul is declared... (cached) yes
+checking whether strtoll is declared... (cached) yes
+checking whether strtoull is declared... (cached) yes
+checking whether strverscmp is declared... (cached) yes
+checking whether strnlen is declared... (cached) yes
+checking whether canonicalize_file_name must be declared... (cached) no
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for getpagesize... (cached) yes
+checking for working mmap... (cached) yes
+checking for working strncmp... (cached) yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating testsuite/Makefile
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing default commands
+Configuring in ./intl
+configure: loading cache ./config.cache
+checking whether make sets $(MAKE)... (cached) yes
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether NLS is requested... yes
+checking for msgfmt... (cached) /usr/bin/msgfmt
+checking for gmsgfmt... (cached) /usr/bin/msgfmt
+checking for xgettext... (cached) /usr/bin/xgettext
+checking for msgmerge... (cached) /usr/bin/msgmerge
+checking for x86_64-pc-linux-gnu-gcc... (cached) gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking build system type... (cached) x86_64-pc-linux-gnu
+checking host system type... (cached) x86_64-pc-linux-gnu
+checking for x86_64-pc-linux-gnu-ranlib... (cached) ranlib
+checking for library containing strerror... (cached) none required
+checking how to run the C preprocessor... (cached) gcc -E
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for ANSI C header files... (cached) yes
+checking for an ANSI C-conforming const... (cached) yes
+checking for inline... (cached) inline
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for off_t... (cached) yes
+checking for size_t... (cached) yes
+checking for working alloca.h... (cached) yes
+checking for alloca... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for getpagesize... (cached) yes
+checking for working mmap... (cached) yes
+checking whether we are using the GNU C Library 2.1 or newer... (cached) yes
+checking whether integer division by zero raises SIGFPE... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unsigned long long... (cached) yes
+checking for inttypes.h... (cached) yes
+checking whether the inttypes.h PRIxNN macros are broken... (cached) no
+checking for ld used by GCC... (cached) ld
+checking if the linker (ld) is GNU ld... (cached) yes
+checking for shared library run path origin... (cached) done
+checking for argz.h... (cached) yes
+checking for limits.h... (cached) yes
+checking for locale.h... (cached) yes
+checking for nl_types.h... (cached) yes
+checking for malloc.h... (cached) yes
+checking for stddef.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for feof_unlocked... (cached) yes
+checking for fgets_unlocked... (cached) yes
+checking for getc_unlocked... (cached) yes
+checking for getcwd... (cached) yes
+checking for getegid... (cached) yes
+checking for geteuid... (cached) yes
+checking for getgid... (cached) yes
+checking for getuid... (cached) yes
+checking for mempcpy... (cached) yes
+checking for munmap... (cached) yes
+checking for putenv... (cached) yes
+checking for setenv... (cached) yes
+checking for setlocale... (cached) yes
+checking for stpcpy... (cached) yes
+checking for strcasecmp... (cached) yes
+checking for strdup... (cached) yes
+checking for strtoul... (cached) yes
+checking for tsearch... (cached) yes
+checking for __argz_count... (cached) yes
+checking for __argz_stringify... (cached) yes
+checking for __argz_next... (cached) yes
+checking for __fsetlocking... (cached) yes
+checking for iconv... (cached) yes
+checking for iconv declaration... (cached) install-shextern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for nl_langinfo and CODESET... (cached) yes
+checking for LC_MESSAGES... (cached) yes
+checking for bison... (cached) bison
+checking version of bison... 3.0.4, ok
+checking whether NLS is requested... yes
+checking whether included gettext is requested... no
+checking for GNU gettext in libc... (cached) yes
+checking whether to use NLS... yes
+checking where the gettext function comes from... libc
+checking for aclocal... (cached) aclocal
+checking for autoconf... (cached) autoconf
+checking for autoheader... (cached) autoheader
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating config.intl
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing default-1 commands
+Configuring in ./bfd
+configure: loading cache ./config.cache
+checking build system type... (cached) x86_64-pc-linux-gnu
+checking host system type... (cached) x86_64-pc-linux-gnu
+checking target system type... (cached) x86_64-pc-linux-gnu
+checking for x86_64-pc-linux-gnu-gcc... (cached) gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for library containing strerror... (cached) none required
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... (cached) /bin/mkdir -p
+checking for gawk... (cached) mawk
+checking whether make sets $(MAKE)... (cached) yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... (cached) gcc3
+checking for x86_64-pc-linux-gnu-ar... (cached) ar
+checking for x86_64-pc-linux-gnu-ranlib... (cached) ranlib
+checking for x86_64-pc-linux-gnu-gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking how to run the C preprocessor... (cached) gcc -E
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for minix/config.h... (cached) no
+checking whether it is safe to define __EXTENSIONS__... (cached) yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... (cached) /bin/grep -F
+checking for ld used by gcc... (cached) ld
+checking if the linker (ld) is GNU ld... (cached) yes
+checking for BSD- or MS-compatible name lister (nm)... (cached) nm
+checking the name lister (nm) interface... (cached) BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... (cached) 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for ld option to reload object files... (cached) -r
+checking for x86_64-pc-linux-gnu-objdump... (cached) objdump
+checking how to recognize dependent libraries... (cached) pass_all
+checking for x86_64-pc-linux-gnu-ar... (cached) ar
+checking for x86_64-pc-linux-gnu-strip... no
+checking for strip... (cached) strip
+checking for x86_64-pc-linux-gnu-ranlib... (cached) ranlib
+checking command to parse nm output from gcc object... (cached) ok
+checking for dlfcn.h... (cached) yes
+checking for objdir... (cached) .libs
+checking if gcc supports -fno-rtti -fno-exceptions... (cached) no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... (cached) yes
+checking if gcc static flag -static works... (cached) yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for shl_load... (cached) no
+checking for shl_load in -ldld... (cached) no
+checking for dlopen... (cached) no
+checking for dlopen in -ldl... (cached) yes
+checking whether a program can dlopen itself... (cached) yes
+checking whether a statically linked program can dlopen itself... (cached) no
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+checking for dlfcn.h... (cached) yes
+checking for windows.h... (cached) no
+checking for library containing dlopen... (cached) -ldl
+checking for special C compiler options needed for large files... (cached) no
+checking for _FILE_OFFSET_BITS value needed for large files... (cached) no
+Setting warning flags = -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether to install libbfd... yes
+checking whether NLS is requested... yes
+checking for catalogs to be installed...  da es fi fr hr id ja ro ru rw sr sv tr uk vi zh_CN da es fi fr hr id ja ro ru rw sr sv tr uk vi zh_CN
+checking whether NLS is requested... yes
+checking for msgfmt... (cached) /usr/bin/msgfmt
+checking for gmsgfmt... (cached) /usr/bin/msgfmt
+checking for xgettext... (cached) /usr/bin/xgettext
+checking for msgmerge... (cached) /usr/bin/msgmerge
+checking for long double... (cached) yes
+checking for long long... (cached) yes
+checking size of long long... (cached) 8
+checking size of void *... (cached) 8
+checking size of long... (cached) 8
+checking for alloca.h... (cached) yes
+checking for stddef.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for time.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for wchar.h... (cached) yes
+checking for wctype.h... (cached) yes
+checking for fcntl.h... (cached) yes
+checking for sys/file.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for sys/resource.h... (cached) yes
+looking for a compliant stdint.h in stdint.h, checking for uintmax_t... yes
+checking for uintptr_t... yes
+checking for int_least32_t... yes
+checking for int_fast32_t... yes
+checking for uint64_t... yes
+checking what to include in bfd_stdint.h... stdint.h (already complete)
+checking whether time.h and sys/time.h may both be included... (cached) yes
+checking for dirent.h that defines DIR... (cached) yes
+checking for library containing opendir... (cached) none required
+checking whether string.h and strings.h may both be included... (cached) yes
+checking for fcntl... (cached) yes
+checking for getpagesize... (cached) yes
+checking for setitimer... (cached) yes
+checking for sysconf... (cached) yes
+checking for fdopen... (cached) yes
+checking for getuid... (cached) yes
+checking for getgid... (cached) yes
+checking for fileno... (cached) yes
+checking for strtoull... (cached) yes
+checking for getrlimit... (cached) yes
+checking whether basename is declared... (cached) yes
+checking whether ftello is declared... (cached) yes
+checking whether ftello64 is declared... (cached) yes
+checking whether fseeko is declared... (cached) yes
+checking whether fseeko64 is declared... (cached) yes
+checking whether ffs is declared... (cached) yes
+checking whether free is declared... (cached) yes
+checking whether getenv is declared... (cached) yes
+checking whether malloc is declared... (cached) yes
+checking whether realloc is declared... (cached) yes
+checking whether stpcpy is declared... (cached) yes
+checking whether strstr is declared... (cached) yes
+checking whether asprintf is declared... (cached) yes
+checking whether vasprintf is declared... (cached) yes
+checking whether snprintf is declared... (cached) yes
+checking whether vsnprintf is declared... (cached) yes
+checking whether strnlen is declared... (cached) yes
+checking linker --as-needed support... (cached) yes
+checking for cos in -lm... (cached) yes
+checking for gcc version with buggy 64-bit support... no
+checking for sys/procfs.h... (cached) yes
+checking for prstatus_t in sys/procfs.h... (cached) yes
+checking for prstatus32_t in sys/procfs.h... (cached) no
+checking for prstatus_t.pr_who in sys/procfs.h... (cached) no
+checking for prstatus32_t.pr_who in sys/procfs.h... (cached) no
+checking for pstatus_t in sys/procfs.h... (cached) no
+checking for pxstatus_t in sys/procfs.h... (cached) no
+checking for pstatus32_t in sys/procfs.h... (cached) no
+checking for prpsinfo_t in sys/procfs.h... (cached) yes
+checking for prpsinfo_t.pr_pid in sys/procfs.h... (cached) yes
+checking for prpsinfo32_t in sys/procfs.h... (cached) no
+checking for prpsinfo32_t.pr_pid in sys/procfs.h... (cached) no
+checking for psinfo_t in sys/procfs.h... (cached) no
+checking for psinfo_t.pr_pid in sys/procfs.h... (cached) no
+checking for psinfo32_t in sys/procfs.h... (cached) no
+checking for psinfo32_t.pr_pid in sys/procfs.h... (cached) no
+checking for lwpstatus_t in sys/procfs.h... (cached) no
+checking for lwpxstatus_t in sys/procfs.h... (cached) no
+checking for lwpstatus_t.pr_context in sys/procfs.h... (cached) no
+checking for lwpstatus_t.pr_reg in sys/procfs.h... (cached) no
+checking for lwpstatus_t.pr_fpreg in sys/procfs.h... (cached) no
+checking for win32_pstatus_t in sys/procfs.h... (cached) no
+checking for ftello... (cached) yes
+checking for ftello64... (cached) yes
+checking for fseeko... (cached) yes
+checking for fseeko64... (cached) yes
+checking for fopen64... (cached) yes
+checking size of off_t... (cached) 8
+checking file_ptr type... BFD_HOST_64_BIT
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for getpagesize... (cached) yes
+checking for working mmap... (cached) yes
+checking for madvise... (cached) yes
+checking for mprotect... (cached) yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating bfd-in3.h
+config.status: creating po/Makefile.in
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing default-1 commands
+config.status: executing bfd_stdint.h commands
+config.status: executing default commands
+make[2]: Entering directory '/home/jake/project/binutils-2.29/libiberty'
+echo ./regex.o ./cplus-dem.o ./cp-demangle.o ./md5.o ./sha1.o ./alloca.o ./argv.o ./choose-temp.o ./concat.o ./cp-demint.o ./crc32.o ./d-demangle.o ./dwarfnames.o ./dyn-string.o ./fdmatch.o ./fibheap.o ./filename_cmp.o ./floatformat.o ./fnmatch.o ./fopen_unlocked.o ./getopt.o ./getopt1.o ./getpwd.o ./getruntime.o ./hashtab.o ./hex.o ./lbasename.o ./lrealpath.o ./make-relative-prefix.o ./make-temp-file.o ./objalloc.o ./obstack.o ./partition.o ./pexecute.o ./physmem.o ./pex-common.o ./pex-one.o ./pex-unix.o ./vprintf-support.o ./rust-demangle.o ./safe-ctype.o ./simple-object.o ./simple-object-coff.o ./simple-object-elf.o ./simple-object-mach-o.o ./simple-object-xcoff.o ./sort.o ./spaces.o ./splay-tree.o ./stack-limit.o ./strerror.o ./strsignal.o ./timeval-utils.o ./unlink-if-ordinary.o ./xasprintf.o ./xatexit.o ./xexit.o ./xmalloc.o ./xmemdup.o ./xstrdup.o ./xstrerror.o ./xstrndup.o ./xvasprintf.o > required-list
+make[3]: Entering directory '/home/jake/project/binutils-2.29/libiberty/testsuite'
+make[3]: Nothing to be done for 'all'.
+make[3]: Leaving directory '/home/jake/project/binutils-2.29/libiberty/testsuite'
+make[2]: Leaving directory '/home/jake/project/binutils-2.29/libiberty'
+make[2]: Entering directory '/home/jake/project/binutils-2.29/intl'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/jake/project/binutils-2.29/intl'
+Configuring in ./zlib
+configure: loading cache ./config.cache
+checking build system type... (cached) x86_64-pc-linux-gnu
+checking host system type... (cached) x86_64-pc-linux-gnu
+checking target system type... (cached) x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... (cached) /bin/mkdir -p
+checking for gawk... (cached) mawk
+checking whether make sets $(MAKE)... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for x86_64-pc-linux-gnu-gcc... (cached) gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for style of include used by make... GNU
+checking dependency style of gcc... (cached) gcc3
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for fgrep... (cached) /bin/grep -F
+checking for ld used by gcc... (cached) ld
+checking if the linker (ld) is GNU ld... (cached) yes
+checking for BSD- or MS-compatible name lister (nm)... (cached) nm
+checking the name lister (nm) interface... (cached) BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... (cached) 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for ld option to reload object files... (cached) -r
+checking for x86_64-pc-linux-gnu-objdump... (cached) objdump
+checking how to recognize dependent libraries... (cached) pass_all
+checking for x86_64-pc-linux-gnu-ar... (cached) ar
+checking for x86_64-pc-linux-gnu-strip... no
+checking for strip... (cached) strip
+checking for x86_64-pc-linux-gnu-ranlib... (cached) ranlib
+checking command to parse nm output from gcc object... (cached) ok
+checking how to run the C preprocessor... (cached) gcc -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for dlfcn.h... (cached) yes
+checking for objdir... (cached) .libs
+checking if gcc supports -fno-rtti -fno-exceptions... (cached) no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... (cached) yes
+checking if gcc static flag -static works... (cached) yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... (cached) no
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C preprocessor... gcc -E
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for getpagesize... (cached) yes
+checking for working mmap... (cached) yes
+checking for memcpy... (cached) yes
+checking for strerror... (cached) yes
+checking for unistd.h... (cached) yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: executing depfiles commands
+config.status: executing libtool commands
+make[2]: Entering directory '/home/jake/project/binutils-2.29/zlib'
+true "AR_FLAGS=rc" "CC_FOR_BUILD=gcc" "CFLAGS=-fPIC" "CXXFLAGS=-g -O2" "CFLAGS_FOR_BUILD=-fPIC" "CFLAGS_FOR_TARGET=-g -O2 -fPIC" "INSTALL=/usr/bin/install -c" "INSTALL_DATA=/usr/bin/install -c -m 644" "INSTALL_PROGRAM=/usr/bin/install -c" "INSTALL_SCRIPT=/usr/bin/install -c" "LDFLAGS=-static-libstdc++ -static-libgcc " "LIBCFLAGS=-fPIC" "LIBCFLAGS_FOR_TARGET=-g -O2 -fPIC" "MAKE=make" "MAKEINFO=makeinfo --split-size=5000000 --split-size=5000000 " "PICFLAG=" "PICFLAG_FOR_TARGET=" "SHELL=/bin/bash" "EXPECT=expect" "RUNTEST=runtest" "RUNTESTFLAGS=" "exec_prefix=/usr/local" "infodir=/usr/local/share/info" "libdir=/usr/local/lib" "prefix=/usr/local" "tooldir=/usr/local/x86_64-pc-linux-gnu" "AR=ar" "AS=as" "CC=gcc" "CXX=g++" "LD=ld" "LIBCFLAGS=-fPIC" "NM=nm" "PICFLAG=" "RANLIB=ranlib" "DESTDIR=" DO=all multi-do # make
+make[2]: Leaving directory '/home/jake/project/binutils-2.29/zlib'
+make[2]: Entering directory '/home/jake/project/binutils-2.29/bfd'
+Making info in doc
+make[3]: Entering directory '/home/jake/project/binutils-2.29/bfd/doc'
+make[3]: Leaving directory '/home/jake/project/binutils-2.29/bfd/doc'
+Making info in po
+make[3]: Entering directory '/home/jake/project/binutils-2.29/bfd/po'
+make[3]: Nothing to be done for 'info'.
+make[3]: Leaving directory '/home/jake/project/binutils-2.29/bfd/po'
+make[3]: Entering directory '/home/jake/project/binutils-2.29/bfd'
+make[3]: Nothing to be done for 'info-am'.
+make[3]: Leaving directory '/home/jake/project/binutils-2.29/bfd'
+make  all-recursive
+make[3]: Entering directory '/home/jake/project/binutils-2.29/bfd'
+Making all in doc
+make[4]: Entering directory '/home/jake/project/binutils-2.29/bfd/doc'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/jake/project/binutils-2.29/bfd/doc'
+Making all in po
+make[4]: Entering directory '/home/jake/project/binutils-2.29/bfd/po'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/jake/project/binutils-2.29/bfd/po'
+make[4]: Entering directory '/home/jake/project/binutils-2.29/bfd'
+rm -f bfd-tmp.h
+cp bfd-in3.h bfd-tmp.h
+/bin/bash ./../move-if-change bfd-tmp.h bfd.h
+rm -f bfd-tmp.h
+touch stmp-bfd-h
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_x86_64_elf64_vec -DHAVE_i386_elf32_vec -DHAVE_iamcu_elf32_vec -DHAVE_x86_64_elf32_vec -DHAVE_i386_aout_linux_vec -DHAVE_i386_pei_vec -DHAVE_x86_64_pei_vec -DHAVE_l1om_elf64_vec -DHAVE_k1om_elf64_vec -DHAVE_elf64_le_vec -DHAVE_elf64_be_vec -DHAVE_elf32_le_vec -DHAVE_elf32_be_vec -DHAVE_plugin_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC -MT archures.lo -MD -MP -MF .deps/archures.Tpo -c -o archures.lo -DDEFAULT_VECTOR=x86_64_elf64_vec -DSELECT_VECS='&x86_64_elf64_vec,&i386_elf32_vec,&iamcu_elf32_vec,&x86_64_elf32_vec,&i386_aout_linux_vec,&i386_pei_vec,&x86_64_pei_vec,&l1om_elf64_vec,&k1om_elf64_vec,&elf64_le_vec,&elf64_be_vec,&elf32_le_vec,&elf32_be_vec,&plugin_vec' -DSELECT_ARCHITECTURES='&bfd_i386_arch,&bfd_iamcu_arch,&bfd_l1om_arch,&bfd_k1om_arch,&bfd_plugin_arch' ./archures.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_x86_64_elf64_vec -DHAVE_i386_elf32_vec -DHAVE_iamcu_elf32_vec -DHAVE_x86_64_elf32_vec -DHAVE_i386_aout_linux_vec -DHAVE_i386_pei_vec -DHAVE_x86_64_pei_vec -DHAVE_l1om_elf64_vec -DHAVE_k1om_elf64_vec -DHAVE_elf64_le_vec -DHAVE_elf64_be_vec -DHAVE_elf32_le_vec -DHAVE_elf32_be_vec -DHAVE_plugin_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC -MT archures.lo -MD -MP -MF .deps/archures.Tpo -c -DDEFAULT_VECTOR=x86_64_elf64_vec "-DSELECT_VECS=&x86_64_elf64_vec,&i386_elf32_vec,&iamcu_elf32_vec,&x86_64_elf32_vec,&i386_aout_linux_vec,&i386_pei_vec,&x86_64_pei_vec,&l1om_elf64_vec,&k1om_elf64_vec,&elf64_le_vec,&elf64_be_vec,&elf32_le_vec,&elf32_be_vec,&plugin_vec" "-DSELECT_ARCHITECTURES=&bfd_i386_arch,&bfd_iamcu_arch,&bfd_l1om_arch,&bfd_k1om_arch,&bfd_plugin_arch" ./archures.c -o archures.o
+mv -f .deps/archures.Tpo .deps/archures.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_x86_64_elf64_vec -DHAVE_i386_elf32_vec -DHAVE_iamcu_elf32_vec -DHAVE_x86_64_elf32_vec -DHAVE_i386_aout_linux_vec -DHAVE_i386_pei_vec -DHAVE_x86_64_pei_vec -DHAVE_l1om_elf64_vec -DHAVE_k1om_elf64_vec -DHAVE_elf64_le_vec -DHAVE_elf64_be_vec -DHAVE_elf32_le_vec -DHAVE_elf32_be_vec -DHAVE_plugin_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC -MT targets.lo -MD -MP -MF .deps/targets.Tpo -c -o targets.lo -DDEFAULT_VECTOR=x86_64_elf64_vec -DSELECT_VECS='&x86_64_elf64_vec,&i386_elf32_vec,&iamcu_elf32_vec,&x86_64_elf32_vec,&i386_aout_linux_vec,&i386_pei_vec,&x86_64_pei_vec,&l1om_elf64_vec,&k1om_elf64_vec,&elf64_le_vec,&elf64_be_vec,&elf32_le_vec,&elf32_be_vec,&plugin_vec' -DSELECT_ARCHITECTURES='&bfd_i386_arch,&bfd_iamcu_arch,&bfd_l1om_arch,&bfd_k1om_arch,&bfd_plugin_arch' ./targets.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_x86_64_elf64_vec -DHAVE_i386_elf32_vec -DHAVE_iamcu_elf32_vec -DHAVE_x86_64_elf32_vec -DHAVE_i386_aout_linux_vec -DHAVE_i386_pei_vec -DHAVE_x86_64_pei_vec -DHAVE_l1om_elf64_vec -DHAVE_k1om_elf64_vec -DHAVE_elf64_le_vec -DHAVE_elf64_be_vec -DHAVE_elf32_le_vec -DHAVE_elf32_be_vec -DHAVE_plugin_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC -MT targets.lo -MD -MP -MF .deps/targets.Tpo -c -DDEFAULT_VECTOR=x86_64_elf64_vec "-DSELECT_VECS=&x86_64_elf64_vec,&i386_elf32_vec,&iamcu_elf32_vec,&x86_64_elf32_vec,&i386_aout_linux_vec,&i386_pei_vec,&x86_64_pei_vec,&l1om_elf64_vec,&k1om_elf64_vec,&elf64_le_vec,&elf64_be_vec,&elf32_le_vec,&elf32_be_vec,&plugin_vec" "-DSELECT_ARCHITECTURES=&bfd_i386_arch,&bfd_iamcu_arch,&bfd_l1om_arch,&bfd_k1om_arch,&bfd_plugin_arch" ./targets.c -o targets.o
+mv -f .deps/targets.Tpo .deps/targets.Plo
+/bin/bash ./libtool --tag=CC   --mode=compile gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include  -DHAVE_x86_64_elf64_vec -DHAVE_i386_elf32_vec -DHAVE_iamcu_elf32_vec -DHAVE_x86_64_elf32_vec -DHAVE_i386_aout_linux_vec -DHAVE_i386_pei_vec -DHAVE_x86_64_pei_vec -DHAVE_l1om_elf64_vec -DHAVE_k1om_elf64_vec -DHAVE_elf64_le_vec -DHAVE_elf64_be_vec -DHAVE_elf32_le_vec -DHAVE_elf32_be_vec -DHAVE_plugin_vec  -DBINDIR='"/usr/local/bin"'  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC -MT dwarf2.lo -MD -MP -MF .deps/dwarf2.Tpo -c -o dwarf2.lo -DDEBUGDIR=\"/usr/local/lib/debug\" ./dwarf2.c
+libtool: compile:  gcc -DHAVE_CONFIG_H -I. -I. -I. -I./../include -DHAVE_x86_64_elf64_vec -DHAVE_i386_elf32_vec -DHAVE_iamcu_elf32_vec -DHAVE_x86_64_elf32_vec -DHAVE_i386_aout_linux_vec -DHAVE_i386_pei_vec -DHAVE_x86_64_pei_vec -DHAVE_l1om_elf64_vec -DHAVE_k1om_elf64_vec -DHAVE_elf64_le_vec -DHAVE_elf64_be_vec -DHAVE_elf32_le_vec -DHAVE_elf32_be_vec -DHAVE_plugin_vec -DBINDIR=\"/usr/local/bin\" -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC -MT dwarf2.lo -MD -MP -MF .deps/dwarf2.Tpo -c -DDEBUGDIR=\"/usr/local/lib/debug\" ./dwarf2.c -o dwarf2.o
+mv -f .deps/dwarf2.Tpo .deps/dwarf2.Plo
+rm -f tofiles
+f=""; \
+for i in elf64-x86-64.lo elf-ifunc.lo elf-nacl.lo elf64.lo elf.lo elflink.lo elf-attrs.lo elf-strtab.lo elf-properties.lo elf-eh-frame.lo dwarf1.lo dwarf2.lo elf32-i386.lo elf-vxworks.lo elf32.lo i386linux.lo aout32.lo pei-i386.lo peigen.lo cofflink.lo coffgen.lo pei-x86_64.lo pex64igen.lo elf64-gen.lo elf32-gen.lo plugin.lo cpu-i386.lo cpu-iamcu.lo cpu-l1om.lo cpu-k1om.lo cpu-plugin.lo  archive64.lo ; do \
+  case " $f " in \
+    *" $i "*) ;; \
+    *) f="$f $i" ;; \
+  esac ; \
+done ; \
+echo $f > tofiles
+/bin/bash ./../move-if-change tofiles ofiles
+touch stamp-ofiles
+/bin/bash ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC  -release `cat libtool-soversion`  -static-libstdc++ -static-libgcc  -o libbfd.la -rpath /usr/local/lib archive.lo archures.lo bfd.lo bfdio.lo bfdwin.lo cache.lo coff-bfd.lo compress.lo corefile.lo format.lo hash.lo init.lo libbfd.lo linker.lo merge.lo opncls.lo reloc.lo section.lo simple.lo stab-syms.lo stabs.lo syms.lo targets.lo binary.lo ihex.lo srec.lo tekhex.lo verilog.lo `cat ofiles`  -ldl -L./../zlib -lz -ldl 
+libtool: link: rm -fr  .libs/libbfd.a .libs/libbfd.la .libs/libbfd.lai
+libtool: link: ar rc .libs/libbfd.a  archive.o archures.o bfd.o bfdio.o bfdwin.o cache.o coff-bfd.o compress.o corefile.o format.o hash.o init.o libbfd.o linker.o merge.o opncls.o reloc.o section.o simple.o stab-syms.o stabs.o syms.o targets.o binary.o ihex.o srec.o tekhex.o verilog.o elf64-x86-64.o elf-ifunc.o elf-nacl.o elf64.o elf.o elflink.o elf-attrs.o elf-strtab.o elf-properties.o elf-eh-frame.o dwarf1.o dwarf2.o elf32-i386.o elf-vxworks.o elf32.o i386linux.o aout32.o pei-i386.o peigen.o cofflink.o coffgen.o pei-x86_64.o pex64igen.o elf64-gen.o elf32-gen.o plugin.o cpu-i386.o cpu-iamcu.o cpu-l1om.o cpu-k1om.o cpu-plugin.o archive64.o
+libtool: link: ranlib .libs/libbfd.a
+libtool: link: ( cd ".libs" && rm -f "libbfd.la" && ln -s "../libbfd.la" "libbfd.la" )
+libtooldir=`/bin/bash ./libtool --config | /bin/sed -n -e 's/^objdir=//p'`; \
+if [ -f $libtooldir/libbfd.a ]; then \
+  cp $libtooldir/libbfd.a libbfd.tmp; \
+  ranlib libbfd.tmp; \
+  /bin/bash ./../move-if-change libbfd.tmp libbfd.a; \
+else true; fi
+touch stamp-lib
+make[4]: Leaving directory '/home/jake/project/binutils-2.29/bfd'
+make[3]: Leaving directory '/home/jake/project/binutils-2.29/bfd'
+make[2]: Leaving directory '/home/jake/project/binutils-2.29/bfd'
+Configuring in ./opcodes
+configure: loading cache ./config.cache
+checking build system type... (cached) x86_64-pc-linux-gnu
+checking host system type... (cached) x86_64-pc-linux-gnu
+checking target system type... (cached) x86_64-pc-linux-gnu
+checking for x86_64-pc-linux-gnu-gcc... (cached) gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for library containing strerror... (cached) none required
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... (cached) /bin/mkdir -p
+checking for gawk... (cached) mawk
+checking whether make sets $(MAKE)... (cached) yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... (cached) gcc3
+checking for x86_64-pc-linux-gnu-gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking how to run the C preprocessor... (cached) gcc -E
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for minix/config.h... (cached) no
+checking whether it is safe to define __EXTENSIONS__... (cached) yes
+checking for x86_64-pc-linux-gnu-ar... (cached) ar
+checking for x86_64-pc-linux-gnu-ranlib... (cached) ranlib
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... (cached) /bin/grep -F
+checking for ld used by gcc... (cached) ld
+checking if the linker (ld) is GNU ld... (cached) yes
+checking for BSD- or MS-compatible name lister (nm)... (cached) nm
+checking the name lister (nm) interface... (cached) BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... (cached) 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for ld option to reload object files... (cached) -r
+checking for x86_64-pc-linux-gnu-objdump... (cached) objdump
+checking how to recognize dependent libraries... (cached) pass_all
+checking for x86_64-pc-linux-gnu-ar... (cached) ar
+checking for x86_64-pc-linux-gnu-strip... no
+checking for strip... (cached) strip
+checking for x86_64-pc-linux-gnu-ranlib... (cached) ranlib
+checking command to parse nm output from gcc object... (cached) ok
+checking for dlfcn.h... (cached) yes
+checking for objdir... (cached) .libs
+checking if gcc supports -fno-rtti -fno-exceptions... (cached) no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... (cached) yes
+checking if gcc static flag -static works... (cached) yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+Setting warning flags = -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144
+checking whether gcc supports -Wmissing-field-initializers... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking whether to install libbfd... yes
+checking whether NLS is requested... yes
+checking for catalogs to be installed...  da de es fi fr ga id it nl pt_BR ro sr sv tr uk vi zh_CN da de es fi fr ga id it nl pt_BR ro sr sv tr uk vi zh_CN
+checking whether NLS is requested... yes
+checking for msgfmt... (cached) /usr/bin/msgfmt
+checking for gmsgfmt... (cached) /usr/bin/msgfmt
+checking for xgettext... (cached) /usr/bin/xgettext
+checking for msgmerge... (cached) /usr/bin/msgmerge
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for limits.h... (cached) yes
+checking whether string.h and strings.h may both be included... (cached) yes
+checking whether basename is declared... (cached) yes
+checking whether stpcpy is declared... (cached) yes
+checking for sigsetjmp... 
+checking linker --as-needed support... (cached) yes
+checking for cos in -lm... (cached) yes
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating po/Makefile.in
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing default-1 commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+make[2]: Entering directory '/home/jake/project/binutils-2.29/opcodes'
+make  all-recursive
+make[3]: Entering directory '/home/jake/project/binutils-2.29/opcodes'
+Making all in .
+make[4]: Entering directory '/home/jake/project/binutils-2.29/opcodes'
+make[4]: Leaving directory '/home/jake/project/binutils-2.29/opcodes'
+Making all in po
+make[4]: Entering directory '/home/jake/project/binutils-2.29/opcodes/po'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/jake/project/binutils-2.29/opcodes/po'
+make[3]: Leaving directory '/home/jake/project/binutils-2.29/opcodes'
+make[2]: Leaving directory '/home/jake/project/binutils-2.29/opcodes'
+Configuring in ./binutils
+configure: loading cache ./config.cache
+checking build system type... (cached) x86_64-pc-linux-gnu
+checking host system type... (cached) x86_64-pc-linux-gnu
+checking target system type... (cached) x86_64-pc-linux-gnu
+checking for x86_64-pc-linux-gnu-gcc... (cached) gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for library containing strerror... (cached) none required
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... (cached) /bin/mkdir -p
+checking for gawk... (cached) mawk
+checking whether make sets $(MAKE)... (cached) yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... (cached) gcc3
+checking for x86_64-pc-linux-gnu-gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking how to run the C preprocessor... (cached) gcc -E
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for minix/config.h... (cached) no
+checking whether it is safe to define __EXTENSIONS__... (cached) yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... (cached) /bin/grep -F
+checking for ld used by gcc... (cached) ld
+checking if the linker (ld) is GNU ld... (cached) yes
+checking for BSD- or MS-compatible name lister (nm)... (cached) nm
+checking the name lister (nm) interface... (cached) BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... (cached) 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for ld option to reload object files... (cached) -r
+checking for x86_64-pc-linux-gnu-objdump... (cached) objdump
+checking how to recognize dependent libraries... (cached) pass_all
+checking for x86_64-pc-linux-gnu-ar... (cached) ar
+checking for x86_64-pc-linux-gnu-strip... no
+checking for strip... (cached) strip
+checking for x86_64-pc-linux-gnu-ranlib... (cached) ranlib
+checking command to parse nm output from gcc object... (cached) ok
+checking for dlfcn.h... (cached) yes
+checking for objdir... (cached) .libs
+checking if gcc supports -fno-rtti -fno-exceptions... (cached) no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... (cached) yes
+checking if gcc static flag -static works... (cached) yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... (cached) no
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for dlfcn.h... (cached) yes
+checking for windows.h... (cached) no
+checking for library containing dlopen... (cached) -ldl
+checking for special C compiler options needed for large files... (cached) no
+checking for _FILE_OFFSET_BITS value needed for large files... (cached) no
+Setting warning flags = -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144
+checking for bison... (cached) bison -y
+checking for flex... (cached) flex
+checking lex output file root... (cached) lex.yy
+checking lex library... (cached) -lfl
+checking whether yytext is a pointer... (cached) yes
+checking whether NLS is requested... yes
+checking for catalogs to be installed...  bg ca da es fi fr hr id it ja ro ru rw sk sr sv tr uk vi zh_CN zh_TW bg ca da es fi fr hr id it ja ro ru rw sk sr sv tr uk vi zh_CN zh_TW
+checking whether NLS is requested... yes
+checking for msgfmt... (cached) /usr/bin/msgfmt
+checking for gmsgfmt... (cached) /usr/bin/msgfmt
+checking for xgettext... (cached) /usr/bin/xgettext
+checking for msgmerge... (cached) /usr/bin/msgmerge
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for x86_64-pc-linux-gnu-ranlib... (cached) ranlib
+checking size of long... (cached) 8
+checking for long long... (cached) yes
+checking size of long long... (cached) 8
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for fcntl.h... (cached) yes
+checking for sys/file.h... (cached) yes
+checking for limits.h... (cached) yes
+checking for locale.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for wchar.h... (cached) yes
+checking for sys/wait.h that is POSIX.1 compatible... (cached) yes
+checking whether string.h and strings.h may both be included... (cached) yes
+checking for working alloca.h... (cached) yes
+checking for alloca... (cached) yes
+checking for sbrk... (cached) yes
+checking for utimes... (cached) yes
+checking for setmode... (cached) no
+checking for getc_unlocked... (cached) yes
+checking for strcoll... (cached) yes
+checking for setlocale... (cached) yes
+checking for mkstemp... (cached) yes
+checking for mkdtemp... (cached) yes
+checking for mbstate_t... yes
+checking for library containing frexp... (cached) none required
+checking for LC_MESSAGES... (cached) yes
+checking for time_t in time.h... (cached) yes
+checking for time_t in sys/types.h... (cached) yes
+checking for a known getopt prototype in unistd.h... (cached) yes
+checking for utime.h... (cached) yes
+checking whether asprintf is declared... (cached) yes
+checking whether environ is declared... (cached) yes
+checking whether fprintf is declared... (cached) yes
+checking whether getc_unlocked is declared... (cached) yes
+checking whether getenv is declared... (cached) yes
+checking whether sbrk is declared... (cached) yes
+checking whether snprintf is declared... (cached) yes
+checking whether stpcpy is declared... (cached) yes
+checking whether strnlen is declared... (cached) yes
+checking whether strstr is declared... (cached) yes
+checking whether vsnprintf is declared... (cached) yes
+checking for iconv.h... (cached) yes
+checking for ld used by GCC... (cached) ld -m elf_x86_64
+checking if the linker (ld -m elf_x86_64) is GNU ld... (cached) yes
+checking for shared library run path origin... (cached) done
+checking for iconv... (cached) yes
+checking for iconv declaration... (cached) install-shextern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating po/Makefile.in
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing default-1 commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+Configuring in ./gas
+configure: loading cache ./config.cache
+checking build system type... (cached) x86_64-pc-linux-gnu
+checking host system type... (cached) x86_64-pc-linux-gnu
+checking target system type... (cached) x86_64-pc-linux-gnu
+checking for x86_64-pc-linux-gnu-gcc... (cached) gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for library containing strerror... (cached) none required
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... (cached) /bin/mkdir -p
+checking for gawk... (cached) mawk
+checking whether make sets $(MAKE)... (cached) yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... (cached) gcc3
+checking for x86_64-pc-linux-gnu-gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking how to run the C preprocessor... (cached) gcc -E
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for minix/config.h... (cached) no
+checking whether it is safe to define __EXTENSIONS__... (cached) yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... (cached) /bin/grep -F
+checking for ld used by gcc... (cached) ld
+checking if the linker (ld) is GNU ld... (cached) yes
+checking for BSD- or MS-compatible name lister (nm)... (cached) nm
+checking the name lister (nm) interface... (cached) BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... (cached) 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for ld option to reload object files... (cached) -r
+checking for x86_64-pc-linux-gnu-objdump... (cached) objdump
+checking how to recognize dependent libraries... (cached) pass_all
+checking for x86_64-pc-linux-gnu-ar... (cached) ar
+checking for x86_64-pc-linux-gnu-strip... no
+checking for strip... (cached) strip
+checking for x86_64-pc-linux-gnu-ranlib... (cached) ranlib
+checking command to parse nm output from gcc object... (cached) ok
+checking for dlfcn.h... (cached) yes
+checking for objdir... (cached) .libs
+checking if gcc supports -fno-rtti -fno-exceptions... (cached) no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... (cached) yes
+checking if gcc static flag -static works... (cached) yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... (cached) no
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for dlfcn.h... (cached) yes
+checking for windows.h... (cached) no
+checking for library containing dlopen... (cached) -ldl
+checking for special C compiler options needed for large files... (cached) no
+checking for _FILE_OFFSET_BITS value needed for large files... (cached) no
+checking how to compare bootstrapped objects... (cached) cmp --ignore-initial=16 $$f1 $$f2
+Setting warning flags = -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144
+checking whether byte ordering is bigendian... (cached) no
+checking for bison... (cached) bison -y
+checking for flex... (cached) flex
+checking lex output file root... (cached) lex.yy
+checking lex library... (cached) -lfl
+checking whether yytext is a pointer... (cached) yes
+checking whether NLS is requested... yes
+checking for catalogs to be installed...  es fi fr id ja ru rw sv tr uk zh_CN es fi fr id ja ru rw sv tr uk zh_CN
+checking whether NLS is requested... yes
+checking for msgfmt... (cached) /usr/bin/msgfmt
+checking for gmsgfmt... (cached) /usr/bin/msgfmt
+checking for xgettext... (cached) /usr/bin/xgettext
+checking for msgmerge... (cached) /usr/bin/msgmerge
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for string.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for errno.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for limits.h... (cached) yes
+checking for locale.h... (cached) yes
+checking for time.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking whether string.h and strings.h may both be included... (cached) yes
+checking whether compiling a cross-assembler... no
+checking for working alloca.h... (cached) yes
+checking for alloca... (cached) yes
+checking for inline... (cached) inline
+checking for unlink... (cached) yes
+checking for sbrk... (cached) yes
+checking for setlocale... (cached) yes
+checking for strsignal... (cached) yes
+checking for LC_MESSAGES... (cached) yes
+checking for working assert macro... (cached) yes
+checking whether declaration is required for errno... (cached) no
+checking for a known getopt prototype in unistd.h... (cached) yes
+checking whether declaration is required for environ... (cached) no
+checking whether declaration is required for ffs... (cached) no
+checking whether declaration is required for free... (cached) no
+checking whether declaration is required for malloc... (cached) no
+checking whether declaration is required for sbrk... (cached) no
+checking whether declaration is required for strstr... (cached) no
+checking whether free is declared... (cached) yes
+checking whether getenv is declared... (cached) yes
+checking whether malloc is declared... (cached) yes
+checking whether mempcpy is declared... (cached) yes
+checking whether realloc is declared... (cached) yes
+checking whether stpcpy is declared... (cached) yes
+checking whether strstr is declared... (cached) yes
+checking whether vsnprintf is declared... (cached) yes
+checking whether asprintf is declared... (cached) yes
+checking for struct tm.tm_gmtoff in time.h... (cached) yes
+checking for struct stat.st_mtim.tv_sec in sys/stat.h... (cached) yes
+checking for struct stat.st_mtim.tv_nsec in sys/stat.h... (cached) yes
+configure: creating ./config.status
+config.status: creating .gdbinit
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating po/Makefile.in
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing default-1 commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+config.status: executing default commands
+make[2]: Entering directory '/home/jake/project/binutils-2.29/gas'
+make  all-recursive
+make[3]: Entering directory '/home/jake/project/binutils-2.29/gas'
+Making all in doc
+make[4]: Entering directory '/home/jake/project/binutils-2.29/gas/doc'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/jake/project/binutils-2.29/gas/doc'
+Making all in po
+make[4]: Entering directory '/home/jake/project/binutils-2.29/gas/po'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/jake/project/binutils-2.29/gas/po'
+make[4]: Entering directory '/home/jake/project/binutils-2.29/gas'
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT app.o -MD -MP -MF .deps/app.Tpo -c -o app.o app.c
+mv -f .deps/app.Tpo .deps/app.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT as.o -MD -MP -MF .deps/as.Tpo -c -o as.o as.c
+mv -f .deps/as.Tpo .deps/as.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT atof-generic.o -MD -MP -MF .deps/atof-generic.Tpo -c -o atof-generic.o atof-generic.c
+mv -f .deps/atof-generic.Tpo .deps/atof-generic.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT cond.o -MD -MP -MF .deps/cond.Tpo -c -o cond.o cond.c
+mv -f .deps/cond.Tpo .deps/cond.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT depend.o -MD -MP -MF .deps/depend.Tpo -c -o depend.o depend.c
+mv -f .deps/depend.Tpo .deps/depend.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT dwarf2dbg.o -MD -MP -MF .deps/dwarf2dbg.Tpo -c -o dwarf2dbg.o dwarf2dbg.c
+mv -f .deps/dwarf2dbg.Tpo .deps/dwarf2dbg.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT dw2gencfi.o -MD -MP -MF .deps/dw2gencfi.Tpo -c -o dw2gencfi.o dw2gencfi.c
+mv -f .deps/dw2gencfi.Tpo .deps/dw2gencfi.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT ecoff.o -MD -MP -MF .deps/ecoff.Tpo -c -o ecoff.o ecoff.c
+mv -f .deps/ecoff.Tpo .deps/ecoff.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT ehopt.o -MD -MP -MF .deps/ehopt.Tpo -c -o ehopt.o ehopt.c
+mv -f .deps/ehopt.Tpo .deps/ehopt.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT expr.o -MD -MP -MF .deps/expr.Tpo -c -o expr.o expr.c
+mv -f .deps/expr.Tpo .deps/expr.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT flonum-copy.o -MD -MP -MF .deps/flonum-copy.Tpo -c -o flonum-copy.o flonum-copy.c
+mv -f .deps/flonum-copy.Tpo .deps/flonum-copy.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT frags.o -MD -MP -MF .deps/frags.Tpo -c -o frags.o frags.c
+mv -f .deps/frags.Tpo .deps/frags.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT hash.o -MD -MP -MF .deps/hash.Tpo -c -o hash.o hash.c
+mv -f .deps/hash.Tpo .deps/hash.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT input-file.o -MD -MP -MF .deps/input-file.Tpo -c -o input-file.o input-file.c
+mv -f .deps/input-file.Tpo .deps/input-file.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT input-scrub.o -MD -MP -MF .deps/input-scrub.Tpo -c -o input-scrub.o input-scrub.c
+mv -f .deps/input-scrub.Tpo .deps/input-scrub.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT listing.o -MD -MP -MF .deps/listing.Tpo -c -o listing.o listing.c
+mv -f .deps/listing.Tpo .deps/listing.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT literal.o -MD -MP -MF .deps/literal.Tpo -c -o literal.o literal.c
+mv -f .deps/literal.Tpo .deps/literal.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT macro.o -MD -MP -MF .deps/macro.Tpo -c -o macro.o macro.c
+mv -f .deps/macro.Tpo .deps/macro.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT messages.o -MD -MP -MF .deps/messages.Tpo -c -o messages.o messages.c
+mv -f .deps/messages.Tpo .deps/messages.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT output-file.o -MD -MP -MF .deps/output-file.Tpo -c -o output-file.o output-file.c
+mv -f .deps/output-file.Tpo .deps/output-file.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT read.o -MD -MP -MF .deps/read.Tpo -c -o read.o read.c
+mv -f .deps/read.Tpo .deps/read.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT remap.o -MD -MP -MF .deps/remap.Tpo -c -o remap.o remap.c
+mv -f .deps/remap.Tpo .deps/remap.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT sb.o -MD -MP -MF .deps/sb.Tpo -c -o sb.o sb.c
+mv -f .deps/sb.Tpo .deps/sb.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT stabs.o -MD -MP -MF .deps/stabs.Tpo -c -o stabs.o stabs.c
+mv -f .deps/stabs.Tpo .deps/stabs.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT subsegs.o -MD -MP -MF .deps/subsegs.Tpo -c -o subsegs.o subsegs.c
+mv -f .deps/subsegs.Tpo .deps/subsegs.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT symbols.o -MD -MP -MF .deps/symbols.Tpo -c -o symbols.o symbols.c
+mv -f .deps/symbols.Tpo .deps/symbols.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT write.o -MD -MP -MF .deps/write.Tpo -c -o write.o write.c
+mv -f .deps/write.Tpo .deps/write.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT tc-i386.o -MD -MP -MF .deps/tc-i386.Tpo -c -o tc-i386.o `test -f 'config/tc-i386.c' || echo './'`config/tc-i386.c
+mv -f .deps/tc-i386.Tpo .deps/tc-i386.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT obj-elf.o -MD -MP -MF .deps/obj-elf.Tpo -c -o obj-elf.o `test -f 'config/obj-elf.c' || echo './'`config/obj-elf.c
+mv -f .deps/obj-elf.Tpo .deps/obj-elf.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./config -I./../include -I./.. -I./../bfd -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -MT atof-ieee.o -MD -MP -MF .deps/atof-ieee.Tpo -c -o atof-ieee.o `test -f 'config/atof-ieee.c' || echo './'`config/atof-ieee.c
+mv -f .deps/atof-ieee.Tpo .deps/atof-ieee.Po
+/bin/bash ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC  -static-libstdc++ -static-libgcc  -o as-new app.o as.o atof-generic.o compress-debug.o cond.o depend.o dwarf2dbg.o dw2gencfi.o ecoff.o ehopt.o expr.o flonum-copy.o flonum-konst.o flonum-mult.o frags.o hash.o input-file.o input-scrub.o listing.o literal.o macro.o messages.o output-file.o read.o remap.o sb.o stabs.o subsegs.o symbols.o write.o tc-i386.o obj-elf.o atof-ieee.o  ../opcodes/libopcodes.la ../bfd/libbfd.la ../libiberty/libiberty.a   -ldl 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -Wwrite-strings -I./../zlib -fPIC -static-libstdc++ -static-libgcc -o as-new app.o as.o atof-generic.o compress-debug.o cond.o depend.o dwarf2dbg.o dw2gencfi.o ecoff.o ehopt.o expr.o flonum-copy.o flonum-konst.o flonum-mult.o frags.o hash.o input-file.o input-scrub.o listing.o literal.o macro.o messages.o output-file.o read.o remap.o sb.o stabs.o subsegs.o symbols.o write.o tc-i386.o obj-elf.o atof-ieee.o  ../opcodes/.libs/libopcodes.a ../bfd/.libs/libbfd.a -L/home/jake/project/binutils-2.29/zlib -lz ../libiberty/libiberty.a -ldl
+make[4]: Leaving directory '/home/jake/project/binutils-2.29/gas'
+make[3]: Leaving directory '/home/jake/project/binutils-2.29/gas'
+make[2]: Leaving directory '/home/jake/project/binutils-2.29/gas'
+make[2]: Entering directory '/home/jake/project/binutils-2.29/binutils'
+Making info in doc
+make[3]: Entering directory '/home/jake/project/binutils-2.29/binutils/doc'
+if test -f cxxfilt.man; then \
+  man=cxxfilt.man; \
+else \
+  man=./cxxfilt.man; \
+fi; \
+sed -e 's/@PROGRAM@/c++filt/' \
+    -e 's/cxxfilt/c++filt/' < $man \
+	> c++filt.1
+make[3]: Leaving directory '/home/jake/project/binutils-2.29/binutils/doc'
+Making info in po
+make[3]: Entering directory '/home/jake/project/binutils-2.29/binutils/po'
+make[3]: Nothing to be done for 'info'.
+make[3]: Leaving directory '/home/jake/project/binutils-2.29/binutils/po'
+make[3]: Entering directory '/home/jake/project/binutils-2.29/binutils'
+make[3]: Nothing to be done for 'info-am'.
+make[3]: Leaving directory '/home/jake/project/binutils-2.29/binutils'
+make  all-recursive
+make[3]: Entering directory '/home/jake/project/binutils-2.29/binutils'
+Making all in doc
+make[4]: Entering directory '/home/jake/project/binutils-2.29/binutils/doc'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/jake/project/binutils-2.29/binutils/doc'
+Making all in po
+make[4]: Entering directory '/home/jake/project/binutils-2.29/binutils/po'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/jake/project/binutils-2.29/binutils/po'
+make[4]: Entering directory '/home/jake/project/binutils-2.29/binutils'
+/bin/bash ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC  -static-libstdc++ -static-libgcc  -o size size.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -ldl 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC -static-libstdc++ -static-libgcc -o size size.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a -L/home/jake/project/binutils-2.29/zlib -lz ../libiberty/libiberty.a -ldl
+/bin/bash ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC  -static-libstdc++ -static-libgcc  -o objdump objdump.o dwarf.o prdbg.o rddbg.o debug.o stabs.o ieee.o rdcoff.o bucomm.o version.o filemode.o elfcomm.o  ../opcodes/libopcodes.la ../bfd/libbfd.la ../libiberty/libiberty.a  -ldl 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC -static-libstdc++ -static-libgcc -o objdump objdump.o dwarf.o prdbg.o rddbg.o debug.o stabs.o ieee.o rdcoff.o bucomm.o version.o filemode.o elfcomm.o  ../opcodes/.libs/libopcodes.a ../bfd/.libs/libbfd.a -L/home/jake/project/binutils-2.29/zlib -lz ../libiberty/libiberty.a -ldl
+/bin/bash ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC  -static-libstdc++ -static-libgcc  -o ar arparse.o arlex.o ar.o not-ranlib.o arsup.o rename.o binemul.o emul_vanilla.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a -lfl  -ldl 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC -static-libstdc++ -static-libgcc -o ar arparse.o arlex.o ar.o not-ranlib.o arsup.o rename.o binemul.o emul_vanilla.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a -L/home/jake/project/binutils-2.29/zlib -lz ../libiberty/libiberty.a -lfl -ldl
+/bin/bash ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC  -static-libstdc++ -static-libgcc  -o strings strings.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -ldl 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC -static-libstdc++ -static-libgcc -o strings strings.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a -L/home/jake/project/binutils-2.29/zlib -lz ../libiberty/libiberty.a -ldl
+/bin/bash ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC  -static-libstdc++ -static-libgcc  -o ranlib ar.o is-ranlib.o arparse.o arlex.o arsup.o rename.o binemul.o emul_vanilla.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a -lfl  -ldl 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC -static-libstdc++ -static-libgcc -o ranlib ar.o is-ranlib.o arparse.o arlex.o arsup.o rename.o binemul.o emul_vanilla.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a -L/home/jake/project/binutils-2.29/zlib -lz ../libiberty/libiberty.a -lfl -ldl
+/bin/bash ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC  -static-libstdc++ -static-libgcc  -o objcopy objcopy.o not-strip.o rename.o rddbg.o debug.o stabs.o ieee.o rdcoff.o wrstabs.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -ldl 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC -static-libstdc++ -static-libgcc -o objcopy objcopy.o not-strip.o rename.o rddbg.o debug.o stabs.o ieee.o rdcoff.o wrstabs.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a -L/home/jake/project/binutils-2.29/zlib -lz ../libiberty/libiberty.a -ldl
+/bin/bash ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC  -static-libstdc++ -static-libgcc  -o addr2line addr2line.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -ldl 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC -static-libstdc++ -static-libgcc -o addr2line addr2line.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a -L/home/jake/project/binutils-2.29/zlib -lz ../libiberty/libiberty.a -ldl
+/bin/bash ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC  -static-libstdc++ -static-libgcc  -o nm-new nm.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -ldl 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC -static-libstdc++ -static-libgcc -o nm-new nm.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a -L/home/jake/project/binutils-2.29/zlib -lz ../libiberty/libiberty.a -ldl
+/bin/bash ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC  -static-libstdc++ -static-libgcc  -o strip-new objcopy.o is-strip.o rename.o rddbg.o debug.o stabs.o ieee.o rdcoff.o wrstabs.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -ldl 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC -static-libstdc++ -static-libgcc -o strip-new objcopy.o is-strip.o rename.o rddbg.o debug.o stabs.o ieee.o rdcoff.o wrstabs.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a -L/home/jake/project/binutils-2.29/zlib -lz ../libiberty/libiberty.a -ldl
+/bin/bash ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC  -static-libstdc++ -static-libgcc  -o cxxfilt cxxfilt.o bucomm.o version.o filemode.o ../bfd/libbfd.la ../libiberty/libiberty.a  -ldl 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC -static-libstdc++ -static-libgcc -o cxxfilt cxxfilt.o bucomm.o version.o filemode.o  ../bfd/.libs/libbfd.a -L/home/jake/project/binutils-2.29/zlib -lz ../libiberty/libiberty.a -ldl
+/bin/bash ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC  -static-libstdc++ -static-libgcc  -o bfdtest1 bfdtest1.o ../bfd/libbfd.la ../libiberty/libiberty.a  -ldl 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC -static-libstdc++ -static-libgcc -o bfdtest1 bfdtest1.o  ../bfd/.libs/libbfd.a -L/home/jake/project/binutils-2.29/zlib -lz ../libiberty/libiberty.a -ldl
+/bin/bash ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC  -static-libstdc++ -static-libgcc  -o bfdtest2 bfdtest2.o ../bfd/libbfd.la ../libiberty/libiberty.a  -ldl 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -I./../zlib -fPIC -static-libstdc++ -static-libgcc -o bfdtest2 bfdtest2.o  ../bfd/.libs/libbfd.a -L/home/jake/project/binutils-2.29/zlib -lz ../libiberty/libiberty.a -ldl
+make[4]: Leaving directory '/home/jake/project/binutils-2.29/binutils'
+make[3]: Leaving directory '/home/jake/project/binutils-2.29/binutils'
+make[2]: Leaving directory '/home/jake/project/binutils-2.29/binutils'
+Configuring in ./etc
+configure: loading cache ./config.cache
+checking for a BSD-compatible install... /usr/bin/install -c
+configure: creating ./config.status
+config.status: creating Makefile
+make[2]: Entering directory '/home/jake/project/binutils-2.29/etc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/jake/project/binutils-2.29/etc'
+Configuring in ./gprof
+configure: loading cache ./config.cache
+checking build system type... (cached) x86_64-pc-linux-gnu
+checking host system type... (cached) x86_64-pc-linux-gnu
+checking target system type... (cached) x86_64-pc-linux-gnu
+checking for x86_64-pc-linux-gnu-gcc... (cached) gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for library containing strerror... (cached) none required
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... (cached) /bin/mkdir -p
+checking for gawk... (cached) mawk
+checking whether make sets $(MAKE)... (cached) yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... (cached) gcc3
+checking for x86_64-pc-linux-gnu-gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking how to run the C preprocessor... (cached) gcc -E
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking for egrep... (cached) /bin/grep -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for minix/config.h... (cached) no
+checking whether it is safe to define __EXTENSIONS__... (cached) yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... (cached) /bin/grep -F
+checking for ld used by gcc... (cached) ld
+checking if the linker (ld) is GNU ld... (cached) yes
+checking for BSD- or MS-compatible name lister (nm)... (cached) nm
+checking the name lister (nm) interface... (cached) BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... (cached) 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for ld option to reload object files... (cached) -r
+checking for x86_64-pc-linux-gnu-objdump... (cached) objdump
+checking how to recognize dependent libraries... (cached) pass_all
+checking for x86_64-pc-linux-gnu-ar... (cached) ar
+checking for x86_64-pc-linux-gnu-strip... no
+checking for strip... (cached) strip
+checking for x86_64-pc-linux-gnu-ranlib... (cached) ranlib
+checking command to parse nm output from gcc object... (cached) ok
+checking for dlfcn.h... (cached) yes
+checking for objdir... (cached) .libs
+checking if gcc supports -fno-rtti -fno-exceptions... (cached) no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... (cached) yes
+checking if gcc static flag -static works... (cached) yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... (cached) no
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking for dlfcn.h... (cached) yes
+checking for windows.h... (cached) no
+checking for library containing dlopen... (cached) -ldl
+checking for special C compiler options needed for large files... (cached) no
+checking for _FILE_OFFSET_BITS value needed for large files... (cached) no
+checking for setmode... (cached) no
+checking whether NLS is requested... yes
+checking for catalogs to be installed...  bg da de eo es fi fr ga hu id it ja ms nl pt_BR ro ru rw sr sv tr uk vi bg da de eo es fi fr ga hu id it ja ms nl pt_BR ro ru rw sr sv tr uk vi
+checking whether NLS is requested... yes
+checking for msgfmt... (cached) /usr/bin/msgfmt
+checking for gmsgfmt... (cached) /usr/bin/msgfmt
+checking for xgettext... (cached) /usr/bin/xgettext
+checking for msgmerge... (cached) /usr/bin/msgmerge
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for sys/gmon_out.h... (cached) yes
+checking for a known getopt prototype in unistd.h... (cached) yes
+checking for library containing fabs... (cached) -lm
+Setting warning flags = -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating po/Makefile.in
+config.status: creating gconfig.h
+config.status: gconfig.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing default-1 commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+make[2]: Entering directory '/home/jake/project/binutils-2.29/gprof'
+make  all-recursive
+make[3]: Entering directory '/home/jake/project/binutils-2.29/gprof'
+Making all in po
+make[4]: Entering directory '/home/jake/project/binutils-2.29/gprof/po'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/jake/project/binutils-2.29/gprof/po'
+make[4]: Entering directory '/home/jake/project/binutils-2.29/gprof'
+/bin/bash ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -fPIC  -static-libstdc++ -static-libgcc  -o gprof basic_blocks.o call_graph.o cg_arcs.o cg_dfn.o cg_print.o corefile.o gmon_io.o gprof.o hertz.o hist.o source.o search_list.o symtab.o sym_ids.o utils.o i386.o alpha.o vax.o tahoe.o sparc.o mips.o aarch64.o flat_bl.o bsd_callg_bl.o fsf_callg_bl.o ../bfd/libbfd.la ../libiberty/libiberty.a  -lm -ldl 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -fPIC -static-libstdc++ -static-libgcc -o gprof basic_blocks.o call_graph.o cg_arcs.o cg_dfn.o cg_print.o corefile.o gmon_io.o gprof.o hertz.o hist.o source.o search_list.o symtab.o sym_ids.o utils.o i386.o alpha.o vax.o tahoe.o sparc.o mips.o aarch64.o flat_bl.o bsd_callg_bl.o fsf_callg_bl.o  ../bfd/.libs/libbfd.a -L/home/jake/project/binutils-2.29/zlib -lz ../libiberty/libiberty.a -lm -ldl
+make[4]: Leaving directory '/home/jake/project/binutils-2.29/gprof'
+make[3]: Leaving directory '/home/jake/project/binutils-2.29/gprof'
+make[2]: Leaving directory '/home/jake/project/binutils-2.29/gprof'
+Configuring in ./ld
+configure: loading cache ./config.cache
+checking build system type... (cached) x86_64-pc-linux-gnu
+checking host system type... (cached) x86_64-pc-linux-gnu
+checking target system type... (cached) x86_64-pc-linux-gnu
+checking for x86_64-pc-linux-gnu-gcc... (cached) gcc
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... (cached) o
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking for library containing strerror... (cached) none required
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... (cached) /bin/mkdir -p
+checking for gawk... (cached) mawk
+checking whether make sets $(MAKE)... (cached) yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... (cached) gcc3
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for x86_64-pc-linux-gnu-gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether we are using the GNU C++ compiler... (cached) yes
+checking whether g++ accepts -g... (cached) yes
+checking dependency style of g++... (cached) gcc3
+checking for grep that handles long lines and -e... (cached) /bin/grep
+checking how to run the C preprocessor... (cached) gcc -E
+checking for egrep... (cached) /bin/grep -E
+checking for ANSI C header files... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for memory.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for minix/config.h... (cached) no
+checking whether it is safe to define __EXTENSIONS__... (cached) yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /bin/sed
+checking for fgrep... (cached) /bin/grep -F
+checking for ld used by gcc... (cached) ld
+checking if the linker (ld) is GNU ld... (cached) yes
+checking for BSD- or MS-compatible name lister (nm)... (cached) nm
+checking the name lister (nm) interface... (cached) BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... (cached) 1572864
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking for ld option to reload object files... (cached) -r
+checking for x86_64-pc-linux-gnu-objdump... (cached) objdump
+checking how to recognize dependent libraries... (cached) pass_all
+checking for x86_64-pc-linux-gnu-ar... (cached) ar
+checking for x86_64-pc-linux-gnu-strip... no
+checking for strip... (cached) strip
+checking for x86_64-pc-linux-gnu-ranlib... (cached) ranlib
+checking command to parse nm output from gcc object... (cached) ok
+checking for dlfcn.h... (cached) yes
+checking for objdir... (cached) .libs
+checking if gcc supports -fno-rtti -fno-exceptions... (cached) no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... (cached) yes
+checking if gcc static flag -static works... (cached) yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (ld -m elf_x86_64) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... (cached) no
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... (cached) g++ -E
+checking for ld used by g++... (cached) ld -m elf_x86_64
+checking if the linker (ld -m elf_x86_64) is GNU ld... (cached) yes
+checking whether the g++ linker (ld -m elf_x86_64) supports shared libraries... yes
+checking for g++ option to produce PIC... -fPIC -DPIC
+checking if g++ PIC flag -fPIC -DPIC works... (cached) yes
+checking if g++ static flag -static works... (cached) yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking if g++ supports -c -o file.o... (cached) yes
+checking whether the g++ linker (ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... (cached) GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking for dlfcn.h... (cached) yes
+checking for windows.h... (cached) no
+checking for library containing dlopen... (cached) -ldl
+checking for special C compiler options needed for large files... (cached) no
+checking for _FILE_OFFSET_BITS value needed for large files... (cached) no
+Setting warning flags = -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144
+checking for LC_MESSAGES... (cached) yes
+checking whether NLS is requested... yes
+checking for catalogs to be installed...  bg da de es fi fr ga id it ja ru sr sv tr uk vi zh_CN zh_TW bg da de es fi fr ga id it ja ru sr sv tr uk vi zh_CN zh_TW
+checking whether NLS is requested... yes
+checking for msgfmt... (cached) /usr/bin/msgfmt
+checking for gmsgfmt... (cached) /usr/bin/msgfmt
+checking for xgettext... (cached) /usr/bin/xgettext
+checking for msgmerge... (cached) /usr/bin/msgmerge
+checking for bison... (cached) bison -y
+checking for flex... (cached) flex
+checking lex output file root... (cached) lex.yy
+checking lex library... (cached) -lfl
+checking whether yytext is a pointer... (cached) yes
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking how to compare bootstrapped objects... (cached) cmp --ignore-initial=16 $$f1 $$f2
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for elf-hints.h... (cached) no
+checking for limits.h... (cached) yes
+checking for locale.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for fcntl.h... (cached) yes
+checking for sys/file.h... (cached) yes
+checking for sys/time.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking whether string.h and strings.h may both be included... (cached) yes
+checking for glob... (cached) yes
+checking for mkstemp... (cached) yes
+checking for realpath... (cached) yes
+checking for sbrk... (cached) yes
+checking for setlocale... (cached) yes
+checking for waitpid... (cached) yes
+checking for open... (cached) yes
+checking for lseek... (cached) yes
+checking for close... (cached) yes
+checking for dirent.h that defines DIR... (cached) yes
+checking for library containing opendir... (cached) none required
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for getpagesize... (cached) yes
+checking for working mmap... (cached) yes
+checking for library containing dlopen... (cached) -ldl
+checking for a known getopt prototype in unistd.h... (cached) yes
+checking whether strstr is declared... (cached) yes
+checking whether free is declared... (cached) yes
+checking whether sbrk is declared... (cached) yes
+checking whether getenv is declared... (cached) yes
+checking whether environ is declared... (cached) yes
+checking whether ANSI C string concatenation works... (cached) yes
+checking size of void *... (cached) 8
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating po/Makefile.in
+config.status: creating config.h
+config.status: config.h is unchanged
+config.status: executing depfiles commands
+config.status: executing libtool commands
+config.status: executing default-1 commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+make[2]: Entering directory '/home/jake/project/binutils-2.29/ld'
+(echo "/* This file is automatically generated.  DO NOT EDIT! */";\
+for f in `echo " " eelf_x86_64.o eelf32_x86_64.o eelf_i386.o eelf_iamcu.o ei386linux.o eelf_l1om.o eelf_k1om.o "" \
+ | sed -e 's/ e/ ld/g' -e 's/ ld/ /g' -e 's/[.]o//g'`; do \
+    echo "extern ld_emulation_xfer_type ld_${f}_emulation;"; \
+done;\
+echo "";\
+echo "#define EMULATION_LIST \\";\
+for f in `echo " " eelf_x86_64.o eelf32_x86_64.o eelf_i386.o eelf_iamcu.o ei386linux.o eelf_l1om.o eelf_k1om.o "" \
+ | sed -e 's/ e/ ld/g' -e 's/ ld/ /g' -e 's/[.]o//g'`; do \
+    echo "  &ld_${f}_emulation, \\"; \
+done;\
+echo "  0") >ldemul-tmp.h
+mv ldemul-tmp.h ldemul-list.h
+make  all-recursive
+make[3]: Entering directory '/home/jake/project/binutils-2.29/ld'
+Making all in po
+make[4]: Entering directory '/home/jake/project/binutils-2.29/ld/po'
+make[4]: Nothing to be done for 'all'.
+make[4]: Leaving directory '/home/jake/project/binutils-2.29/ld/po'
+make[4]: Entering directory '/home/jake/project/binutils-2.29/ld'
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include  -fPIC -DENABLE_PLUGINS -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -DELF_LIST_OPTIONS=TRUE -DELF_SHLIB_LIST_OPTIONS=TRUE -DELF_PLT_UNWIND_LIST_OPTIONS=TRUE -fPIC -MT ldmain.o -MD -MP -MF .deps/ldmain.Tpo -c -o ldmain.o \
+  -DDEFAULT_EMULATION='"elf_x86_64"' \
+  -DBINDIR='"/usr/local/bin"' -DTOOLBINDIR='"/usr/local/x86_64-pc-linux-gnu/bin"' \
+  -DTARGET='"x86_64-pc-linux-gnu"' -DTARGET_SYSTEM_ROOT=\"\" \
+  ./ldmain.c
+mv -f .deps/ldmain.Tpo .deps/ldmain.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include  -fPIC -DENABLE_PLUGINS -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -DELF_LIST_OPTIONS=TRUE -DELF_SHLIB_LIST_OPTIONS=TRUE -DELF_PLT_UNWIND_LIST_OPTIONS=TRUE -fPIC -MT ldemul.o -MD -MP -MF .deps/ldemul.Tpo -c -o ldemul.o ldemul.c
+mv -f .deps/ldemul.Tpo .deps/ldemul.Po
+gcc -DHAVE_CONFIG_H -I.  -I. -I. -I../bfd -I./../bfd -I./../include  -fPIC -DENABLE_PLUGINS -DLOCALEDIR="\"/usr/local/share/locale\""  -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -DELF_LIST_OPTIONS=TRUE -DELF_SHLIB_LIST_OPTIONS=TRUE -DELF_PLT_UNWIND_LIST_OPTIONS=TRUE -fPIC -MT ldfile.o -MD -MP -MF .deps/ldfile.Tpo -c -o ldfile.o \
+-DSCRIPTDIR='"/usr/local/x86_64-pc-linux-gnu/lib"' -DBINDIR='"/usr/local/bin"' -DTOOLBINDIR='"/usr/local/x86_64-pc-linux-gnu/bin"' \
+ ./ldfile.c
+mv -f .deps/ldfile.Tpo .deps/ldfile.Po
+/bin/bash ./libtool --tag=CC   --mode=link gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -DELF_LIST_OPTIONS=TRUE -DELF_SHLIB_LIST_OPTIONS=TRUE -DELF_PLT_UNWIND_LIST_OPTIONS=TRUE -fPIC  -static-libstdc++ -static-libgcc  -o ld-new ldgram.o ldlex-wrapper.o lexsup.o ldlang.o mri.o ldctor.o ldmain.o ldwrite.o ldexp.o ldemul.o ldver.o ldmisc.o ldfile.o ldcref.o plugin.o ldbuildid.o eelf_x86_64.o eelf32_x86_64.o eelf_i386.o eelf_iamcu.o ei386linux.o eelf_l1om.o eelf_k1om.o  ../bfd/libbfd.la ../libiberty/libiberty.a  -ldl -ldl 
+libtool: link: gcc -W -Wall -Wstrict-prototypes -Wmissing-prototypes -Wshadow -Wstack-usage=262144 -DELF_LIST_OPTIONS=TRUE -DELF_SHLIB_LIST_OPTIONS=TRUE -DELF_PLT_UNWIND_LIST_OPTIONS=TRUE -fPIC -static-libstdc++ -static-libgcc -o ld-new ldgram.o ldlex-wrapper.o lexsup.o ldlang.o mri.o ldctor.o ldmain.o ldwrite.o ldexp.o ldemul.o ldver.o ldmisc.o ldfile.o ldcref.o plugin.o ldbuildid.o eelf_x86_64.o eelf32_x86_64.o eelf_i386.o eelf_iamcu.o ei386linux.o eelf_l1om.o eelf_k1om.o  ../bfd/.libs/libbfd.a -L/home/jake/project/binutils-2.29/zlib -lz ../libiberty/libiberty.a -ldl
+make[4]: Leaving directory '/home/jake/project/binutils-2.29/ld'
+make[3]: Leaving directory '/home/jake/project/binutils-2.29/ld'
+make[2]: Leaving directory '/home/jake/project/binutils-2.29/ld'
+make[1]: Nothing to be done for 'all-target'.
+make[1]: Leaving directory '/home/jake/project/binutils-2.29'
+
