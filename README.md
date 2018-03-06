@@ -28,3 +28,5 @@ Example fuzzing binutils/objdump from main
 		ob = dofuzz('~/binutils-2.29', 'binutils/objdump.c', 'objdump', '../libFuzzer.a')
 
 -------------------------------------------------------------------------------------------
+
+![Alt text](./Output_1.png?raw=true "Output of fuzzing objdump from main")

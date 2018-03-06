@@ -56,7 +56,12 @@ class makeObject:
 
     def runner(self):
         self.getCommand()
-        return subprocess.check_output(self.cmd)
+        try:
+            subprocess.check_output(self.cmd)
+        except subprocess.CalledProcessError:
+            self.cmd.pop(self.cmd.index('-Wl,--whole-archive'))
+            self.cmd.pop(self.cmd.index('-Wl,--no-whole-archive'))
+            subprocess.check_output(self.cmd)
 
 
 class ParseException(Exception):
