@@ -19,3 +19,12 @@ Fuzzing arbitrary function
                              use_default=False, prototype='int blah(int, char*)')
 
 -------------------------------------------------------------------------------------------
+
+
+Example fuzzing binutils/objdump from main
+
+		from dofuzz import *
+
+		ob = dofuzz('~/binutils-2.29', 'binutils/objdump.c', 'objdump', '../libFuzzer.a')
+
+-------------------------------------------------------------------------------------------
